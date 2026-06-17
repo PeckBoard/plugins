@@ -7,10 +7,10 @@
       "description": "Public, API-key-authenticated HTTP surface for Peckboard, served as a WASM plugin. Lets external clients list projects, list/create cards, and manage scoped API keys over a /plugin-api/* prefix.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/api-plugin",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "hooks": ["http.request.before"],
-      "url": "https://github.com/PeckBoard/api-plugin/releases/download/v0.2.0/api.wasm",
-      "sha256": "4ecb2ee49c3d85c323556f191f6d7fa3a5a0ec8ea9371daa952f17d577c86df2"
+      "url": "https://github.com/PeckBoard/api-plugin/releases/download/v0.2.1/api.wasm",
+      "sha256": "84945d363771fa80861ead823f2c282fdb70174bee96f198dc39800d175d57c6"
     }
   ]
 }
