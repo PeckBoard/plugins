@@ -11,7 +11,7 @@
       "hooks": ["http.request.before"],
       "url": "https://github.com/PeckBoard/api-plugin/releases/download/v0.2.2/api.wasm",
       "sha256": "d0fa23aac56a05dc11aef3421927a24b7fa14419076cfc7e8903bc2c9cf0184d",
-      "min_peckboard": "0.1.0"
+      "min_peckboard": "0.0.19"
     },
     {
       "id": "common-tools",
@@ -23,7 +23,7 @@
       "hooks": ["mcp.tool.invoke"],
       "url": "https://github.com/PeckBoard/common-tools/releases/download/v0.2.1/common-tools.wasm",
       "sha256": "f8f02966570101f94bc1b79c226260f9e61f66ef52796a3b4a6362e7002758aa",
-      "min_peckboard": "0.1.0"
+      "min_peckboard": "0.0.19"
     },
     {
       "id": "experts",
@@ -35,7 +35,7 @@
       "hooks": ["mcp.tool.invoke", "http.request.before", "http.request.authed", "session.user.answer"],
       "url": "https://github.com/PeckBoard/experts/releases/download/v0.1.0/experts.wasm",
       "sha256": "1d32086cdd55d2c349608e36aeced67f18e3c5c4c1d161d85a1ab2c199a2ce57",
-      "min_peckboard": "0.1.0"
+      "min_peckboard": "0.0.19"
     }
   ]
 }
