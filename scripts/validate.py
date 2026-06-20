@@ -22,7 +22,7 @@ SHA256_RE = re.compile(r"^[a-f0-9]{64}$")
 VERSION_RE = re.compile(r"^[0-9]+\.[0-9]+\.[0-9]+([.-].+)?$")
 
 REQUIRED = ["id", "name", "description", "author", "version", "hooks", "url", "sha256"]
-ALLOWED = set(REQUIRED) | {"homepage"}
+ALLOWED = set(REQUIRED) | {"homepage", "min_peckboard"}
 
 DOWNLOAD_CAP = 64 * 1024 * 1024  # 64 MiB — matches Peckboard's install cap.
 
@@ -73,6 +73,10 @@ def validate_structure(data):
         ver = p.get("version")
         if "version" in p and (not isinstance(ver, str) or not VERSION_RE.match(ver)):
             errors.append(f"{where}.version `{ver}` must be semver-like")
+
+        min_pb = p.get("min_peckboard")
+        if "min_peckboard" in p and (not isinstance(min_pb, str) or not VERSION_RE.match(min_pb)):
+            errors.append(f"{where}.min_peckboard `{min_pb}` must be semver-like")
 
         hooks = p.get("hooks")
         if "hooks" in p:

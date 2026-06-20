@@ -76,6 +76,11 @@
           "description": "Lowercase hex SHA-256 of the .wasm at `url`. Peckboard rejects the download if it doesn't match.",
           "type": "string",
           "pattern": "^[a-f0-9]{64}$"
+        },
+        "min_peckboard": {
+          "description": "Optional minimum Peckboard version this plugin supports (semver). Peckboard refuses to install or upgrade to this entry, and the UI greys the button out, when the running Peckboard is older. Omit when the plugin has no version floor.",
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+([.-].+)?$"
         }
       }
     }
