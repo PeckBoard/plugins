@@ -31,10 +31,10 @@
       "description": "Side-by-side viewer/editor for every file that differs from origin/main, including new files and images, served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/diff-viewer",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "hooks": ["http.request.before", "http.request.authed"],
-      "url": "https://github.com/PeckBoard/diff-viewer/releases/download/v0.1.0/diff-viewer.wasm",
-      "sha256": "756fd677a62acedee8a1332aea6f548d875f25515febf319831a486cb28be5a1",
+      "url": "https://github.com/PeckBoard/diff-viewer/releases/download/v0.2.0/diff-viewer.wasm",
+      "sha256": "5a1a7bee559de4b987fbbf39b3353ff753b0ce7d895f41ced9dbe29d7ca4b182",
       "min_peckboard": "0.0.27"
     },
     {
