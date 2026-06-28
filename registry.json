@@ -28,13 +28,13 @@
     {
       "id": "diff-viewer",
       "name": "Diff Viewer",
-      "description": "Side-by-side viewer/editor for every file that differs from origin/main, including new files and images, served as a WASM plugin.",
+      "description": "Pick any git repo in the project/session folder, then get a side-by-side viewer/editor for every file that differs from origin/main, including new files and images, served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/diff-viewer",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "hooks": ["http.request.before", "http.request.authed"],
-      "url": "https://github.com/PeckBoard/diff-viewer/releases/download/v0.2.0/diff-viewer.wasm",
-      "sha256": "5a1a7bee559de4b987fbbf39b3353ff753b0ce7d895f41ced9dbe29d7ca4b182",
+      "url": "https://github.com/PeckBoard/diff-viewer/releases/download/v0.3.0/diff-viewer.wasm",
+      "sha256": "c259cf4739d3ecf8a985ffbc00580fb1e8064cb3fbc114c6a3421e0400ad4335",
       "min_peckboard": "0.0.28"
     },
     {
