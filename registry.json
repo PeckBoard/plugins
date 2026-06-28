@@ -35,7 +35,7 @@
       "hooks": ["http.request.before", "http.request.authed"],
       "url": "https://github.com/PeckBoard/diff-viewer/releases/download/v0.2.0/diff-viewer.wasm",
       "sha256": "5a1a7bee559de4b987fbbf39b3353ff753b0ce7d895f41ced9dbe29d7ca4b182",
-      "min_peckboard": "0.0.27"
+      "min_peckboard": "0.0.28"
     },
     {
       "id": "experts",
