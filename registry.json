@@ -22,7 +22,7 @@
       "version": "0.2.3",
       "hooks": ["mcp.tool.invoke"],
       "url": "https://github.com/PeckBoard/common-tools/releases/download/v0.2.3/common-tools.wasm",
-      "sha256": "e326cc00c0333663d39c46424bcd32b8f782a25f4f1b45a6bc8faafc88d2e158",
+      "sha256": "a23bfc03fedd60a5078a1411b67f5dcbd51c9b22bb2010683bbc1e6d23f0bc72",
       "min_peckboard": "0.0.19"
     },
     {
