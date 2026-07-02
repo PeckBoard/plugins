@@ -16,13 +16,13 @@
     {
       "id": "common-tools",
       "name": "Common Tools",
-      "description": "Common worker tools for Peckboard (math, web search/fetch/parse, file search, git, tests), served as a WASM plugin.",
+      "description": "Common worker tools for Peckboard (math, web search/fetch/parse, file read/edit/search, code outline, git, tests), served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/common-tools",
-      "version": "0.2.3",
+      "version": "0.3.0",
       "hooks": ["mcp.tool.invoke"],
-      "url": "https://github.com/PeckBoard/common-tools/releases/download/v0.2.3/common-tools.wasm",
-      "sha256": "a23bfc03fedd60a5078a1411b67f5dcbd51c9b22bb2010683bbc1e6d23f0bc72",
+      "url": "https://github.com/PeckBoard/common-tools/releases/download/v0.3.0/common-tools.wasm",
+      "sha256": "2b0dbfa4c07bc6e147e32bfc7fa80ec543b28e0460544e621d81fcff88046217",
       "min_peckboard": "0.0.19"
     },
     {
