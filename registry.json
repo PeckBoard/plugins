@@ -8,7 +8,9 @@
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/api-plugin",
       "version": "0.2.2",
-      "hooks": ["http.request.before"],
+      "hooks": [
+        "http.request.before"
+      ],
       "url": "https://github.com/PeckBoard/api-plugin/releases/download/v0.2.2/api.wasm",
       "sha256": "d0fa23aac56a05dc11aef3421927a24b7fa14419076cfc7e8903bc2c9cf0184d",
       "min_peckboard": "0.0.19"
@@ -20,7 +22,10 @@
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/diff-viewer",
       "version": "0.3.1",
-      "hooks": ["http.request.before", "http.request.authed"],
+      "hooks": [
+        "http.request.before",
+        "http.request.authed"
+      ],
       "url": "https://github.com/PeckBoard/diff-viewer/releases/download/v0.3.1/diff-viewer.wasm",
       "sha256": "66ae8b127d9a4d254da4b47a2ef21a6a863316fb468412f14ceedf8f14e830bd",
       "min_peckboard": "0.0.28"
@@ -31,10 +36,15 @@
       "description": "Experts feature for Peckboard (knowledge / question / PM experts, MCP tools, and UI), served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/experts",
-      "version": "0.2.0",
-      "hooks": ["mcp.tool.invoke", "http.request.before", "http.request.authed", "session.user.answer"],
-      "url": "https://github.com/PeckBoard/experts/releases/download/v0.2.0/experts.wasm",
-      "sha256": "6c74f7e12e27615d2800c338566c8a7d10e768b897b0654a96ec544ddf82b861",
+      "version": "0.2.1",
+      "hooks": [
+        "mcp.tool.invoke",
+        "http.request.before",
+        "http.request.authed",
+        "session.user.answer"
+      ],
+      "url": "https://github.com/PeckBoard/experts/releases/download/v0.2.1/experts.wasm",
+      "sha256": "4f251f3503d7f6560df8a070c3c8c90af7a97081804f66458015f4a61444def6",
       "min_peckboard": "0.0.19"
     },
     {
@@ -44,7 +54,9 @@
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/session-control",
       "version": "0.1.0",
-      "hooks": ["mcp.tool.invoke"],
+      "hooks": [
+        "mcp.tool.invoke"
+      ],
       "url": "https://github.com/PeckBoard/session-control/releases/download/v0.1.0/session-control.wasm",
       "sha256": "02640fe2a387b4af07fdcfd23a1841167eb1bb8a661b145fcc029db067c753b7",
       "min_peckboard": "0.0.19"
