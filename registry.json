@@ -60,6 +60,21 @@
       "url": "https://github.com/PeckBoard/session-control/releases/download/v0.1.0/session-control.wasm",
       "sha256": "02640fe2a387b4af07fdcfd23a1841167eb1bb8a661b145fcc029db067c753b7",
       "min_peckboard": "0.0.19"
+    },
+    {
+      "id": "playwright-video",
+      "name": "Playwright Tests",
+      "description": "LogRocket-style replay of recorded browser test runs (per-step frames, time-scaled playback, action event track), with a Playwright Tests page below Sessions.",
+      "author": "PeckBoard",
+      "homepage": "https://github.com/PeckBoard/playwright-video",
+      "version": "0.1.0",
+      "hooks": [
+        "http.request.before",
+        "http.request.authed"
+      ],
+      "url": "https://github.com/PeckBoard/playwright-video/releases/download/v0.1.0/playwright-video.wasm",
+      "sha256": "5f4b42e63bf3969b6f75b5894b8b85a41382167675f92f92174cb77234ff557a",
+      "min_peckboard": "0.0.52"
     }
   ]
 }
