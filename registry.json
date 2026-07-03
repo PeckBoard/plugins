@@ -14,18 +14,6 @@
       "min_peckboard": "0.0.19"
     },
     {
-      "id": "common-tools",
-      "name": "Common Tools",
-      "description": "Common worker tools for Peckboard (math, web search/fetch/parse, file read/edit/search, code outline, git, tests), served as a WASM plugin.",
-      "author": "PeckBoard",
-      "homepage": "https://github.com/PeckBoard/common-tools",
-      "version": "0.3.0",
-      "hooks": ["mcp.tool.invoke"],
-      "url": "https://github.com/PeckBoard/common-tools/releases/download/v0.3.0/common-tools.wasm",
-      "sha256": "2b0dbfa4c07bc6e147e32bfc7fa80ec543b28e0460544e621d81fcff88046217",
-      "min_peckboard": "0.0.19"
-    },
-    {
       "id": "diff-viewer",
       "name": "Diff Viewer",
       "description": "Pick any git repo in the project/session folder, then get a side-by-side viewer/editor for every file that differs from origin/main, including new files and images, served as a WASM plugin.",
