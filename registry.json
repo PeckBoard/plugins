@@ -74,7 +74,7 @@
       ],
       "url": "https://github.com/PeckBoard/playwright-video/releases/download/v0.1.0/playwright-video.wasm",
       "sha256": "5f4b42e63bf3969b6f75b5894b8b85a41382167675f92f92174cb77234ff557a",
-      "min_peckboard": "0.0.52"
+      "min_peckboard": "0.0.53"
     }
   ]
 }
