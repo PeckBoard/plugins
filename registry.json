@@ -53,13 +53,13 @@
       "description": "Control another Peckboard session from a session: interrupt, terminate the agent, clear, and send messages/images. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/session-control",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "hooks": [
         "mcp.tool.invoke"
       ],
-      "url": "https://github.com/PeckBoard/session-control/releases/download/v0.1.0/session-control.wasm",
-      "sha256": "02640fe2a387b4af07fdcfd23a1841167eb1bb8a661b145fcc029db067c753b7",
-      "min_peckboard": "0.0.19"
+      "url": "https://github.com/PeckBoard/session-control/releases/download/v0.2.0/session-control.wasm",
+      "sha256": "7db289499c70bbf00e60fcfbccb50e87764160da19b47c8019ef24af6d94cd54",
+      "min_peckboard": "0.0.61"
     },
     {
       "id": "playwright-video",
