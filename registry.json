@@ -79,17 +79,17 @@
     {
       "id": "pre-hatcher",
       "name": "Pre-hatcher",
-      "description": "Pre-warms chat messages before they reach the main model: a temp session on a cheaper model (the provider's cheapest priced one, or the model picked in Settings) gathers repository context, optionally asks one clarifying question, then delivers the enriched — or untouched — message to the chat, streaming its research actions into the parked message live. Served as a WASM plugin.",
+      "description": "Pre-warms chat messages before they reach the main model: a temp session on a cheaper model (the provider's cheapest priced one, or the model picked in Settings) gathers repository context, optionally asks one clarifying question, then delivers the enriched \u2014 or untouched \u2014 message to the chat, streaming its research actions into the parked message live. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/pre-hatcher",
-      "version": "0.2.1",
+      "version": "0.2.2",
       "hooks": [
         "session.message.before",
         "mcp.tool.invoke"
       ],
-      "url": "https://github.com/PeckBoard/pre-hatcher/releases/download/v0.2.1/pre-hatcher.wasm",
-      "sha256": "f2221523049309eed51ed2a537f4c308e54f28e33af91be9e65b3f9ffd767ed3",
-      "min_peckboard": "0.0.67"
+      "url": "https://github.com/PeckBoard/pre-hatcher/releases/download/v0.2.2/pre-hatcher.wasm",
+      "sha256": "dd6aef6233c6475367660c44de1c65b14256fb8fd0efff1d58dba0494aaf587f",
+      "min_peckboard": "0.0.71"
     }
   ]
 }
