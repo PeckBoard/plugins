@@ -77,19 +77,19 @@
       "min_peckboard": "0.0.53"
     },
     {
-      "id": "pre-igniter",
-      "name": "Pre-igniter",
-      "description": "Pre-warms chat messages before they reach the main model: a temp session on the provider's cheapest model gathers repository context, optionally asks one clarifying question, then delivers the enriched — or untouched — message to the chat. Served as a WASM plugin.",
+      "id": "pre-hatcher",
+      "name": "Pre-hatcher",
+      "description": "Pre-warms chat messages before they reach the main model: a temp session on a cheaper model (the provider's cheapest priced one, or the model picked in Settings) gathers repository context, optionally asks one clarifying question, then delivers the enriched — or untouched — message to the chat, streaming its research actions into the parked message live. Served as a WASM plugin.",
       "author": "PeckBoard",
-      "homepage": "https://github.com/PeckBoard/pre-igniter",
-      "version": "0.1.1",
+      "homepage": "https://github.com/PeckBoard/pre-hatcher",
+      "version": "0.2.0",
       "hooks": [
         "session.message.before",
         "mcp.tool.invoke"
       ],
-      "url": "https://github.com/PeckBoard/pre-igniter/releases/download/v0.1.1/pre-igniter.wasm",
-      "sha256": "4bf94fe36043a3c6b582833cbe41335418636b6657cfc780c94aaa37d32b56de",
-      "min_peckboard": "0.0.65"
+      "url": "https://github.com/PeckBoard/pre-hatcher/releases/download/v0.2.0/pre-hatcher.wasm",
+      "sha256": "97565acdfc9987658125e0bf7d99a3f469b3c100586600ae820c669f79db5c37",
+      "min_peckboard": "0.0.67"
     }
   ]
 }
