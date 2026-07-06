@@ -79,7 +79,7 @@
     {
       "id": "pre-hatcher",
       "name": "Pre-hatcher",
-      "description": "Pre-warms chat messages before they reach the main model: a temp session on a cheaper model (the provider's cheapest priced one, or the model picked in Settings) gathers repository context, optionally asks one clarifying question, then delivers the enriched \u2014 or untouched \u2014 message to the chat, streaming its research actions into the parked message live. Served as a WASM plugin.",
+      "description": "Pre-warms chat messages before they reach the main model: each intercepted message first gets a plain opt-in question card (no AI involved) — declining sends it unchanged; accepting has a temp session on a cheaper model (the provider's cheapest priced one, or the model picked in Settings) gather repository context, optionally ask one clarifying question, then deliver the enriched — or untouched — message to the chat, streaming its research actions into the parked message live. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/pre-hatcher",
       "version": "0.2.2",
