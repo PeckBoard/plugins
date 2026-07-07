@@ -79,18 +79,18 @@
     {
       "id": "pre-hatcher",
       "name": "Pre-hatcher",
-      "description": "Pre-warms chat messages before they reach the main model: each intercepted message first gets a plain opt-in question card (no AI involved) — declining sends it unchanged; accepting has a temp session on a cheaper model (the provider's cheapest priced one, or the model picked in Settings) gather repository context and propose an enriched message, which is delivered only after the user approves it on a second plain question card showing the expanded text (declining delivers the original). Research actions stream into the parked message live. Served as a WASM plugin.",
+      "description": "Pre-warms chat messages before they reach the main model: each intercepted message first gets a plain opt-in question card (no AI involved) — declining sends it unchanged; accepting has a temp session on a cheaper model (the provider's cheapest priced one, or the model picked in Settings) gather repository context with the full chat transcript in view, ask a clarifying question when the request is ambiguous, and propose an enriched message delivered only after the user approves it on a second plain question card showing the expanded text (declining delivers the original). The research session runs under a configurable library system prompt (default \"fable 5\"). Research actions stream into the parked message live. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/pre-hatcher",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "hooks": [
         "session.message.before",
         "session.prehatch.cancel",
         "mcp.tool.invoke"
       ],
-      "url": "https://github.com/PeckBoard/pre-hatcher/releases/download/v0.3.0/pre-hatcher.wasm",
-      "sha256": "d14af5da1661a4937b21e0844e0d90865495df819a36e42500d690e449d8cff1",
-      "min_peckboard": "0.0.73"
+      "url": "https://github.com/PeckBoard/pre-hatcher/releases/download/v0.4.0/pre-hatcher.wasm",
+      "sha256": "053122bb3a0ab545e40d72b6421c2aff7a647ff61b3c4a1dc00143a72de8a834",
+      "min_peckboard": "0.0.81"
     }
   ]
 }
