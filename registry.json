@@ -82,15 +82,16 @@
       "description": "Pre-warms chat messages before they reach the main model: each intercepted message first gets a plain opt-in question card (no AI involved) — declining sends it unchanged; accepting has a temp session on a cheaper model (the provider's cheapest priced one, or the model picked in Settings) gather repository context with the full chat transcript in view, ask a clarifying question when the request is ambiguous, and propose an enriched message delivered only after the user approves it on a second plain question card showing the expanded text (declining delivers the original). The research session runs under a configurable library system prompt (default \"fable 5\"). Research actions stream into the parked message live. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/pre-hatcher",
-      "version": "0.4.0",
+      "version": "0.5.0",
       "hooks": [
         "session.message.before",
+        "session.prehatch.answer",
         "session.prehatch.cancel",
         "mcp.tool.invoke"
       ],
-      "url": "https://github.com/PeckBoard/pre-hatcher/releases/download/v0.4.0/pre-hatcher.wasm",
-      "sha256": "053122bb3a0ab545e40d72b6421c2aff7a647ff61b3c4a1dc00143a72de8a834",
-      "min_peckboard": "0.0.81"
+      "url": "https://github.com/PeckBoard/pre-hatcher/releases/download/v0.5.0/pre-hatcher.wasm",
+      "sha256": "356a19716afa1110b7a63e8d7c6457bc672638722b3a36263db89a87b835a18f",
+      "min_peckboard": "0.0.82"
     }
   ]
 }
