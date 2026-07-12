@@ -99,13 +99,13 @@
       "description": "Manage an Nginx Proxy Manager instance from Peckboard sessions: bridges NPM's built-in MCP server (proxy hosts, redirections, streams, certificates, access lists) as MCP tools — npm_status, npm_list_tools, npm_call, npm_configure. Passthrough surface: the tool catalog is discovered live per API-key scope. Requires the http_request permission (outbound HTTP incl. private/LAN targets) to reach a self-hosted NPM. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/nginx-manager",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "hooks": [
         "mcp.tool.invoke"
       ],
-      "url": "https://github.com/PeckBoard/nginx-manager/releases/download/v0.1.0/nginx-manager.wasm",
-      "sha256": "79ed8e21a76764da2de5414a0bf12f0797f1e23ec42ba563d22babc10f14d9c7",
-      "min_peckboard": "0.0.96"
+      "url": "https://github.com/PeckBoard/nginx-manager/releases/download/v0.2.0/nginx-manager.wasm",
+      "sha256": "30633cb58ae1837bccfae1ff8105d4211f84f9ab3fe30972fd6145a5a2d6dc74",
+      "min_peckboard": "0.0.97"
     }
   ]
 }
