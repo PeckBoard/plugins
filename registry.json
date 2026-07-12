@@ -92,6 +92,20 @@
       "url": "https://github.com/PeckBoard/pre-hatcher/releases/download/v0.5.0/pre-hatcher.wasm",
       "sha256": "356a19716afa1110b7a63e8d7c6457bc672638722b3a36263db89a87b835a18f",
       "min_peckboard": "0.0.82"
+    },
+    {
+      "id": "nginx-manager",
+      "name": "Nginx Proxy Manager",
+      "description": "Manage an Nginx Proxy Manager instance from Peckboard sessions: bridges NPM's built-in MCP server (proxy hosts, redirections, streams, certificates, access lists) as MCP tools — npm_status, npm_list_tools, npm_call, npm_configure. Passthrough surface: the tool catalog is discovered live per API-key scope. Requires the http_request permission (outbound HTTP incl. private/LAN targets) to reach a self-hosted NPM. Served as a WASM plugin.",
+      "author": "PeckBoard",
+      "homepage": "https://github.com/PeckBoard/nginx-manager",
+      "version": "0.1.0",
+      "hooks": [
+        "mcp.tool.invoke"
+      ],
+      "url": "https://github.com/PeckBoard/nginx-manager/releases/download/v0.1.0/nginx-manager.wasm",
+      "sha256": "79ed8e21a76764da2de5414a0bf12f0797f1e23ec42ba563d22babc10f14d9c7",
+      "min_peckboard": "0.0.96"
     }
   ]
 }
