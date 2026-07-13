@@ -106,6 +106,20 @@
       "url": "https://github.com/PeckBoard/nginx-manager/releases/download/v0.2.0/nginx-manager.wasm",
       "sha256": "30633cb58ae1837bccfae1ff8105d4211f84f9ab3fe30972fd6145a5a2d6dc74",
       "min_peckboard": "0.0.97"
+    },
+    {
+      "id": "kaiad-manager",
+      "name": "Kaiad",
+      "description": "Manage a Kaiad control plane from Peckboard sessions: bridges Kaiad's hosted MCP server (services & deployments, builds, registry, agents, operators, incidents) as MCP tools — kaiad_status, kaiad_list_tools, kaiad_call, kaiad_configure. Passthrough surface: the tool catalog is discovered live per credential scope (mcp.read/mcp.write). Requires the http_request permission (outbound HTTP incl. private/LAN targets) to reach a self-hosted Kaiad panel. Served as a WASM plugin.",
+      "author": "PeckBoard",
+      "homepage": "https://github.com/PeckBoard/kaiad-manager",
+      "version": "0.1.0",
+      "hooks": [
+        "mcp.tool.invoke"
+      ],
+      "url": "https://github.com/PeckBoard/kaiad-manager/releases/download/v0.1.0/kaiad-manager.wasm",
+      "sha256": "49fa40b915691644a40963c47c06e1489c91e8fe60c91f3dff738468d8261eab",
+      "min_peckboard": "0.0.97"
     }
   ]
 }
