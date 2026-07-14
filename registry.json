@@ -127,15 +127,15 @@
       "description": "Hold connection details for many SSH hosts (user+password or user+key) and drive them over MCP tools: register hosts, run commands on one host or across the whole fleet, and read/write/edit remote files over SFTP. Ships a live activity dashboard (searchable host picker, per-host and all-hosts views, live polling). SSH runs through native host functions in Peckboard core, so credentials stay in memory and are never written to disk. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/ssh-fleet",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "hooks": [
         "mcp.tool.invoke",
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/ssh-fleet/releases/download/v0.1.0/ssh-fleet.wasm",
-      "sha256": "257e54ba28a0cf835c367a5c849cafe5605b05de3f65595df675c52cd58dad29",
-      "min_peckboard": "0.0.102"
+      "url": "https://github.com/PeckBoard/ssh-fleet/releases/download/v0.1.1/ssh-fleet.wasm",
+      "sha256": "720e32be3291edfe5c43d3fee0a908b9f163ec22a38ddda90019971c66e994f8",
+      "min_peckboard": "0.0.103"
     }
   ]
 }
