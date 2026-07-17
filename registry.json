@@ -442,7 +442,7 @@
       "command": "uvx",
       "args": ["semgrep-mcp"],
       "env": [{ "key": "SEMGREP_APP_TOKEN", "value": "" }],
-      "setup_note": "Requires Python/uv. SEMGREP_APP_TOKEN is optional — set it to use Semgrep AppSec Platform rules (get one at https://semgrep.dev/orgs/-/settings/tokens).",
+      "setup_note": "Requires Python/uv and the semgrep CLI on PATH (e.g. pip install semgrep). SEMGREP_APP_TOKEN is optional — set it to use Semgrep AppSec Platform rules (get one at https://semgrep.dev/orgs/-/settings/tokens).",
       "tags": ["security", "static-analysis", "sast"],
       "category": "security"
     },
@@ -532,7 +532,7 @@
       "transport": "stdio",
       "command": "npx",
       "args": ["-y", "@azure/mcp@latest", "server", "start"],
-      "setup_note": "Uses your local Azure credentials — sign in first with: az login.",
+      "setup_note": "Requires Node.js 22+. Uses your local Azure credentials — sign in first with: az login.",
       "tags": ["azure", "cloud"],
       "category": "infrastructure"
     },
@@ -1017,7 +1017,7 @@
       "homepage": "https://github.com/designcomputer/mysql_mcp_server",
       "transport": "stdio",
       "command": "uvx",
-      "args": ["mysql-mcp-server"],
+      "args": ["--from", "mysql-mcp-server", "mysql_mcp_server"],
       "env": [{ "key": "MYSQL_HOST", "value": "" }, { "key": "MYSQL_USER", "value": "" }, { "key": "MYSQL_PASSWORD", "value": "" }, { "key": "MYSQL_DATABASE", "value": "" }],
       "setup_note": "Requires Python/uv. Use a restricted MySQL user for safety.",
       "tags": ["mysql", "database", "sql"],
@@ -1179,20 +1179,6 @@
       "category": "productivity"
     },
     {
-      "id": "box",
-      "name": "Box",
-      "description": "Box's official MCP server: search files, read and extract content with Box AI, and manage folders in your Box enterprise.",
-      "author": "Box",
-      "homepage": "https://github.com/box-community/mcp-server-box",
-      "transport": "stdio",
-      "command": "uvx",
-      "args": ["mcp-server-box"],
-      "env": [{ "key": "BOX_CLIENT_ID", "value": "" }, { "key": "BOX_CLIENT_SECRET", "value": "" }],
-      "setup_note": "Requires Python/uv. Create a Box platform app (client-credentials grant) at https://app.box.com/developers/console and authorize it in the admin console.",
-      "tags": ["files", "storage", "documents"],
-      "category": "productivity"
-    },
-    {
       "id": "zapier",
       "name": "Zapier",
       "description": "Zapier's official MCP server: call actions across 8,000+ connected apps — Gmail, Sheets, Slack, CRMs, and more — from one MCP endpoint.",
@@ -1239,9 +1225,9 @@
       "homepage": "https://github.com/stripe/agent-toolkit",
       "transport": "stdio",
       "command": "npx",
-      "args": ["-y", "@stripe/mcp", "--tools=all"],
+      "args": ["-y", "@stripe/mcp"],
       "env": [{ "key": "STRIPE_SECRET_KEY", "value": "" }],
-      "setup_note": "Use a restricted API key from https://dashboard.stripe.com/apikeys with only the permissions you need.",
+      "setup_note": "Create a restricted API key (rk_…) at https://dashboard.stripe.com/apikeys — the key's permissions control which tools are enabled.",
       "tags": ["payments", "billing", "invoices"],
       "category": "commerce"
     },
@@ -1385,7 +1371,7 @@
       "transport": "stdio",
       "command": "npx",
       "args": ["-y", "@auth0/auth0-mcp-server", "run"],
-      "setup_note": "Initialize once with: npx @auth0/auth0-mcp-server init (device-flow login to your tenant).",
+      "setup_note": "Initialize once with: npx @auth0/auth0-mcp-server init (device-flow login to your tenant). Requires an OS keychain to store credentials (libsecret/gnome-keyring on Linux).",
       "tags": ["auth", "identity", "sso"],
       "category": "security"
     },
