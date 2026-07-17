@@ -351,7 +351,20 @@
       "transport": "http",
       "url": "https://mcp.atlassian.com/v1/mcp",
       "headers": [{ "key": "Authorization", "value": "" }],
-      "setup_note": "Create a personal API token at https://id.atlassian.com/manage-profile/security/api-tokens and set the Authorization header to: Basic BASE64_OF_email:api_token (an org admin must enable API token auth for the Rovo MCP Server; service-account API keys use Bearer instead). OAuth-capable clients can instead connect to https://mcp.atlassian.com/v1/mcp/authv2 with no header.",
+      "setup_note": "Create a personal API token at https://id.atlassian.com/manage-profile/security/api-tokens and set the Authorization header to: Basic BASE64_OF_email:api_token (an org admin must enable API token auth for the Rovo MCP Server; service-account API keys use Bearer instead). To sign in with OAuth instead, add the Atlassian (OAuth) entry.",
+      "tags": ["jira", "confluence", "bitbucket"],
+      "category": "productivity"
+    },
+    {
+      "id": "atlassian-oauth",
+      "name": "Atlassian (OAuth)",
+      "description": "Atlassian's official Rovo MCP Server via OAuth sign-in: Jira, Confluence, Jira Service Management, Bitbucket, and Compass with your existing Atlassian permissions — no API token to create.",
+      "author": "Atlassian",
+      "homepage": "https://www.atlassian.com/platform/remote-mcp-server",
+      "transport": "http",
+      "url": "https://mcp.atlassian.com/v1/mcp/authv2",
+      "oauth": {},
+      "setup_note": "Click Sign in with Atlassian to connect with OAuth. For API-token auth use the plain Atlassian entry instead.",
       "tags": ["jira", "confluence", "bitbucket"],
       "category": "productivity"
     },
