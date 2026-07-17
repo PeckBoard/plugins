@@ -250,6 +250,58 @@
       "category": "ai"
     },
     {
+      "id": "clear-thought",
+      "name": "Clear Thought",
+      "description": "Advanced reasoning toolkit: one clear_thought tool with 38 operations — mental models, debugging approaches, tree-of-thought, beam search, MCTS, graph-of-thought, decision frameworks, and metacognitive monitoring.",
+      "author": "Waldzell AI",
+      "homepage": "https://github.com/waldzellai/clearthought-onepointfive",
+      "transport": "stdio",
+      "command": "npx",
+      "args": ["-y", "@waldzellai/clear-thought-onepointfive"],
+      "setup_note": "",
+      "tags": ["reasoning", "mental-models", "planning"],
+      "category": "ai"
+    },
+    {
+      "id": "sequentialthinking-tools",
+      "name": "Sequential Thinking Tools",
+      "description": "Sequential thinking with per-step tool recommendations: breaks problems into thought steps and suggests which available MCP tools to use next, with confidence scores, branching, and revision history.",
+      "author": "Scott Spence",
+      "homepage": "https://github.com/spences10/mcp-sequentialthinking-tools",
+      "transport": "stdio",
+      "command": "npx",
+      "args": ["-y", "mcp-sequentialthinking-tools"],
+      "setup_note": "",
+      "tags": ["reasoning", "planning", "tool-routing"],
+      "category": "ai"
+    },
+    {
+      "id": "structured-thinking",
+      "name": "Structured Thinking",
+      "description": "Mind-map style reasoning with metacognition: capture thoughts with quality scores and stages (problem definition, analysis, ideation), branch parallel reasoning paths, and retrieve past thoughts from short/long-term memory.",
+      "author": "Promptly Technologies",
+      "homepage": "https://github.com/Promptly-Technologies-LLC/mcp-structured-thinking",
+      "transport": "stdio",
+      "command": "npx",
+      "args": ["-y", "structured-thinking"],
+      "setup_note": "",
+      "tags": ["reasoning", "mind-map", "metacognition"],
+      "category": "ai"
+    },
+    {
+      "id": "mcp-reasoner",
+      "name": "MCP Reasoner",
+      "description": "Systematic reasoning engine with beam search and Monte Carlo Tree Search over scored thought trees — strong on math, logic puzzles, and problems with uncertain outcomes.",
+      "author": "Jacck",
+      "homepage": "https://github.com/Jacck/mcp-reasoner",
+      "transport": "stdio",
+      "command": "node",
+      "args": ["/path/to/mcp-reasoner/dist/index.js"],
+      "setup_note": "Not on npm. Clone https://github.com/Jacck/mcp-reasoner, run npm install (builds dist/ via the prepare script), then replace /path/to/mcp-reasoner with the clone's absolute path.",
+      "tags": ["reasoning", "beam-search", "mcts"],
+      "category": "ai"
+    },
+    {
       "id": "postgres",
       "name": "Postgres MCP Pro",
       "description": "PostgreSQL for agents with index tuning, explain plans, health checks, and safe SQL execution (configurable read/write access).",
