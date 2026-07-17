@@ -391,8 +391,15 @@
       "transport": "http",
       "url": "https://mcp.datadoghq.com/v1/mcp",
       "headers": [{ "key": "Authorization", "value": "" }],
+      "url_options": [
+        { "label": "US1 (app.datadoghq.com)", "url": "https://mcp.datadoghq.com/v1/mcp" },
+        { "label": "US3 (us3.datadoghq.com)", "url": "https://mcp.us3.datadoghq.com/v1/mcp" },
+        { "label": "US5 (us5.datadoghq.com)", "url": "https://mcp.us5.datadoghq.com/v1/mcp" },
+        { "label": "EU (app.datadoghq.eu)", "url": "https://mcp.datadoghq.eu/v1/mcp" },
+        { "label": "AP1 (ap1.datadoghq.com)", "url": "https://mcp.ap1.datadoghq.com/v1/mcp" }
+      ],
       "oauth": {},
-      "setup_note": "Click Sign in with Datadog to connect with OAuth. Datadog is region-split: the URL shown is the US1 site — if your org lives on another site, change the URL to its MCP domain first (EU: https://mcp.datadoghq.eu/v1/mcp, US3: https://mcp.us3.datadoghq.com/v1/mcp, US5: https://mcp.us5.datadoghq.com/v1/mcp, AP1: https://mcp.ap1.datadoghq.com/v1/mcp) and the sign-in follows the URL. Alternatively set the Authorization header to: Bearer YOUR_TOKEN using a Personal or Service Access Token — or replace the header with DD_API_KEY and DD_APPLICATION_KEY rows. Append ?toolsets=all to enable all toolsets.",
+      "setup_note": "Pick your Datadog site in the Region dropdown, then click Sign in with Datadog — the OAuth sign-in follows the selected region. If Datadog rejects the redirect, allow-list the callback URL shown in the sign-in panel under Datadog Organization Settings. Alternatively set the Authorization header to: Bearer YOUR_TOKEN using a Personal or Service Access Token — or replace the header with DD_API_KEY and DD_APPLICATION_KEY rows. Append ?toolsets=all to enable all toolsets.",
       "tags": ["observability", "metrics", "logs", "monitoring"],
       "category": "infrastructure"
     },
@@ -412,7 +419,7 @@
         "scope_param": "user_scope",
         "token_field": "authed_user.access_token"
       },
-      "setup_note": "Slack does not allow automatic client registration: create your own Slack app at https://api.slack.com/apps, add the redirect URL PeckBoard shows you to the app's OAuth settings, then click Sign in and enter the app's client id and secret. Alternatively paste a user OAuth token (xoxp-…) as the Authorization header: Bearer YOUR_TOKEN.",
+      "setup_note": "Slack does not allow automatic client registration: create your own Slack app at https://api.slack.com/apps, add the callback URL shown in the sign-in panel to the app's OAuth settings, then click Sign in and enter the app's client id and secret. On Enterprise Grid with SSO, pin the workspace by adding an extra sign-in parameter team=YOUR_WORKSPACE_ID (the T… id) — Slack then routes the sign-in through your org's IdP. Alternatively paste a user OAuth token (xoxp-…) as the Authorization header: Bearer YOUR_TOKEN.",
       "tags": ["slack", "messaging", "search"],
       "category": "communication"
     },

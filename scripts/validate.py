@@ -39,6 +39,7 @@ MCP_ALLOWED = set(MCP_REQUIRED) | {
     "setup_note",
     "install",
     "oauth",
+    "url_options",
     "tags",
     "category",
     "min_peckboard",
@@ -49,6 +50,7 @@ MCP_ALLOWED = set(MCP_REQUIRED) | {
 # metadata"; fields override individual pieces (see the McpOauthConfig
 # struct in peckboard).
 MCP_OAUTH_ALLOWED = {
+    "auth_params",
     "authorize_url",
     "token_url",
     "registration_url",
@@ -236,8 +238,37 @@ def validate_mcp_servers(servers):
                 for k, v in oauth.items():
                     if k not in MCP_OAUTH_ALLOWED:
                         errors.append(f"{where}.oauth has unknown field `{k}`")
+                    elif k == "auth_params":
+                        ok = isinstance(v, list) and all(
+                            isinstance(r, dict)
+                            and set(r) <= {"key", "value"}
+                            and isinstance(r.get("key"), str)
+                            and r.get("key").strip()
+                            and isinstance(r.get("value", ""), str)
+                            for r in v
+                        )
+                        if not ok:
+                            errors.append(
+                                f"{where}.oauth.auth_params must be an array of {{key, value}} string rows"
+                            )
                     elif not isinstance(v, str) or not v.strip():
                         errors.append(f"{where}.oauth.{k} must be a non-empty string")
+
+        opts = m.get("url_options")
+        if "url_options" in m:
+            ok = isinstance(opts, list) and all(
+                isinstance(o, dict)
+                and set(o) <= {"label", "url"}
+                and isinstance(o.get("label"), str)
+                and o.get("label").strip()
+                and isinstance(o.get("url"), str)
+                and o.get("url", "").startswith("https://")
+                for o in opts
+            )
+            if not ok:
+                errors.append(
+                    f"{where}.url_options must be an array of {{label, url}} rows with https URLs"
+                )
 
         if "homepage" in m and (not isinstance(homepage, str) or not homepage.startswith("https://")):
             errors.append(f"{where}.homepage must be an https:// URL")
