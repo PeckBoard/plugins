@@ -37,6 +37,7 @@ MCP_ALLOWED = set(MCP_REQUIRED) | {
     "headers",
     "url",
     "setup_note",
+    "install",
     "tags",
     "category",
     "min_peckboard",
@@ -186,6 +187,13 @@ def validate_mcp_servers(servers):
         args = m.get("args")
         if "args" in m and (not isinstance(args, list) or not all(isinstance(a, str) for a in args)):
             errors.append(f"{where}.args must be an array of strings")
+
+        install = m.get("install")
+        if "install" in m and (
+            not isinstance(install, list)
+            or not all(isinstance(s, str) and s.strip() for s in install)
+        ):
+            errors.append(f"{where}.install must be an array of non-empty strings")
 
         for list_field in ("env", "headers"):
             rows = m.get(list_field)
