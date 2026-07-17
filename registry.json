@@ -289,6 +289,58 @@
       "setup_note": "Requires Python/uv installed.",
       "tags": ["web", "fetch", "markdown"],
       "category": "web"
+    },
+    {
+      "id": "atlassian",
+      "name": "Atlassian",
+      "description": "Atlassian's official Rovo MCP Server: real-time access to Jira, Confluence, Jira Service Management, Bitbucket, and Compass — search, create, and update issues and pages, with existing Atlassian permissions enforced.",
+      "author": "Atlassian",
+      "homepage": "https://github.com/atlassian/atlassian-mcp-server",
+      "transport": "http",
+      "url": "https://mcp.atlassian.com/v1/mcp",
+      "headers": [{ "key": "Authorization", "value": "" }],
+      "setup_note": "Create a personal API token at https://id.atlassian.com/manage-profile/security/api-tokens and set the Authorization header to: Basic BASE64_OF_email:api_token (an org admin must enable API token auth for the Rovo MCP Server; service-account API keys use Bearer instead). OAuth-capable clients can instead connect to https://mcp.atlassian.com/v1/mcp/authv2 with no header.",
+      "tags": ["jira", "confluence", "bitbucket"],
+      "category": "productivity"
+    },
+    {
+      "id": "linear",
+      "name": "Linear",
+      "description": "Linear's official MCP server: find, create, and update issues, projects, and comments in your Linear workspace.",
+      "author": "Linear",
+      "homepage": "https://linear.app/docs/mcp",
+      "transport": "http",
+      "url": "https://mcp.linear.app/mcp",
+      "headers": [{ "key": "Authorization", "value": "" }],
+      "setup_note": "Create an API key in Linear under Settings → Security & Access and set the Authorization header to: Bearer YOUR_KEY. OAuth-capable clients can also connect without the header via the interactive flow.",
+      "tags": ["issues", "project-management"],
+      "category": "productivity"
+    },
+    {
+      "id": "datadog",
+      "name": "Datadog",
+      "description": "Datadog's official MCP server: query metrics, logs, traces, monitors, dashboards, incidents, and other observability data from agent sessions.",
+      "author": "Datadog",
+      "homepage": "https://docs.datadoghq.com/mcp_server/",
+      "transport": "http",
+      "url": "https://mcp.datadoghq.com/v1/mcp",
+      "headers": [{ "key": "Authorization", "value": "" }],
+      "setup_note": "Set the Authorization header to: Bearer YOUR_TOKEN using a Datadog Personal or Service Access Token — or replace the header with DD_API_KEY and DD_APPLICATION_KEY rows. The URL is for the US1 site; other sites use their regional MCP domain (see https://docs.datadoghq.com/mcp_server/setup/). Append ?toolsets=all to enable all toolsets.",
+      "tags": ["observability", "metrics", "logs", "monitoring"],
+      "category": "infrastructure"
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "description": "Slack's official MCP server: search channels and messages, read threads, send messages, and work with canvases in your Slack workspace.",
+      "author": "Slack",
+      "homepage": "https://docs.slack.dev/ai/slack-mcp-server",
+      "transport": "http",
+      "url": "https://mcp.slack.com/mcp",
+      "headers": [{ "key": "Authorization", "value": "" }],
+      "setup_note": "Requires a registered Slack app (internal or Marketplace-listed; dynamic client registration is not supported). Obtain a user OAuth token (xoxp-…) through your app's OAuth flow with the scopes you need (e.g. search:read.public, files:read) and set the Authorization header to: Bearer YOUR_TOKEN.",
+      "tags": ["slack", "messaging", "search"],
+      "category": "communication"
     }
   ]
 }
