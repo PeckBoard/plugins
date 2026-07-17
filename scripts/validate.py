@@ -38,9 +38,25 @@ MCP_ALLOWED = set(MCP_REQUIRED) | {
     "url",
     "setup_note",
     "install",
+    "oauth",
     "tags",
     "category",
     "min_peckboard",
+}
+
+# Optional OAuth sign-in template on http/sse MCP entries. `{}` alone means
+# "OAuth-capable — discover everything from the server's .well-known
+# metadata"; fields override individual pieces (see the McpOauthConfig
+# struct in peckboard).
+MCP_OAUTH_ALLOWED = {
+    "authorize_url",
+    "token_url",
+    "registration_url",
+    "client_id",
+    "client_secret",
+    "scopes",
+    "scope_param",
+    "token_field",
 }
 
 DOWNLOAD_CAP = 64 * 1024 * 1024  # 64 MiB — matches Peckboard's install cap.
@@ -210,6 +226,19 @@ def validate_mcp_servers(servers):
                     errors.append(f"{where}.{list_field} must be an array of {{key, value}} string rows")
 
         homepage = m.get("homepage")
+        oauth = m.get("oauth")
+        if "oauth" in m:
+            if not isinstance(oauth, dict):
+                errors.append(f"{where}.oauth must be an object")
+            else:
+                if transport == "stdio":
+                    errors.append(f"{where}.oauth only applies to http/sse transports")
+                for k, v in oauth.items():
+                    if k not in MCP_OAUTH_ALLOWED:
+                        errors.append(f"{where}.oauth has unknown field `{k}`")
+                    elif not isinstance(v, str) or not v.strip():
+                        errors.append(f"{where}.oauth.{k} must be a non-empty string")
+
         if "homepage" in m and (not isinstance(homepage, str) or not homepage.startswith("https://")):
             errors.append(f"{where}.homepage must be an https:// URL")
 

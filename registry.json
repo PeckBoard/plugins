@@ -364,7 +364,8 @@
       "transport": "http",
       "url": "https://mcp.linear.app/mcp",
       "headers": [{ "key": "Authorization", "value": "" }],
-      "setup_note": "Create an API key in Linear under Settings → Security & Access and set the Authorization header to: Bearer YOUR_KEY. OAuth-capable clients can also connect without the header via the interactive flow.",
+      "oauth": {},
+      "setup_note": "Click Sign in with Linear to connect with OAuth (recommended — nothing to paste). Alternatively create an API key under Settings → Security & Access and set the Authorization header to: Bearer YOUR_KEY.",
       "tags": ["issues", "project-management"],
       "category": "productivity"
     },
@@ -377,7 +378,8 @@
       "transport": "http",
       "url": "https://mcp.datadoghq.com/v1/mcp",
       "headers": [{ "key": "Authorization", "value": "" }],
-      "setup_note": "Set the Authorization header to: Bearer YOUR_TOKEN using a Datadog Personal or Service Access Token — or replace the header with DD_API_KEY and DD_APPLICATION_KEY rows. The URL is for the US1 site; other sites use their regional MCP domain (see https://docs.datadoghq.com/mcp_server/setup/). Append ?toolsets=all to enable all toolsets.",
+      "oauth": {},
+      "setup_note": "Click Sign in with Datadog to connect with OAuth (US1 site). Alternatively set the Authorization header to: Bearer YOUR_TOKEN using a Datadog Personal or Service Access Token — or replace the header with DD_API_KEY and DD_APPLICATION_KEY rows. Other sites use their regional MCP domain (see https://docs.datadoghq.com/mcp_server/setup/). Append ?toolsets=all to enable all toolsets.",
       "tags": ["observability", "metrics", "logs", "monitoring"],
       "category": "infrastructure"
     },
@@ -390,7 +392,14 @@
       "transport": "http",
       "url": "https://mcp.slack.com/mcp",
       "headers": [{ "key": "Authorization", "value": "" }],
-      "setup_note": "Requires a registered Slack app (internal or Marketplace-listed; dynamic client registration is not supported). Obtain a user OAuth token (xoxp-…) through your app's OAuth flow with the scopes you need (e.g. search:read.public, files:read) and set the Authorization header to: Bearer YOUR_TOKEN.",
+      "oauth": {
+        "authorize_url": "https://slack.com/oauth/v2_user/authorize",
+        "token_url": "https://slack.com/api/oauth.v2.user.access",
+        "scopes": "search:read.public search:read.private search:read.mpim search:read.im search:read.files search:read.users files:read channels:history groups:history im:history mpim:history users:read chat:write",
+        "scope_param": "user_scope",
+        "token_field": "authed_user.access_token"
+      },
+      "setup_note": "Slack does not allow automatic client registration: create your own Slack app at https://api.slack.com/apps, add the redirect URL PeckBoard shows you to the app's OAuth settings, then click Sign in and enter the app's client id and secret. Alternatively paste a user OAuth token (xoxp-…) as the Authorization header: Bearer YOUR_TOKEN.",
       "tags": ["slack", "messaging", "search"],
       "category": "communication"
     },
@@ -441,7 +450,8 @@
       "homepage": "https://docs.sentry.io/product/sentry-mcp/",
       "transport": "http",
       "url": "https://mcp.sentry.dev/mcp",
-      "setup_note": "Authenticates with OAuth — your agent completes the flow against your Sentry org on first connect.",
+      "oauth": {},
+      "setup_note": "Authenticates with OAuth — click Sign in with Sentry to connect your org.",
       "tags": ["errors", "monitoring", "debugging"],
       "category": "observability"
     },
@@ -453,6 +463,7 @@
       "homepage": "https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server/",
       "transport": "http",
       "url": "https://gitlab.com/api/v4/mcp",
+      "oauth": {},
       "setup_note": "URL shown is GitLab.com; for self-managed use https://YOUR_GITLAB_HOST/api/v4/mcp (GitLab 18.2+). Authenticates with OAuth 2.1 dynamic client registration.",
       "tags": ["gitlab", "issues", "merge-requests"],
       "category": "integrations"
@@ -661,6 +672,7 @@
       "homepage": "https://github.com/cloudflare/mcp-server-cloudflare",
       "transport": "http",
       "url": "https://observability.mcp.cloudflare.com/mcp",
+      "oauth": {},
       "setup_note": "Authenticates with OAuth against your Cloudflare account on first connect.",
       "tags": ["cloudflare", "logs", "workers"],
       "category": "observability"
@@ -673,6 +685,7 @@
       "homepage": "https://github.com/jsdelivr/globalping-mcp-server",
       "transport": "http",
       "url": "https://mcp.globalping.dev/mcp",
+      "oauth": {},
       "setup_note": "Works anonymously at basic rate limits; sign in with OAuth for higher limits.",
       "tags": ["network", "ping", "dns"],
       "category": "infrastructure"
@@ -685,6 +698,7 @@
       "homepage": "https://vercel.com/docs/mcp/vercel-mcp",
       "transport": "http",
       "url": "https://mcp.vercel.com",
+      "oauth": {},
       "setup_note": "Authenticates with OAuth against your Vercel account on first connect.",
       "tags": ["deploy", "hosting", "serverless"],
       "category": "infrastructure"
@@ -1110,6 +1124,7 @@
       "homepage": "https://developers.asana.com/docs/using-asanas-mcp-server",
       "transport": "sse",
       "url": "https://mcp.asana.com/sse",
+      "oauth": {},
       "setup_note": "Authenticates with OAuth against your Asana account on first connect.",
       "tags": ["tasks", "project-management"],
       "category": "productivity"
@@ -1135,6 +1150,7 @@
       "homepage": "https://developer.clickup.com/docs/mcp",
       "transport": "http",
       "url": "https://mcp.clickup.com/mcp",
+      "oauth": {},
       "setup_note": "Authenticates with OAuth against your ClickUp workspace on first connect.",
       "tags": ["tasks", "project-management"],
       "category": "productivity"
@@ -1147,6 +1163,7 @@
       "homepage": "https://developers.figma.com/docs/figma-mcp-server/",
       "transport": "http",
       "url": "https://mcp.figma.com/mcp",
+      "oauth": {},
       "setup_note": "Authenticates with OAuth against your Figma account on first connect. (The Figma desktop app also serves a local Dev Mode variant at http://127.0.0.1:3845/mcp.)",
       "tags": ["design", "ui", "code-generation"],
       "category": "design"
@@ -1159,6 +1176,7 @@
       "homepage": "https://www.canva.dev/docs/connect/canva-mcp-server-setup/",
       "transport": "http",
       "url": "https://mcp.canva.com/mcp",
+      "oauth": {},
       "setup_note": "Authenticates with OAuth against your Canva account on first connect.",
       "tags": ["design", "templates"],
       "category": "design"
@@ -1265,6 +1283,7 @@
       "homepage": "https://developers.intercom.com/docs/guides/mcp",
       "transport": "http",
       "url": "https://mcp.intercom.com/mcp",
+      "oauth": {},
       "setup_note": "Authenticates with OAuth against your Intercom workspace on first connect.",
       "tags": ["support", "conversations", "crm"],
       "category": "communication"
@@ -1284,6 +1303,20 @@
       "category": "commerce"
     },
     {
+      "id": "stripe-remote",
+      "name": "Stripe (hosted)",
+      "description": "Stripe's hosted remote MCP server: the same account tools as the local @stripe/mcp package, served from mcp.stripe.com with OAuth sign-in — no API key or local Node needed.",
+      "author": "Stripe",
+      "homepage": "https://docs.stripe.com/mcp",
+      "transport": "http",
+      "url": "https://mcp.stripe.com",
+      "headers": [{ "key": "Authorization", "value": "" }],
+      "oauth": {},
+      "setup_note": "Click Sign in with Stripe to connect with OAuth (recommended). Alternatively set the Authorization header to: Bearer rk_… using a restricted API key from https://dashboard.stripe.com/apikeys.",
+      "tags": ["payments", "billing", "invoices"],
+      "category": "commerce"
+    },
+    {
       "id": "paypal",
       "name": "PayPal",
       "description": "PayPal's official MCP server: create and manage invoices, orders, payments, subscriptions, and disputes on your PayPal business account.",
@@ -1291,6 +1324,7 @@
       "homepage": "https://developer.paypal.com/tools/mcp/",
       "transport": "http",
       "url": "https://mcp.paypal.com/mcp",
+      "oauth": {},
       "setup_note": "Authenticates with OAuth against your PayPal account on first connect (sandbox variant: https://mcp.sandbox.paypal.com/mcp).",
       "tags": ["payments", "invoices", "orders"],
       "category": "commerce"
@@ -1303,6 +1337,7 @@
       "homepage": "https://developer.squareup.com/docs/mcp",
       "transport": "sse",
       "url": "https://mcp.squareup.com/sse",
+      "oauth": {},
       "setup_note": "Authenticates with OAuth against your Square account on first connect.",
       "tags": ["payments", "pos", "catalog"],
       "category": "commerce"
@@ -1501,6 +1536,7 @@
       "homepage": "https://www.wix.com/studio/developers/mcp-server",
       "transport": "sse",
       "url": "https://mcp.wix.com/sse",
+      "oauth": {},
       "setup_note": "Authenticates with OAuth against your Wix account on first connect.",
       "tags": ["website", "cms", "ecommerce"],
       "category": "integrations"
@@ -1513,6 +1549,7 @@
       "homepage": "https://developer.close.com/topics/mcp/",
       "transport": "http",
       "url": "https://mcp.close.com/mcp",
+      "oauth": {},
       "setup_note": "Authenticates with OAuth against your Close organization on first connect.",
       "tags": ["crm", "sales", "leads"],
       "category": "integrations"
