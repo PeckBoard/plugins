@@ -8,11 +8,7 @@
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/api-plugin",
       "version": "0.2.2",
-      "tags": [
-        "http-api",
-        "api-keys",
-        "external-access"
-      ],
+      "tags": ["http-api", "api-keys", "external-access"],
       "category": "integrations",
       "hooks": [
         "http.request.before"
@@ -28,11 +24,7 @@
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/diff-viewer",
       "version": "0.3.1",
-      "tags": [
-        "git",
-        "diff",
-        "code-review"
-      ],
+      "tags": ["git", "diff", "code-review"],
       "category": "dev-tools",
       "hooks": [
         "http.request.before",
@@ -49,11 +41,7 @@
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/experts",
       "version": "0.2.1",
-      "tags": [
-        "agents",
-        "knowledge",
-        "project-management"
-      ],
+      "tags": ["agents", "knowledge", "project-management"],
       "category": "ai",
       "hooks": [
         "mcp.tool.invoke",
@@ -72,11 +60,7 @@
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/session-control",
       "version": "0.2.0",
-      "tags": [
-        "sessions",
-        "orchestration",
-        "automation"
-      ],
+      "tags": ["sessions", "orchestration", "automation"],
       "category": "automation",
       "hooks": [
         "mcp.tool.invoke"
@@ -88,15 +72,11 @@
     {
       "id": "playwright-video",
       "name": "Playwright Tests",
-      "description": "LogRocket-style replay of recorded browser test runs: network waterfall with masked request/response detail, console panel, event timeline with rage-click detection, cursor replay with click ripples, session details, and time-scaled playback with inactivity skipping \u2014 on a Playwright Tests page below Sessions.",
+      "description": "LogRocket-style replay of recorded browser test runs: network waterfall with masked request/response detail, console panel, event timeline with rage-click detection, cursor replay with click ripples, session details, and time-scaled playback with inactivity skipping — on a Playwright Tests page below Sessions.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/playwright-video",
       "version": "0.3.1",
-      "tags": [
-        "testing",
-        "playwright",
-        "replay"
-      ],
+      "tags": ["testing", "playwright", "replay"],
       "category": "dev-tools",
       "hooks": [
         "http.request.before",
@@ -109,15 +89,11 @@
     {
       "id": "pre-hatcher",
       "name": "Pre-hatcher",
-      "description": "Pre-warms chat messages before they reach the main model: each intercepted message first gets a plain opt-in question card (no AI involved) \u2014 declining sends it unchanged; accepting has a temp session on a cheaper model (the provider's cheapest priced one, or the model picked in Settings) gather repository context with the full chat transcript in view, ask a clarifying question when the request is ambiguous, and propose an enriched message delivered only after the user approves it on a second plain question card showing the expanded text (declining delivers the original). The research session runs under a configurable library system prompt (default \"fable 5\"). Research actions stream into the parked message live. Served as a WASM plugin.",
+      "description": "Pre-warms chat messages before they reach the main model: each intercepted message first gets a plain opt-in question card (no AI involved) — declining sends it unchanged; accepting has a temp session on a cheaper model (the provider's cheapest priced one, or the model picked in Settings) gather repository context with the full chat transcript in view, ask a clarifying question when the request is ambiguous, and propose an enriched message delivered only after the user approves it on a second plain question card showing the expanded text (declining delivers the original). The research session runs under a configurable library system prompt (default \"fable 5\"). Research actions stream into the parked message live. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/pre-hatcher",
       "version": "0.5.0",
-      "tags": [
-        "chat",
-        "context",
-        "prompt-enrichment"
-      ],
+      "tags": ["chat", "context", "prompt-enrichment"],
       "category": "ai",
       "hooks": [
         "session.message.before",
@@ -132,15 +108,11 @@
     {
       "id": "nginx-manager",
       "name": "Nginx Proxy Manager",
-      "description": "Manage an Nginx Proxy Manager instance from Peckboard sessions: bridges NPM's built-in MCP server (proxy hosts, redirections, streams, certificates, access lists) as MCP tools \u2014 npm_status, npm_list_tools, npm_call, npm_configure. Passthrough surface: the tool catalog is discovered live per API-key scope. Requires the http_request permission (outbound HTTP incl. private/LAN targets) to reach a self-hosted NPM. Served as a WASM plugin.",
+      "description": "Manage an Nginx Proxy Manager instance from Peckboard sessions: bridges NPM's built-in MCP server (proxy hosts, redirections, streams, certificates, access lists) as MCP tools — npm_status, npm_list_tools, npm_call, npm_configure. Passthrough surface: the tool catalog is discovered live per API-key scope. Requires the http_request permission (outbound HTTP incl. private/LAN targets) to reach a self-hosted NPM. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/nginx-manager",
       "version": "0.2.0",
-      "tags": [
-        "nginx",
-        "proxy",
-        "mcp-bridge"
-      ],
+      "tags": ["nginx", "proxy", "mcp-bridge"],
       "category": "infrastructure",
       "hooks": [
         "mcp.tool.invoke"
@@ -152,15 +124,11 @@
     {
       "id": "kaiad-manager",
       "name": "Kaiad",
-      "description": "Manage a Kaiad control plane from Peckboard sessions: bridges Kaiad's hosted MCP server (services & deployments, builds, registry, agents, operators, incidents) as MCP tools \u2014 kaiad_status, kaiad_list_tools, kaiad_call, kaiad_configure. Passthrough surface: the tool catalog is discovered live per credential scope (mcp.read/mcp.write). Requires the http_request permission (outbound HTTP incl. private/LAN targets) to reach a self-hosted Kaiad panel. Served as a WASM plugin.",
+      "description": "Manage a Kaiad control plane from Peckboard sessions: bridges Kaiad's hosted MCP server (services & deployments, builds, registry, agents, operators, incidents) as MCP tools — kaiad_status, kaiad_list_tools, kaiad_call, kaiad_configure. Passthrough surface: the tool catalog is discovered live per credential scope (mcp.read/mcp.write). Requires the http_request permission (outbound HTTP incl. private/LAN targets) to reach a self-hosted Kaiad panel. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/kaiad-manager",
       "version": "0.1.0",
-      "tags": [
-        "deploy",
-        "control-plane",
-        "mcp-bridge"
-      ],
+      "tags": ["deploy", "control-plane", "mcp-bridge"],
       "category": "infrastructure",
       "hooks": [
         "mcp.tool.invoke"
@@ -176,11 +144,7 @@
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/ssh-fleet",
       "version": "0.2.2",
-      "tags": [
-        "ssh",
-        "sftp",
-        "fleet"
-      ],
+      "tags": ["ssh", "sftp", "fleet"],
       "category": "infrastructure",
       "hooks": [
         "mcp.tool.invoke",
@@ -201,35 +165,22 @@
       "homepage": "https://github.com/microsoft/playwright-mcp",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "@playwright/mcp@latest"
-      ],
+      "args": ["@playwright/mcp@latest"],
       "setup_note": "",
-      "tags": [
-        "browser",
-        "automation",
-        "testing"
-      ],
+      "tags": ["browser", "automation", "testing"],
       "category": "dev-tools"
     },
     {
       "id": "context7",
       "name": "Context7",
-      "description": "Fetches up-to-date, version-specific documentation and code examples for any library directly from official sources \u2014 no hallucinated or outdated APIs.",
+      "description": "Fetches up-to-date, version-specific documentation and code examples for any library directly from official sources — no hallucinated or outdated APIs.",
       "author": "Upstash",
       "homepage": "https://github.com/upstash/context7",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@upstash/context7-mcp"
-      ],
+      "args": ["-y", "@upstash/context7-mcp"],
       "setup_note": "Works without a key at basic rate limits. For higher limits, get a free API key at https://context7.com/dashboard and add the arguments: --api-key YOUR_KEY.",
-      "tags": [
-        "documentation",
-        "code-context",
-        "libraries"
-      ],
+      "tags": ["documentation", "code-context", "libraries"],
       "category": "dev-tools"
     },
     {
@@ -240,18 +191,9 @@
       "homepage": "https://github.com/github/github-mcp-server",
       "transport": "http",
       "url": "https://api.githubcopilot.com/mcp/",
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": ""
-        }
-      ],
+      "headers": [{ "key": "Authorization", "value": "" }],
       "setup_note": "Create a Personal Access Token at https://github.com/settings/personal-access-tokens/new and set the Authorization header to: Bearer YOUR_TOKEN.",
-      "tags": [
-        "github",
-        "code-review",
-        "issues"
-      ],
+      "tags": ["github", "code-review", "issues"],
       "category": "integrations"
     },
     {
@@ -262,63 +204,36 @@
       "homepage": "https://github.com/makenotion/notion-mcp-server",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@notionhq/notion-mcp-server"
-      ],
-      "env": [
-        {
-          "key": "NOTION_TOKEN",
-          "value": ""
-        }
-      ],
+      "args": ["-y", "@notionhq/notion-mcp-server"],
+      "env": [{ "key": "NOTION_TOKEN", "value": "" }],
       "setup_note": "Create an internal integration at https://www.notion.so/profile/integrations to get a token (starts with ntn_), then connect the integration to the pages or databases the agent should access.",
-      "tags": [
-        "notion",
-        "notes",
-        "knowledge-base"
-      ],
+      "tags": ["notion", "notes", "knowledge-base"],
       "category": "productivity"
     },
     {
       "id": "filesystem",
       "name": "Filesystem",
-      "description": "Filesystem operations over MCP: read/write files, create/list/delete directories, move files, search, and file metadata \u2014 scoped to the directories you allow.",
+      "description": "Filesystem operations over MCP: read/write files, create/list/delete directories, move files, search, and file metadata — scoped to the directories you allow.",
       "author": "Anthropic",
       "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-filesystem",
-        "/path/to/allowed/dir"
-      ],
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/path/to/allowed/dir"],
       "setup_note": "Replace /path/to/allowed/dir with the absolute path the server may access; add more paths as extra arguments.",
-      "tags": [
-        "filesystem",
-        "files",
-        "local"
-      ],
+      "tags": ["filesystem", "files", "local"],
       "category": "system"
     },
     {
       "id": "memory",
       "name": "Memory (Knowledge Graph)",
-      "description": "Persistent agent memory backed by a local knowledge graph \u2014 remember entities, relations, and facts across sessions.",
+      "description": "Persistent agent memory backed by a local knowledge graph — remember entities, relations, and facts across sessions.",
       "author": "Anthropic",
       "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/memory",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-memory"
-      ],
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
       "setup_note": "",
-      "tags": [
-        "memory",
-        "knowledge-graph",
-        "persistence"
-      ],
+      "tags": ["memory", "knowledge-graph", "persistence"],
       "category": "ai"
     },
     {
@@ -329,35 +244,22 @@
       "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-sequential-thinking"
-      ],
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
       "setup_note": "",
-      "tags": [
-        "reasoning",
-        "planning"
-      ],
+      "tags": ["reasoning", "planning"],
       "category": "ai"
     },
     {
       "id": "clear-thought",
       "name": "Clear Thought",
-      "description": "Advanced reasoning toolkit: one clear_thought tool with 38 operations \u2014 mental models, debugging approaches, tree-of-thought, beam search, MCTS, graph-of-thought, decision frameworks, and metacognitive monitoring.",
+      "description": "Advanced reasoning toolkit: one clear_thought tool with 38 operations — mental models, debugging approaches, tree-of-thought, beam search, MCTS, graph-of-thought, decision frameworks, and metacognitive monitoring.",
       "author": "Waldzell AI",
       "homepage": "https://github.com/waldzellai/clearthought-onepointfive",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@waldzellai/clear-thought-onepointfive"
-      ],
+      "args": ["-y", "@waldzellai/clear-thought-onepointfive"],
       "setup_note": "",
-      "tags": [
-        "reasoning",
-        "mental-models",
-        "planning"
-      ],
+      "tags": ["reasoning", "mental-models", "planning"],
       "category": "ai"
     },
     {
@@ -368,16 +270,9 @@
       "homepage": "https://github.com/spences10/mcp-sequentialthinking-tools",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "mcp-sequentialthinking-tools"
-      ],
+      "args": ["-y", "mcp-sequentialthinking-tools"],
       "setup_note": "",
-      "tags": [
-        "reasoning",
-        "planning",
-        "tool-routing"
-      ],
+      "tags": ["reasoning", "planning", "tool-routing"],
       "category": "ai"
     },
     {
@@ -388,35 +283,22 @@
       "homepage": "https://github.com/Promptly-Technologies-LLC/mcp-structured-thinking",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "structured-thinking"
-      ],
+      "args": ["-y", "structured-thinking"],
       "setup_note": "",
-      "tags": [
-        "reasoning",
-        "mind-map",
-        "metacognition"
-      ],
+      "tags": ["reasoning", "mind-map", "metacognition"],
       "category": "ai"
     },
     {
       "id": "mcp-reasoner",
       "name": "MCP Reasoner",
-      "description": "Systematic reasoning engine with beam search and Monte Carlo Tree Search over scored thought trees \u2014 strong on math, logic puzzles, and problems with uncertain outcomes.",
+      "description": "Systematic reasoning engine with beam search and Monte Carlo Tree Search over scored thought trees — strong on math, logic puzzles, and problems with uncertain outcomes.",
       "author": "Jacck",
       "homepage": "https://github.com/Jacck/mcp-reasoner",
       "transport": "stdio",
       "command": "node",
-      "args": [
-        "/path/to/mcp-reasoner/dist/index.js"
-      ],
+      "args": ["/path/to/mcp-reasoner/dist/index.js"],
       "setup_note": "Not on npm. Clone https://github.com/Jacck/mcp-reasoner, run npm install (builds dist/ via the prepare script), then replace /path/to/mcp-reasoner with the clone's absolute path.",
-      "tags": [
-        "reasoning",
-        "beam-search",
-        "mcts"
-      ],
+      "tags": ["reasoning", "beam-search", "mcts"],
       "category": "ai"
     },
     {
@@ -427,22 +309,10 @@
       "homepage": "https://github.com/crystaldba/postgres-mcp",
       "transport": "stdio",
       "command": "uvx",
-      "args": [
-        "postgres-mcp",
-        "--access-mode=unrestricted"
-      ],
-      "env": [
-        {
-          "key": "DATABASE_URI",
-          "value": ""
-        }
-      ],
+      "args": ["postgres-mcp", "--access-mode=unrestricted"],
+      "env": [{ "key": "DATABASE_URI", "value": "" }],
       "setup_note": "Requires Python/uv. Set DATABASE_URI to your PostgreSQL connection URI, e.g. postgresql://user:pass@localhost:5432/dbname. Use --access-mode=restricted for read-only analysis.",
-      "tags": [
-        "postgres",
-        "database",
-        "sql"
-      ],
+      "tags": ["postgres", "database", "sql"],
       "category": "data"
     },
     {
@@ -453,24 +323,10 @@
       "homepage": "https://github.com/brave/brave-search-mcp-server",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@brave/brave-search-mcp-server",
-        "--transport",
-        "stdio"
-      ],
-      "env": [
-        {
-          "key": "BRAVE_API_KEY",
-          "value": ""
-        }
-      ],
+      "args": ["-y", "@brave/brave-search-mcp-server", "--transport", "stdio"],
+      "env": [{ "key": "BRAVE_API_KEY", "value": "" }],
       "setup_note": "Get a free API key at https://api-dashboard.search.brave.com/app/keys.",
-      "tags": [
-        "search",
-        "web-search",
-        "news"
-      ],
+      "tags": ["search", "web-search", "news"],
       "category": "web"
     },
     {
@@ -481,54 +337,35 @@
       "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch",
       "transport": "stdio",
       "command": "uvx",
-      "args": [
-        "mcp-server-fetch"
-      ],
+      "args": ["mcp-server-fetch"],
       "setup_note": "Requires Python/uv installed.",
-      "tags": [
-        "web",
-        "fetch",
-        "markdown"
-      ],
+      "tags": ["web", "fetch", "markdown"],
       "category": "web"
     },
     {
       "id": "atlassian",
       "name": "Atlassian",
-      "description": "Atlassian's official Rovo MCP Server: real-time access to Jira, Confluence, Jira Service Management, Bitbucket, and Compass \u2014 search, create, and update issues and pages, with existing Atlassian permissions enforced.",
+      "description": "Atlassian's official Rovo MCP Server: real-time access to Jira, Confluence, Jira Service Management, Bitbucket, and Compass — search, create, and update issues and pages, with existing Atlassian permissions enforced.",
       "author": "Atlassian",
       "homepage": "https://github.com/atlassian/atlassian-mcp-server",
       "transport": "http",
       "url": "https://mcp.atlassian.com/v1/mcp",
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": ""
-        }
-      ],
+      "headers": [{ "key": "Authorization", "value": "" }],
       "setup_note": "Create a personal API token at https://id.atlassian.com/manage-profile/security/api-tokens and set the Authorization header to: Basic BASE64_OF_email:api_token (an org admin must enable API token auth for the Rovo MCP Server; service-account API keys use Bearer instead). To sign in with OAuth instead, add the Atlassian (OAuth) entry.",
-      "tags": [
-        "jira",
-        "confluence",
-        "bitbucket"
-      ],
+      "tags": ["jira", "confluence", "bitbucket"],
       "category": "productivity"
     },
     {
       "id": "atlassian-oauth",
       "name": "Atlassian (OAuth)",
-      "description": "Atlassian's official Rovo MCP Server via OAuth sign-in: Jira, Confluence, Jira Service Management, Bitbucket, and Compass with your existing Atlassian permissions \u2014 no API token to create.",
+      "description": "Atlassian's official Rovo MCP Server via OAuth sign-in: Jira, Confluence, Jira Service Management, Bitbucket, and Compass with your existing Atlassian permissions — no API token to create.",
       "author": "Atlassian",
       "homepage": "https://www.atlassian.com/platform/remote-mcp-server",
       "transport": "http",
       "url": "https://mcp.atlassian.com/v1/mcp/authv2",
       "oauth": {},
       "setup_note": "Click Sign in with Atlassian to connect with OAuth. For API-token auth use the plain Atlassian entry instead.",
-      "tags": [
-        "jira",
-        "confluence",
-        "bitbucket"
-      ],
+      "tags": ["jira", "confluence", "bitbucket"],
       "category": "productivity"
     },
     {
@@ -539,18 +376,10 @@
       "homepage": "https://linear.app/docs/mcp",
       "transport": "http",
       "url": "https://mcp.linear.app/mcp",
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": ""
-        }
-      ],
+      "headers": [{ "key": "Authorization", "value": "" }],
       "oauth": {},
-      "setup_note": "Click Sign in with Linear to connect with OAuth (recommended \u2014 nothing to paste). Alternatively create an API key under Settings \u2192 Security & Access and set the Authorization header to: Bearer YOUR_KEY.",
-      "tags": [
-        "issues",
-        "project-management"
-      ],
+      "setup_note": "Click Sign in with Linear to connect with OAuth (recommended — nothing to paste). Alternatively create an API key under Settings → Security & Access and set the Authorization header to: Bearer YOUR_KEY.",
+      "tags": ["issues", "project-management"],
       "category": "productivity"
     },
     {
@@ -561,42 +390,17 @@
       "homepage": "https://docs.datadoghq.com/mcp_server/",
       "transport": "http",
       "url": "https://mcp.datadoghq.com/v1/mcp",
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": ""
-        }
-      ],
+      "headers": [{ "key": "Authorization", "value": "" }],
       "url_options": [
-        {
-          "label": "US1 (app.datadoghq.com)",
-          "url": "https://mcp.datadoghq.com/v1/mcp"
-        },
-        {
-          "label": "US3 (us3.datadoghq.com)",
-          "url": "https://mcp.us3.datadoghq.com/v1/mcp"
-        },
-        {
-          "label": "US5 (us5.datadoghq.com)",
-          "url": "https://mcp.us5.datadoghq.com/v1/mcp"
-        },
-        {
-          "label": "EU (app.datadoghq.eu)",
-          "url": "https://mcp.datadoghq.eu/v1/mcp"
-        },
-        {
-          "label": "AP1 (ap1.datadoghq.com)",
-          "url": "https://mcp.ap1.datadoghq.com/v1/mcp"
-        }
+        { "label": "US1 (app.datadoghq.com)", "url": "https://mcp.datadoghq.com/v1/mcp" },
+        { "label": "US3 (us3.datadoghq.com)", "url": "https://mcp.us3.datadoghq.com/v1/mcp" },
+        { "label": "US5 (us5.datadoghq.com)", "url": "https://mcp.us5.datadoghq.com/v1/mcp" },
+        { "label": "EU (app.datadoghq.eu)", "url": "https://mcp.datadoghq.eu/v1/mcp" },
+        { "label": "AP1 (ap1.datadoghq.com)", "url": "https://mcp.ap1.datadoghq.com/v1/mcp" }
       ],
       "oauth": {},
-      "setup_note": "Pick your Datadog site in the Region dropdown, then click Sign in with Datadog \u2014 the OAuth sign-in follows the selected region. Datadog only completes sign-in for allow-listed redirect URLs: if it fails with 'Mismatching redirect URI', add the callback URL shown in the sign-in panel in Datadog under Organization Settings > Preferences > MCP OAuth Redirect URLs, then retry. Alternatively set the Authorization header to: Bearer YOUR_TOKEN using a Personal or Service Access Token \u2014 or replace the header with DD_API_KEY and DD_APPLICATION_KEY rows. Append ?toolsets=all to enable all toolsets.",
-      "tags": [
-        "observability",
-        "metrics",
-        "logs",
-        "monitoring"
-      ],
+      "setup_note": "Pick your Datadog site in the Region dropdown, then click Sign in with Datadog — the OAuth sign-in follows the selected region. Datadog only completes sign-in for allow-listed redirect URLs: if it fails with 'Mismatching redirect URI', add the callback URL shown in the sign-in panel in Datadog under Organization Settings > Preferences > MCP OAuth Redirect URLs, then retry. Alternatively set the Authorization header to: Bearer YOUR_TOKEN using a Personal or Service Access Token — or replace the header with DD_API_KEY and DD_APPLICATION_KEY rows. Append ?toolsets=all to enable all toolsets.",
+      "tags": ["observability", "metrics", "logs", "monitoring"],
       "category": "infrastructure"
     },
     {
@@ -607,12 +411,7 @@
       "homepage": "https://docs.slack.dev/ai/slack-mcp-server",
       "transport": "http",
       "url": "https://mcp.slack.com/mcp",
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": ""
-        }
-      ],
+      "headers": [{ "key": "Authorization", "value": "" }],
       "oauth": {
         "authorize_url": "https://slack.com/oauth/v2_user/authorize",
         "token_url": "https://slack.com/api/oauth.v2.user.access",
@@ -620,30 +419,21 @@
         "scope_param": "user_scope",
         "token_field": "authed_user.access_token"
       },
-      "setup_note": "Slack does not allow automatic client registration: create your own Slack app at https://api.slack.com/apps, add the callback URL shown in the sign-in panel to the app's OAuth settings, then click Sign in and enter the app's client id and secret. On Enterprise Grid with SSO, pin the workspace by adding an extra sign-in parameter team=YOUR_WORKSPACE_ID (the T\u2026 id) \u2014 Slack then routes the sign-in through your org's IdP. Alternatively paste a user OAuth token (xoxp-\u2026) as the Authorization header: Bearer YOUR_TOKEN.",
-      "tags": [
-        "slack",
-        "messaging",
-        "search"
-      ],
+      "setup_note": "Slack does not allow automatic client registration: create your own Slack app at https://api.slack.com/apps, add the callback URL shown in the sign-in panel to the app's OAuth settings, then click Sign in and enter the app's client id and secret. On Enterprise Grid with SSO, pin the workspace by adding an extra sign-in parameter team=YOUR_WORKSPACE_ID (the T… id) — Slack then routes the sign-in through your org's IdP. Alternatively paste a user OAuth token (xoxp-…) as the Authorization header: Bearer YOUR_TOKEN.",
+      "tags": ["slack", "messaging", "search"],
       "category": "communication"
     },
     {
       "id": "git",
       "name": "Git",
-      "description": "Git repository tools over MCP: read, search, and manipulate local repositories \u2014 status, diff, log, branch, commit, and more.",
+      "description": "Git repository tools over MCP: read, search, and manipulate local repositories — status, diff, log, branch, commit, and more.",
       "author": "Anthropic",
       "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/git",
       "transport": "stdio",
       "command": "uvx",
-      "args": [
-        "mcp-server-git"
-      ],
+      "args": ["mcp-server-git"],
       "setup_note": "Requires Python/uv. Optionally restrict access with: --repository /path/to/repo.",
-      "tags": [
-        "git",
-        "version-control"
-      ],
+      "tags": ["git", "version-control"],
       "category": "dev-tools"
     },
     {
@@ -654,14 +444,9 @@
       "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/time",
       "transport": "stdio",
       "command": "uvx",
-      "args": [
-        "mcp-server-time"
-      ],
+      "args": ["mcp-server-time"],
       "setup_note": "Requires Python/uv.",
-      "tags": [
-        "time",
-        "timezones"
-      ],
+      "tags": ["time", "timezones"],
       "category": "system"
     },
     {
@@ -672,17 +457,9 @@
       "homepage": "https://github.com/modelcontextprotocol/servers-archived/tree/main/src/sqlite",
       "transport": "stdio",
       "command": "uvx",
-      "args": [
-        "mcp-server-sqlite",
-        "--db-path",
-        "/path/to/database.db"
-      ],
+      "args": ["mcp-server-sqlite", "--db-path", "/path/to/database.db"],
       "setup_note": "Requires Python/uv. Replace --db-path with the absolute path to your SQLite database file.",
-      "tags": [
-        "sqlite",
-        "database",
-        "sql"
-      ],
+      "tags": ["sqlite", "database", "sql"],
       "category": "data"
     },
     {
@@ -694,12 +471,8 @@
       "transport": "http",
       "url": "https://mcp.sentry.dev/mcp",
       "oauth": {},
-      "setup_note": "Authenticates with OAuth \u2014 click Sign in with Sentry to connect your org.",
-      "tags": [
-        "errors",
-        "monitoring",
-        "debugging"
-      ],
+      "setup_note": "Authenticates with OAuth — click Sign in with Sentry to connect your org.",
+      "tags": ["errors", "monitoring", "debugging"],
       "category": "observability"
     },
     {
@@ -712,31 +485,20 @@
       "url": "https://gitlab.com/api/v4/mcp",
       "oauth": {},
       "setup_note": "URL shown is GitLab.com; for self-managed use https://YOUR_GITLAB_HOST/api/v4/mcp (GitLab 18.2+). Authenticates with OAuth 2.1 dynamic client registration.",
-      "tags": [
-        "gitlab",
-        "issues",
-        "merge-requests"
-      ],
+      "tags": ["gitlab", "issues", "merge-requests"],
       "category": "integrations"
     },
     {
       "id": "chrome-devtools",
       "name": "Chrome DevTools",
-      "description": "Google's official Chrome DevTools MCP server: control and inspect a live Chrome browser \u2014 performance traces, network requests, console, screenshots, and page automation.",
+      "description": "Google's official Chrome DevTools MCP server: control and inspect a live Chrome browser — performance traces, network requests, console, screenshots, and page automation.",
       "author": "Google",
       "homepage": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "chrome-devtools-mcp@latest"
-      ],
+      "args": ["-y", "chrome-devtools-mcp@latest"],
       "setup_note": "Requires Chrome installed on the same machine.",
-      "tags": [
-        "browser",
-        "debugging",
-        "performance"
-      ],
+      "tags": ["browser", "debugging", "performance"],
       "category": "dev-tools"
     },
     {
@@ -747,22 +509,10 @@
       "homepage": "https://github.com/CircleCI-Public/mcp-server-circleci",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@circleci/mcp-server-circleci"
-      ],
-      "env": [
-        {
-          "key": "CIRCLECI_TOKEN",
-          "value": ""
-        }
-      ],
+      "args": ["-y", "@circleci/mcp-server-circleci"],
+      "env": [{ "key": "CIRCLECI_TOKEN", "value": "" }],
       "setup_note": "Create a personal API token at https://app.circleci.com/settings/user/tokens.",
-      "tags": [
-        "ci",
-        "builds",
-        "testing"
-      ],
+      "tags": ["ci", "builds", "testing"],
       "category": "dev-tools"
     },
     {
@@ -773,83 +523,38 @@
       "homepage": "https://github.com/semgrep/mcp",
       "transport": "stdio",
       "command": "uvx",
-      "args": [
-        "semgrep-mcp"
-      ],
-      "env": [
-        {
-          "key": "SEMGREP_APP_TOKEN",
-          "value": ""
-        }
-      ],
-      "setup_note": "Requires Python/uv and the semgrep CLI on PATH (e.g. pip install semgrep). SEMGREP_APP_TOKEN is optional \u2014 set it to use Semgrep AppSec Platform rules (get one at https://semgrep.dev/orgs/-/settings/tokens).",
-      "tags": [
-        "security",
-        "static-analysis",
-        "sast"
-      ],
+      "args": ["semgrep-mcp"],
+      "env": [{ "key": "SEMGREP_APP_TOKEN", "value": "" }],
+      "setup_note": "Requires Python/uv and the semgrep CLI on PATH (e.g. pip install semgrep). SEMGREP_APP_TOKEN is optional — set it to use Semgrep AppSec Platform rules (get one at https://semgrep.dev/orgs/-/settings/tokens).",
+      "tags": ["security", "static-analysis", "sast"],
       "category": "security"
     },
     {
       "id": "sonarqube",
       "name": "SonarQube",
-      "description": "SonarSource's official MCP server: analyze code quality and security \u2014 issues, quality gates, metrics, and languages from SonarQube Server or Cloud.",
+      "description": "SonarSource's official MCP server: analyze code quality and security — issues, quality gates, metrics, and languages from SonarQube Server or Cloud.",
       "author": "SonarSource",
       "homepage": "https://github.com/SonarSource/sonarqube-mcp-server",
       "transport": "stdio",
       "command": "docker",
-      "args": [
-        "run",
-        "-i",
-        "--rm",
-        "-e",
-        "SONARQUBE_TOKEN",
-        "-e",
-        "SONARQUBE_ORG",
-        "mcp/sonarqube"
-      ],
-      "env": [
-        {
-          "key": "SONARQUBE_TOKEN",
-          "value": ""
-        },
-        {
-          "key": "SONARQUBE_ORG",
-          "value": ""
-        }
-      ],
-      "setup_note": "Requires Docker. Generate a token in SonarQube under My Account \u2192 Security; SONARQUBE_ORG is your SonarQube Cloud organization key (for SonarQube Server set SONARQUBE_URL instead).",
-      "tags": [
-        "code-quality",
-        "security",
-        "static-analysis"
-      ],
+      "args": ["run", "-i", "--rm", "-e", "SONARQUBE_TOKEN", "-e", "SONARQUBE_ORG", "mcp/sonarqube"],
+      "env": [{ "key": "SONARQUBE_TOKEN", "value": "" }, { "key": "SONARQUBE_ORG", "value": "" }],
+      "setup_note": "Requires Docker. Generate a token in SonarQube under My Account → Security; SONARQUBE_ORG is your SonarQube Cloud organization key (for SonarQube Server set SONARQUBE_URL instead).",
+      "tags": ["code-quality", "security", "static-analysis"],
       "category": "security"
     },
     {
       "id": "e2b",
       "name": "E2B Code Interpreter",
-      "description": "E2B's official MCP server: run code in secure cloud sandboxes \u2014 execute Python and shell in isolated VMs for data analysis and code interpretation.",
+      "description": "E2B's official MCP server: run code in secure cloud sandboxes — execute Python and shell in isolated VMs for data analysis and code interpretation.",
       "author": "E2B",
       "homepage": "https://github.com/e2b-dev/mcp-server",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@e2b/mcp-server"
-      ],
-      "env": [
-        {
-          "key": "E2B_API_KEY",
-          "value": ""
-        }
-      ],
+      "args": ["-y", "@e2b/mcp-server"],
+      "env": [{ "key": "E2B_API_KEY", "value": "" }],
       "setup_note": "Get an API key at https://e2b.dev/dashboard.",
-      "tags": [
-        "code-execution",
-        "sandbox",
-        "python"
-      ],
+      "tags": ["code-execution", "sandbox", "python"],
       "category": "ai"
     },
     {
@@ -860,110 +565,72 @@
       "homepage": "https://github.com/postmanlabs/postman-api-mcp-server",
       "transport": "http",
       "url": "https://mcp.postman.com/mcp",
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": ""
-        }
-      ],
+      "headers": [{ "key": "Authorization", "value": "" }],
       "setup_note": "Create an API key at https://postman.co/settings/me/api-keys and set the Authorization header to: Bearer YOUR_KEY.",
-      "tags": [
-        "api",
-        "testing",
-        "collections"
-      ],
+      "tags": ["api", "testing", "collections"],
       "category": "dev-tools"
     },
     {
       "id": "deepwiki",
       "name": "DeepWiki",
-      "description": "Cognition's DeepWiki MCP server: ask questions about any public GitHub repository and read AI-generated architecture docs \u2014 no authentication required.",
+      "description": "Cognition's DeepWiki MCP server: ask questions about any public GitHub repository and read AI-generated architecture docs — no authentication required.",
       "author": "Cognition",
       "homepage": "https://docs.devin.ai/work-with-devin/deepwiki-mcp",
       "transport": "http",
       "url": "https://mcp.deepwiki.com/mcp",
       "setup_note": "",
-      "tags": [
-        "documentation",
-        "github",
-        "code-context"
-      ],
+      "tags": ["documentation", "github", "code-context"],
       "category": "dev-tools"
     },
     {
       "id": "microsoft-learn",
       "name": "Microsoft Learn",
-      "description": "Microsoft's official Learn MCP server: search and fetch trusted, up-to-date Microsoft/Azure documentation and code samples \u2014 no authentication required.",
+      "description": "Microsoft's official Learn MCP server: search and fetch trusted, up-to-date Microsoft/Azure documentation and code samples — no authentication required.",
       "author": "Microsoft",
       "homepage": "https://github.com/MicrosoftDocs/mcp",
       "transport": "http",
       "url": "https://learn.microsoft.com/api/mcp",
       "setup_note": "",
-      "tags": [
-        "documentation",
-        "azure",
-        "microsoft"
-      ],
+      "tags": ["documentation", "azure", "microsoft"],
       "category": "dev-tools"
     },
     {
       "id": "aws-knowledge",
       "name": "AWS Knowledge",
-      "description": "AWS's official Knowledge MCP server: search and read AWS documentation, API references, What's New posts, and architectural guidance \u2014 no AWS account required.",
+      "description": "AWS's official Knowledge MCP server: search and read AWS documentation, API references, What's New posts, and architectural guidance — no AWS account required.",
       "author": "AWS",
       "homepage": "https://awslabs.github.io/mcp/servers/aws-knowledge-mcp-server/",
       "transport": "http",
       "url": "https://knowledge-mcp.global.api.aws",
       "setup_note": "",
-      "tags": [
-        "documentation",
-        "aws"
-      ],
+      "tags": ["documentation", "aws"],
       "category": "dev-tools"
     },
     {
       "id": "azure",
       "name": "Azure",
-      "description": "Microsoft's official Azure MCP server: work with Azure resources \u2014 storage, Cosmos DB, Azure CLI, monitor logs, and dozens of other services.",
+      "description": "Microsoft's official Azure MCP server: work with Azure resources — storage, Cosmos DB, Azure CLI, monitor logs, and dozens of other services.",
       "author": "Microsoft",
       "homepage": "https://github.com/microsoft/mcp",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@azure/mcp@latest",
-        "server",
-        "start"
-      ],
-      "setup_note": "Requires Node.js 22+. Uses your local Azure credentials \u2014 sign in first with: az login.",
-      "tags": [
-        "azure",
-        "cloud"
-      ],
+      "args": ["-y", "@azure/mcp@latest", "server", "start"],
+      "setup_note": "Requires Node.js 22+. Uses your local Azure credentials — sign in first with: az login.",
+      "tags": ["azure", "cloud"],
       "category": "infrastructure"
     },
     {
       "id": "aws-api",
       "name": "AWS API",
-      "description": "AWS's official API MCP server: call AWS CLI commands from agents with validation and suggestions \u2014 manage and inspect resources across all AWS services.",
+      "description": "AWS's official API MCP server: call AWS CLI commands from agents with validation and suggestions — manage and inspect resources across all AWS services.",
       "author": "AWS",
       "homepage": "https://awslabs.github.io/mcp/servers/aws-api-mcp-server/",
       "transport": "stdio",
       "command": "uvx",
-      "args": [
-        "awslabs.aws-api-mcp-server@latest"
-      ],
-      "env": [
-        {
-          "key": "AWS_REGION",
-          "value": ""
-        }
-      ],
+      "args": ["awslabs.aws-api-mcp-server@latest"],
+      "env": [{ "key": "AWS_REGION", "value": "" }],
       "setup_note": "Requires Python/uv and AWS credentials configured locally (aws configure / SSO / env vars).",
-      "tags": [
-        "aws",
-        "cloud"
-      ],
+      "tags": ["aws", "cloud"],
       "category": "infrastructure"
     },
     {
@@ -974,17 +641,9 @@
       "homepage": "https://github.com/hashicorp/terraform-mcp-server",
       "transport": "stdio",
       "command": "docker",
-      "args": [
-        "run",
-        "-i",
-        "--rm",
-        "hashicorp/terraform-mcp-server"
-      ],
+      "args": ["run", "-i", "--rm", "hashicorp/terraform-mcp-server"],
       "setup_note": "Requires Docker.",
-      "tags": [
-        "terraform",
-        "iac"
-      ],
+      "tags": ["terraform", "iac"],
       "category": "infrastructure"
     },
     {
@@ -995,68 +654,47 @@
       "homepage": "https://github.com/pulumi/mcp-server",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@pulumi/mcp-server@latest",
-        "stdio"
-      ],
+      "args": ["-y", "@pulumi/mcp-server@latest", "stdio"],
       "setup_note": "Pulumi CLI operations use your local Pulumi login and cloud credentials.",
-      "tags": [
-        "pulumi",
-        "iac"
-      ],
+      "tags": ["pulumi", "iac"],
       "category": "infrastructure"
     },
     {
       "id": "kubernetes",
       "name": "Kubernetes",
-      "description": "Kubernetes cluster management over MCP: pods, deployments, services, logs, exec, port-forward, and Helm \u2014 driven by kubectl against your current context.",
+      "description": "Kubernetes cluster management over MCP: pods, deployments, services, logs, exec, port-forward, and Helm — driven by kubectl against your current context.",
       "author": "Flux159",
       "homepage": "https://github.com/Flux159/mcp-server-kubernetes",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "mcp-server-kubernetes"
-      ],
+      "args": ["-y", "mcp-server-kubernetes"],
       "setup_note": "Uses your local kubeconfig (current kubectl context). Requires kubectl; Helm optional.",
-      "tags": [
-        "kubernetes",
-        "devops",
-        "helm"
-      ],
+      "tags": ["kubernetes", "devops", "helm"],
       "category": "infrastructure"
     },
     {
       "id": "cloudflare-docs",
       "name": "Cloudflare Docs",
-      "description": "Cloudflare's official documentation MCP server: search up-to-date Cloudflare docs (Workers, R2, KV, DNS, and more) \u2014 no authentication required.",
+      "description": "Cloudflare's official documentation MCP server: search up-to-date Cloudflare docs (Workers, R2, KV, DNS, and more) — no authentication required.",
       "author": "Cloudflare",
       "homepage": "https://github.com/cloudflare/mcp-server-cloudflare",
       "transport": "http",
       "url": "https://docs.mcp.cloudflare.com/mcp",
       "setup_note": "",
-      "tags": [
-        "documentation",
-        "cloudflare"
-      ],
+      "tags": ["documentation", "cloudflare"],
       "category": "dev-tools"
     },
     {
       "id": "cloudflare-observability",
       "name": "Cloudflare Observability",
-      "description": "Cloudflare's official observability MCP server: debug Workers applications \u2014 logs, analytics, errors, and usage data for your Cloudflare account.",
+      "description": "Cloudflare's official observability MCP server: debug Workers applications — logs, analytics, errors, and usage data for your Cloudflare account.",
       "author": "Cloudflare",
       "homepage": "https://github.com/cloudflare/mcp-server-cloudflare",
       "transport": "http",
       "url": "https://observability.mcp.cloudflare.com/mcp",
       "oauth": {},
       "setup_note": "Authenticates with OAuth against your Cloudflare account on first connect.",
-      "tags": [
-        "cloudflare",
-        "logs",
-        "workers"
-      ],
+      "tags": ["cloudflare", "logs", "workers"],
       "category": "observability"
     },
     {
@@ -1069,11 +707,7 @@
       "url": "https://mcp.globalping.dev/mcp",
       "oauth": {},
       "setup_note": "Works anonymously at basic rate limits; sign in with OAuth for higher limits.",
-      "tags": [
-        "network",
-        "ping",
-        "dns"
-      ],
+      "tags": ["network", "ping", "dns"],
       "category": "infrastructure"
     },
     {
@@ -1086,11 +720,7 @@
       "url": "https://mcp.vercel.com",
       "oauth": {},
       "setup_note": "Authenticates with OAuth against your Vercel account on first connect.",
-      "tags": [
-        "deploy",
-        "hosting",
-        "serverless"
-      ],
+      "tags": ["deploy", "hosting", "serverless"],
       "category": "infrastructure"
     },
     {
@@ -1101,21 +731,10 @@
       "homepage": "https://docs.netlify.com/build/build-with-ai/netlify-mcp-server/",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@netlify/mcp"
-      ],
-      "env": [
-        {
-          "key": "NETLIFY_PERSONAL_ACCESS_TOKEN",
-          "value": ""
-        }
-      ],
+      "args": ["-y", "@netlify/mcp"],
+      "env": [{ "key": "NETLIFY_PERSONAL_ACCESS_TOKEN", "value": "" }],
       "setup_note": "Create a personal access token at https://app.netlify.com/user/applications (or leave empty to use your local netlify login).",
-      "tags": [
-        "deploy",
-        "hosting"
-      ],
+      "tags": ["deploy", "hosting"],
       "category": "infrastructure"
     },
     {
@@ -1126,17 +745,9 @@
       "homepage": "https://render.com/docs/mcp-server",
       "transport": "http",
       "url": "https://mcp.render.com/mcp",
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": ""
-        }
-      ],
+      "headers": [{ "key": "Authorization", "value": "" }],
       "setup_note": "Create an API key at https://dashboard.render.com/settings#api-keys and set the Authorization header to: Bearer YOUR_KEY.",
-      "tags": [
-        "deploy",
-        "hosting"
-      ],
+      "tags": ["deploy", "hosting"],
       "category": "infrastructure"
     },
     {
@@ -1147,21 +758,10 @@
       "homepage": "https://github.com/heroku/heroku-mcp-server",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@heroku/mcp-server"
-      ],
-      "env": [
-        {
-          "key": "HEROKU_API_KEY",
-          "value": ""
-        }
-      ],
-      "setup_note": "Generate an API key with: heroku authorizations:create, or from Account Settings \u2192 Applications.",
-      "tags": [
-        "deploy",
-        "hosting"
-      ],
+      "args": ["-y", "@heroku/mcp-server"],
+      "env": [{ "key": "HEROKU_API_KEY", "value": "" }],
+      "setup_note": "Generate an API key with: heroku authorizations:create, or from Account Settings → Applications.",
+      "tags": ["deploy", "hosting"],
       "category": "infrastructure"
     },
     {
@@ -1172,34 +772,10 @@
       "homepage": "https://github.com/grafana/mcp-grafana",
       "transport": "stdio",
       "command": "docker",
-      "args": [
-        "run",
-        "--rm",
-        "-i",
-        "-e",
-        "GRAFANA_URL",
-        "-e",
-        "GRAFANA_SERVICE_ACCOUNT_TOKEN",
-        "mcp/grafana",
-        "-t",
-        "stdio"
-      ],
-      "env": [
-        {
-          "key": "GRAFANA_URL",
-          "value": ""
-        },
-        {
-          "key": "GRAFANA_SERVICE_ACCOUNT_TOKEN",
-          "value": ""
-        }
-      ],
-      "setup_note": "Requires Docker. Set GRAFANA_URL to your instance (e.g. https://myorg.grafana.net) and create a service account token under Administration \u2192 Service accounts.",
-      "tags": [
-        "grafana",
-        "dashboards",
-        "prometheus"
-      ],
+      "args": ["run", "--rm", "-i", "-e", "GRAFANA_URL", "-e", "GRAFANA_SERVICE_ACCOUNT_TOKEN", "mcp/grafana", "-t", "stdio"],
+      "env": [{ "key": "GRAFANA_URL", "value": "" }, { "key": "GRAFANA_SERVICE_ACCOUNT_TOKEN", "value": "" }],
+      "setup_note": "Requires Docker. Set GRAFANA_URL to your instance (e.g. https://myorg.grafana.net) and create a service account token under Administration → Service accounts.",
+      "tags": ["grafana", "dashboards", "prometheus"],
       "category": "observability"
     },
     {
@@ -1210,21 +786,10 @@
       "homepage": "https://github.com/PagerDuty/pagerduty-mcp-server",
       "transport": "stdio",
       "command": "uvx",
-      "args": [
-        "pagerduty-mcp-server"
-      ],
-      "env": [
-        {
-          "key": "PAGERDUTY_USER_API_KEY",
-          "value": ""
-        }
-      ],
-      "setup_note": "Requires Python/uv. Create an API user token in PagerDuty under My Profile \u2192 User Settings \u2192 API Access.",
-      "tags": [
-        "incidents",
-        "on-call",
-        "alerts"
-      ],
+      "args": ["pagerduty-mcp-server"],
+      "env": [{ "key": "PAGERDUTY_USER_API_KEY", "value": "" }],
+      "setup_note": "Requires Python/uv. Create an API user token in PagerDuty under My Profile → User Settings → API Access.",
+      "tags": ["incidents", "on-call", "alerts"],
       "category": "observability"
     },
     {
@@ -1235,81 +800,38 @@
       "homepage": "https://github.com/pab1it0/prometheus-mcp-server",
       "transport": "stdio",
       "command": "uvx",
-      "args": [
-        "prometheus-mcp-server"
-      ],
-      "env": [
-        {
-          "key": "PROMETHEUS_URL",
-          "value": ""
-        }
-      ],
+      "args": ["prometheus-mcp-server"],
+      "env": [{ "key": "PROMETHEUS_URL", "value": "" }],
       "setup_note": "Requires Python/uv. Set PROMETHEUS_URL to your server (e.g. http://localhost:9090); optional PROMETHEUS_USERNAME/PROMETHEUS_PASSWORD for basic auth.",
-      "tags": [
-        "prometheus",
-        "metrics",
-        "promql"
-      ],
+      "tags": ["prometheus", "metrics", "promql"],
       "category": "observability"
     },
     {
       "id": "browserbase",
       "name": "Browserbase",
-      "description": "Browserbase's official MCP server: cloud browser automation with Stagehand \u2014 navigate, act, extract, and screenshot on headless browsers at scale.",
+      "description": "Browserbase's official MCP server: cloud browser automation with Stagehand — navigate, act, extract, and screenshot on headless browsers at scale.",
       "author": "Browserbase",
       "homepage": "https://github.com/browserbase/mcp-server-browserbase",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@browserbasehq/mcp-server-browserbase"
-      ],
-      "env": [
-        {
-          "key": "BROWSERBASE_API_KEY",
-          "value": ""
-        },
-        {
-          "key": "BROWSERBASE_PROJECT_ID",
-          "value": ""
-        },
-        {
-          "key": "GEMINI_API_KEY",
-          "value": ""
-        }
-      ],
+      "args": ["-y", "@browserbasehq/mcp-server-browserbase"],
+      "env": [{ "key": "BROWSERBASE_API_KEY", "value": "" }, { "key": "BROWSERBASE_PROJECT_ID", "value": "" }, { "key": "GEMINI_API_KEY", "value": "" }],
       "setup_note": "Get API key and project ID at https://www.browserbase.com/settings. Stagehand also needs a model key (GEMINI_API_KEY by default; other providers configurable).",
-      "tags": [
-        "browser",
-        "automation",
-        "scraping"
-      ],
+      "tags": ["browser", "automation", "scraping"],
       "category": "web"
     },
     {
       "id": "firecrawl",
       "name": "Firecrawl",
-      "description": "Firecrawl's official MCP server: web scraping, crawling, search, and structured extraction \u2014 JavaScript rendering, batch scraping, and deep research.",
+      "description": "Firecrawl's official MCP server: web scraping, crawling, search, and structured extraction — JavaScript rendering, batch scraping, and deep research.",
       "author": "Firecrawl",
       "homepage": "https://github.com/firecrawl/firecrawl-mcp-server",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "firecrawl-mcp"
-      ],
-      "env": [
-        {
-          "key": "FIRECRAWL_API_KEY",
-          "value": ""
-        }
-      ],
+      "args": ["-y", "firecrawl-mcp"],
+      "env": [{ "key": "FIRECRAWL_API_KEY", "value": "" }],
       "setup_note": "Get an API key at https://firecrawl.dev/app/api-keys.",
-      "tags": [
-        "scraping",
-        "crawling",
-        "web"
-      ],
+      "tags": ["scraping", "crawling", "web"],
       "category": "web"
     },
     {
@@ -1320,48 +842,24 @@
       "homepage": "https://github.com/brightdata/brightdata-mcp",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@brightdata/mcp"
-      ],
-      "env": [
-        {
-          "key": "API_TOKEN",
-          "value": ""
-        }
-      ],
+      "args": ["-y", "@brightdata/mcp"],
+      "env": [{ "key": "API_TOKEN", "value": "" }],
       "setup_note": "Get an API token at https://brightdata.com/cp/setting/users (free tier available).",
-      "tags": [
-        "scraping",
-        "search",
-        "proxies"
-      ],
+      "tags": ["scraping", "search", "proxies"],
       "category": "web"
     },
     {
       "id": "apify",
       "name": "Apify",
-      "description": "Apify's official MCP server: run any of 6,000+ Apify Actors \u2014 scrapers and extractors for websites, social media, maps, e-commerce, and more.",
+      "description": "Apify's official MCP server: run any of 6,000+ Apify Actors — scrapers and extractors for websites, social media, maps, e-commerce, and more.",
       "author": "Apify",
       "homepage": "https://github.com/apify/actors-mcp-server",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@apify/actors-mcp-server"
-      ],
-      "env": [
-        {
-          "key": "APIFY_TOKEN",
-          "value": ""
-        }
-      ],
+      "args": ["-y", "@apify/actors-mcp-server"],
+      "env": [{ "key": "APIFY_TOKEN", "value": "" }],
       "setup_note": "Get an API token at https://console.apify.com/settings/integrations.",
-      "tags": [
-        "scraping",
-        "actors",
-        "automation"
-      ],
+      "tags": ["scraping", "actors", "automation"],
       "category": "web"
     },
     {
@@ -1372,48 +870,24 @@
       "homepage": "https://github.com/hyperbrowserai/mcp",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "hyperbrowser-mcp"
-      ],
-      "env": [
-        {
-          "key": "HYPERBROWSER_API_KEY",
-          "value": ""
-        }
-      ],
+      "args": ["-y", "hyperbrowser-mcp"],
+      "env": [{ "key": "HYPERBROWSER_API_KEY", "value": "" }],
       "setup_note": "Get an API key at https://app.hyperbrowser.ai.",
-      "tags": [
-        "browser",
-        "scraping",
-        "automation"
-      ],
+      "tags": ["browser", "scraping", "automation"],
       "category": "web"
     },
     {
       "id": "exa",
       "name": "Exa Search",
-      "description": "Exa's official MCP server: AI-native web search \u2014 real-time results, code context, company research, crawling, and deep research tools.",
+      "description": "Exa's official MCP server: AI-native web search — real-time results, code context, company research, crawling, and deep research tools.",
       "author": "Exa",
       "homepage": "https://github.com/exa-labs/exa-mcp-server",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "exa-mcp-server"
-      ],
-      "env": [
-        {
-          "key": "EXA_API_KEY",
-          "value": ""
-        }
-      ],
+      "args": ["-y", "exa-mcp-server"],
+      "env": [{ "key": "EXA_API_KEY", "value": "" }],
       "setup_note": "Get an API key at https://dashboard.exa.ai/api-keys.",
-      "tags": [
-        "search",
-        "web-search",
-        "research"
-      ],
+      "tags": ["search", "web-search", "research"],
       "category": "web"
     },
     {
@@ -1424,48 +898,24 @@
       "homepage": "https://github.com/tavily-ai/tavily-mcp",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "tavily-mcp@latest"
-      ],
-      "env": [
-        {
-          "key": "TAVILY_API_KEY",
-          "value": ""
-        }
-      ],
+      "args": ["-y", "tavily-mcp@latest"],
+      "env": [{ "key": "TAVILY_API_KEY", "value": "" }],
       "setup_note": "Get an API key at https://app.tavily.com (free tier available).",
-      "tags": [
-        "search",
-        "web-search",
-        "extraction"
-      ],
+      "tags": ["search", "web-search", "extraction"],
       "category": "web"
     },
     {
       "id": "perplexity",
       "name": "Perplexity",
-      "description": "Perplexity's official MCP server: live web-wide research via the Sonar API \u2014 ask questions and get grounded, up-to-date answers with citations.",
+      "description": "Perplexity's official MCP server: live web-wide research via the Sonar API — ask questions and get grounded, up-to-date answers with citations.",
       "author": "Perplexity",
       "homepage": "https://github.com/perplexityai/modelcontextprotocol",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "server-perplexity-ask"
-      ],
-      "env": [
-        {
-          "key": "PERPLEXITY_API_KEY",
-          "value": ""
-        }
-      ],
+      "args": ["-y", "server-perplexity-ask"],
+      "env": [{ "key": "PERPLEXITY_API_KEY", "value": "" }],
       "setup_note": "Get an API key at https://www.perplexity.ai/settings/api.",
-      "tags": [
-        "search",
-        "research",
-        "citations"
-      ],
+      "tags": ["search", "research", "citations"],
       "category": "web"
     },
     {
@@ -1476,65 +926,37 @@
       "homepage": "https://github.com/kagisearch/kagimcp",
       "transport": "stdio",
       "command": "uvx",
-      "args": [
-        "kagimcp"
-      ],
-      "env": [
-        {
-          "key": "KAGI_API_KEY",
-          "value": ""
-        }
-      ],
+      "args": ["kagimcp"],
+      "env": [{ "key": "KAGI_API_KEY", "value": "" }],
       "setup_note": "Requires Python/uv. Get an API key at https://kagi.com/settings?p=api (search API access currently requires an invite).",
-      "tags": [
-        "search",
-        "web-search",
-        "summarization"
-      ],
+      "tags": ["search", "web-search", "summarization"],
       "category": "web"
     },
     {
       "id": "duckduckgo",
       "name": "DuckDuckGo Search",
-      "description": "Web search through DuckDuckGo with result formatting and content fetching \u2014 no API key required.",
+      "description": "Web search through DuckDuckGo with result formatting and content fetching — no API key required.",
       "author": "Nick Clyde",
       "homepage": "https://github.com/nickclyde/duckduckgo-mcp-server",
       "transport": "stdio",
       "command": "uvx",
-      "args": [
-        "duckduckgo-mcp-server"
-      ],
+      "args": ["duckduckgo-mcp-server"],
       "setup_note": "Requires Python/uv.",
-      "tags": [
-        "search",
-        "web-search"
-      ],
+      "tags": ["search", "web-search"],
       "category": "web"
     },
     {
       "id": "mongodb",
       "name": "MongoDB",
-      "description": "MongoDB's official MCP server: query and manage MongoDB databases and Atlas clusters \u2014 find, aggregate, schema inspection, and Atlas administration.",
+      "description": "MongoDB's official MCP server: query and manage MongoDB databases and Atlas clusters — find, aggregate, schema inspection, and Atlas administration.",
       "author": "MongoDB",
       "homepage": "https://github.com/mongodb-js/mongodb-mcp-server",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "mongodb-mcp-server"
-      ],
-      "env": [
-        {
-          "key": "MDB_MCP_CONNECTION_STRING",
-          "value": ""
-        }
-      ],
+      "args": ["-y", "mongodb-mcp-server"],
+      "env": [{ "key": "MDB_MCP_CONNECTION_STRING", "value": "" }],
       "setup_note": "Set MDB_MCP_CONNECTION_STRING to your connection string (mongodb://... or mongodb+srv://...); for Atlas administration set MDB_MCP_API_CLIENT_ID/SECRET service-account credentials instead.",
-      "tags": [
-        "mongodb",
-        "database",
-        "atlas"
-      ],
+      "tags": ["mongodb", "database", "atlas"],
       "category": "data"
     },
     {
@@ -1545,44 +967,23 @@
       "homepage": "https://github.com/supabase-community/supabase-mcp",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@supabase/mcp-server-supabase@latest"
-      ],
-      "env": [
-        {
-          "key": "SUPABASE_ACCESS_TOKEN",
-          "value": ""
-        }
-      ],
+      "args": ["-y", "@supabase/mcp-server-supabase@latest"],
+      "env": [{ "key": "SUPABASE_ACCESS_TOKEN", "value": "" }],
       "setup_note": "Create a personal access token at https://supabase.com/dashboard/account/tokens. Recommended extra args: --read-only --project-ref=YOUR_PROJECT_REF.",
-      "tags": [
-        "supabase",
-        "postgres",
-        "database"
-      ],
+      "tags": ["supabase", "postgres", "database"],
       "category": "data"
     },
     {
       "id": "neon",
       "name": "Neon",
-      "description": "Neon's official MCP server: manage serverless Postgres \u2014 create projects and branches, run SQL, and handle migrations in natural language.",
+      "description": "Neon's official MCP server: manage serverless Postgres — create projects and branches, run SQL, and handle migrations in natural language.",
       "author": "Neon",
       "homepage": "https://github.com/neondatabase/mcp-server-neon",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@neondatabase/mcp-server-neon",
-        "start",
-        "YOUR_NEON_API_KEY"
-      ],
+      "args": ["-y", "@neondatabase/mcp-server-neon", "start", "YOUR_NEON_API_KEY"],
       "setup_note": "Replace YOUR_NEON_API_KEY with an API key from https://console.neon.tech/app/settings/api-keys.",
-      "tags": [
-        "postgres",
-        "database",
-        "serverless"
-      ],
+      "tags": ["postgres", "database", "serverless"],
       "category": "data"
     },
     {
@@ -1593,52 +994,23 @@
       "homepage": "https://github.com/ClickHouse/mcp-clickhouse",
       "transport": "stdio",
       "command": "uvx",
-      "args": [
-        "mcp-clickhouse"
-      ],
-      "env": [
-        {
-          "key": "CLICKHOUSE_HOST",
-          "value": ""
-        },
-        {
-          "key": "CLICKHOUSE_USER",
-          "value": ""
-        },
-        {
-          "key": "CLICKHOUSE_PASSWORD",
-          "value": ""
-        }
-      ],
+      "args": ["mcp-clickhouse"],
+      "env": [{ "key": "CLICKHOUSE_HOST", "value": "" }, { "key": "CLICKHOUSE_USER", "value": "" }, { "key": "CLICKHOUSE_PASSWORD", "value": "" }],
       "setup_note": "Requires Python/uv. Try it keyless against the public SQL playground: host sql-clickhouse.clickhouse.com, user demo, empty password.",
-      "tags": [
-        "clickhouse",
-        "database",
-        "analytics"
-      ],
+      "tags": ["clickhouse", "database", "analytics"],
       "category": "data"
     },
     {
       "id": "motherduck",
       "name": "MotherDuck / DuckDB",
-      "description": "MotherDuck's official MCP server: run SQL analytics on DuckDB \u2014 query local database files or MotherDuck cloud databases.",
+      "description": "MotherDuck's official MCP server: run SQL analytics on DuckDB — query local database files or MotherDuck cloud databases.",
       "author": "MotherDuck",
       "homepage": "https://github.com/motherduckdb/mcp-server-motherduck",
       "transport": "stdio",
       "command": "uvx",
-      "args": [
-        "mcp-server-motherduck",
-        "--db-path",
-        "md:",
-        "--motherduck-token",
-        "YOUR_MOTHERDUCK_TOKEN"
-      ],
-      "setup_note": "Requires Python/uv. Get a token at https://app.motherduck.com/settings/tokens \u2014 or query a local file instead with: --db-path /path/to/local.db (drop the token argument).",
-      "tags": [
-        "duckdb",
-        "sql",
-        "analytics"
-      ],
+      "args": ["mcp-server-motherduck", "--db-path", "md:", "--motherduck-token", "YOUR_MOTHERDUCK_TOKEN"],
+      "setup_note": "Requires Python/uv. Get a token at https://app.motherduck.com/settings/tokens — or query a local file instead with: --db-path /path/to/local.db (drop the token argument).",
+      "tags": ["duckdb", "sql", "analytics"],
       "category": "data"
     },
     {
@@ -1649,101 +1021,50 @@
       "homepage": "https://github.com/elastic/mcp-server-elasticsearch",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@elastic/mcp-server-elasticsearch"
-      ],
-      "env": [
-        {
-          "key": "ES_URL",
-          "value": ""
-        },
-        {
-          "key": "ES_API_KEY",
-          "value": ""
-        }
-      ],
-      "setup_note": "Set ES_URL to your cluster endpoint and create an API key in Kibana under Stack Management \u2192 API keys.",
-      "tags": [
-        "elasticsearch",
-        "search",
-        "indices"
-      ],
+      "args": ["-y", "@elastic/mcp-server-elasticsearch"],
+      "env": [{ "key": "ES_URL", "value": "" }, { "key": "ES_API_KEY", "value": "" }],
+      "setup_note": "Set ES_URL to your cluster endpoint and create an API key in Kibana under Stack Management → API keys.",
+      "tags": ["elasticsearch", "search", "indices"],
       "category": "data"
     },
     {
       "id": "redis",
       "name": "Redis",
-      "description": "Redis' official MCP server: manage and search data in Redis \u2014 strings, hashes, lists, sets, streams, JSON, and vector indexes.",
+      "description": "Redis' official MCP server: manage and search data in Redis — strings, hashes, lists, sets, streams, JSON, and vector indexes.",
       "author": "Redis",
       "homepage": "https://github.com/redis/mcp-redis",
       "transport": "stdio",
       "command": "uvx",
-      "args": [
-        "--from",
-        "redis-mcp-server@latest",
-        "redis-mcp-server",
-        "--url",
-        "redis://localhost:6379/0"
-      ],
+      "args": ["--from", "redis-mcp-server@latest", "redis-mcp-server", "--url", "redis://localhost:6379/0"],
       "setup_note": "Requires Python/uv. Replace the --url value with your Redis connection URI (rediss://user:pass@host:port for TLS/Cloud).",
-      "tags": [
-        "redis",
-        "cache",
-        "vector-search"
-      ],
+      "tags": ["redis", "cache", "vector-search"],
       "category": "data"
     },
     {
       "id": "chroma",
       "name": "Chroma",
-      "description": "Chroma's official MCP server: vector database operations \u2014 create collections, add documents, and run semantic search, with local or cloud backends.",
+      "description": "Chroma's official MCP server: vector database operations — create collections, add documents, and run semantic search, with local or cloud backends.",
       "author": "Chroma",
       "homepage": "https://github.com/chroma-core/chroma-mcp",
       "transport": "stdio",
       "command": "uvx",
-      "args": [
-        "chroma-mcp"
-      ],
+      "args": ["chroma-mcp"],
       "setup_note": "Requires Python/uv. Defaults to an ephemeral in-memory client; use --client-type persistent --data-dir /path for local persistence, or cloud/http client flags for hosted Chroma.",
-      "tags": [
-        "vector-database",
-        "embeddings",
-        "rag"
-      ],
+      "tags": ["vector-database", "embeddings", "rag"],
       "category": "data"
     },
     {
       "id": "qdrant",
       "name": "Qdrant",
-      "description": "Qdrant's official MCP server: a semantic memory layer \u2014 store and retrieve documents by vector similarity on your Qdrant instance.",
+      "description": "Qdrant's official MCP server: a semantic memory layer — store and retrieve documents by vector similarity on your Qdrant instance.",
       "author": "Qdrant",
       "homepage": "https://github.com/qdrant/mcp-server-qdrant",
       "transport": "stdio",
       "command": "uvx",
-      "args": [
-        "mcp-server-qdrant"
-      ],
-      "env": [
-        {
-          "key": "QDRANT_URL",
-          "value": ""
-        },
-        {
-          "key": "QDRANT_API_KEY",
-          "value": ""
-        },
-        {
-          "key": "COLLECTION_NAME",
-          "value": ""
-        }
-      ],
+      "args": ["mcp-server-qdrant"],
+      "env": [{ "key": "QDRANT_URL", "value": "" }, { "key": "QDRANT_API_KEY", "value": "" }, { "key": "COLLECTION_NAME", "value": "" }],
       "setup_note": "Requires Python/uv. Set QDRANT_URL (e.g. http://localhost:6333 or your cloud URL), an API key for Qdrant Cloud, and the collection to use.",
-      "tags": [
-        "vector-database",
-        "embeddings",
-        "rag"
-      ],
+      "tags": ["vector-database", "embeddings", "rag"],
       "category": "data"
     },
     {
@@ -1754,55 +1075,24 @@
       "homepage": "https://github.com/pinecone-io/pinecone-mcp",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@pinecone-database/mcp"
-      ],
-      "env": [
-        {
-          "key": "PINECONE_API_KEY",
-          "value": ""
-        }
-      ],
+      "args": ["-y", "@pinecone-database/mcp"],
+      "env": [{ "key": "PINECONE_API_KEY", "value": "" }],
       "setup_note": "Get an API key at https://app.pinecone.io.",
-      "tags": [
-        "vector-database",
-        "embeddings",
-        "rag"
-      ],
+      "tags": ["vector-database", "embeddings", "rag"],
       "category": "data"
     },
     {
       "id": "neo4j",
       "name": "Neo4j",
-      "description": "Neo4j's official MCP server: query graph databases with Cypher \u2014 schema introspection plus read and write queries against your Neo4j instance.",
+      "description": "Neo4j's official MCP server: query graph databases with Cypher — schema introspection plus read and write queries against your Neo4j instance.",
       "author": "Neo4j",
       "homepage": "https://github.com/neo4j-contrib/mcp-neo4j",
       "transport": "stdio",
       "command": "uvx",
-      "args": [
-        "mcp-neo4j-cypher"
-      ],
-      "env": [
-        {
-          "key": "NEO4J_URI",
-          "value": ""
-        },
-        {
-          "key": "NEO4J_USERNAME",
-          "value": ""
-        },
-        {
-          "key": "NEO4J_PASSWORD",
-          "value": ""
-        }
-      ],
+      "args": ["mcp-neo4j-cypher"],
+      "env": [{ "key": "NEO4J_URI", "value": "" }, { "key": "NEO4J_USERNAME", "value": "" }, { "key": "NEO4J_PASSWORD", "value": "" }],
       "setup_note": "Requires Python/uv. Set NEO4J_URI (e.g. neo4j+s://xxx.databases.neo4j.io or bolt://localhost:7687) and credentials.",
-      "tags": [
-        "neo4j",
-        "graph-database",
-        "cypher"
-      ],
+      "tags": ["neo4j", "graph-database", "cypher"],
       "category": "data"
     },
     {
@@ -1813,35 +1103,10 @@
       "homepage": "https://github.com/designcomputer/mysql_mcp_server",
       "transport": "stdio",
       "command": "uvx",
-      "args": [
-        "--from",
-        "mysql-mcp-server",
-        "mysql_mcp_server"
-      ],
-      "env": [
-        {
-          "key": "MYSQL_HOST",
-          "value": ""
-        },
-        {
-          "key": "MYSQL_USER",
-          "value": ""
-        },
-        {
-          "key": "MYSQL_PASSWORD",
-          "value": ""
-        },
-        {
-          "key": "MYSQL_DATABASE",
-          "value": ""
-        }
-      ],
+      "args": ["--from", "mysql-mcp-server", "mysql_mcp_server"],
+      "env": [{ "key": "MYSQL_HOST", "value": "" }, { "key": "MYSQL_USER", "value": "" }, { "key": "MYSQL_PASSWORD", "value": "" }, { "key": "MYSQL_DATABASE", "value": "" }],
       "setup_note": "Requires Python/uv. Use a restricted MySQL user for safety.",
-      "tags": [
-        "mysql",
-        "database",
-        "sql"
-      ],
+      "tags": ["mysql", "database", "sql"],
       "category": "data"
     },
     {
@@ -1852,22 +1117,10 @@
       "homepage": "https://github.com/domdomegg/airtable-mcp-server",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "airtable-mcp-server"
-      ],
-      "env": [
-        {
-          "key": "AIRTABLE_API_KEY",
-          "value": ""
-        }
-      ],
+      "args": ["-y", "airtable-mcp-server"],
+      "env": [{ "key": "AIRTABLE_API_KEY", "value": "" }],
       "setup_note": "Create a personal access token at https://airtable.com/create/tokens with scopes schema.bases:read and data.records:read (add write scopes as needed).",
-      "tags": [
-        "airtable",
-        "spreadsheet",
-        "database"
-      ],
+      "tags": ["airtable", "spreadsheet", "database"],
       "category": "data"
     },
     {
@@ -1878,18 +1131,9 @@
       "homepage": "https://docs.convex.dev/ai/convex-mcp-server",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "convex@latest",
-        "mcp",
-        "start"
-      ],
+      "args": ["-y", "convex@latest", "mcp", "start"],
       "setup_note": "Run from within a Convex project directory (uses your local convex login).",
-      "tags": [
-        "convex",
-        "database",
-        "backend"
-      ],
+      "tags": ["convex", "database", "backend"],
       "category": "data"
     },
     {
@@ -1902,10 +1146,7 @@
       "url": "https://mcp.asana.com/sse",
       "oauth": {},
       "setup_note": "Authenticates with OAuth against your Asana account on first connect.",
-      "tags": [
-        "tasks",
-        "project-management"
-      ],
+      "tags": ["tasks", "project-management"],
       "category": "productivity"
     },
     {
@@ -1916,17 +1157,9 @@
       "homepage": "https://github.com/mondaycom/mcp",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@mondaydotcomorg/monday-api-mcp",
-        "-t",
-        "YOUR_MONDAY_API_TOKEN"
-      ],
-      "setup_note": "Replace YOUR_MONDAY_API_TOKEN with a token from monday.com \u2192 Avatar \u2192 Developers \u2192 My access tokens.",
-      "tags": [
-        "boards",
-        "project-management"
-      ],
+      "args": ["-y", "@mondaydotcomorg/monday-api-mcp", "-t", "YOUR_MONDAY_API_TOKEN"],
+      "setup_note": "Replace YOUR_MONDAY_API_TOKEN with a token from monday.com → Avatar → Developers → My access tokens.",
+      "tags": ["boards", "project-management"],
       "category": "productivity"
     },
     {
@@ -1939,27 +1172,20 @@
       "url": "https://mcp.clickup.com/mcp",
       "oauth": {},
       "setup_note": "Authenticates with OAuth against your ClickUp workspace on first connect.",
-      "tags": [
-        "tasks",
-        "project-management"
-      ],
+      "tags": ["tasks", "project-management"],
       "category": "productivity"
     },
     {
       "id": "figma",
       "name": "Figma",
-      "description": "Figma's official MCP server: give agents design context \u2014 read files, frames, components, and variables, and generate code from selections.",
+      "description": "Figma's official MCP server: give agents design context — read files, frames, components, and variables, and generate code from selections.",
       "author": "Figma",
       "homepage": "https://developers.figma.com/docs/figma-mcp-server/",
       "transport": "http",
       "url": "https://mcp.figma.com/mcp",
       "oauth": {},
       "setup_note": "Authenticates with OAuth against your Figma account on first connect. (The Figma desktop app also serves a local Dev Mode variant at http://127.0.0.1:3845/mcp.)",
-      "tags": [
-        "design",
-        "ui",
-        "code-generation"
-      ],
+      "tags": ["design", "ui", "code-generation"],
       "category": "design"
     },
     {
@@ -1972,10 +1198,7 @@
       "url": "https://mcp.canva.com/mcp",
       "oauth": {},
       "setup_note": "Authenticates with OAuth against your Canva account on first connect.",
-      "tags": [
-        "design",
-        "templates"
-      ],
+      "tags": ["design", "templates"],
       "category": "design"
     },
     {
@@ -1986,16 +1209,9 @@
       "homepage": "https://github.com/softeria/ms-365-mcp-server",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@softeria/ms-365-mcp-server"
-      ],
+      "args": ["-y", "@softeria/ms-365-mcp-server"],
       "setup_note": "Sign in via the built-in login tool (device-code flow) on first use. Add --org-mode for work/school accounts with Teams and SharePoint.",
-      "tags": [
-        "outlook",
-        "excel",
-        "teams"
-      ],
+      "tags": ["outlook", "excel", "teams"],
       "category": "productivity"
     },
     {
@@ -2006,25 +1222,10 @@
       "homepage": "https://github.com/taylorwilsdon/google_workspace_mcp",
       "transport": "stdio",
       "command": "uvx",
-      "args": [
-        "workspace-mcp"
-      ],
-      "env": [
-        {
-          "key": "GOOGLE_OAUTH_CLIENT_ID",
-          "value": ""
-        },
-        {
-          "key": "GOOGLE_OAUTH_CLIENT_SECRET",
-          "value": ""
-        }
-      ],
+      "args": ["workspace-mcp"],
+      "env": [{ "key": "GOOGLE_OAUTH_CLIENT_ID", "value": "" }, { "key": "GOOGLE_OAUTH_CLIENT_SECRET", "value": "" }],
       "setup_note": "Requires Python/uv and a Google Cloud OAuth client (Desktop type) with the Workspace APIs you need enabled; sign-in happens in the browser on first use.",
-      "tags": [
-        "gmail",
-        "calendar",
-        "drive"
-      ],
+      "tags": ["gmail", "calendar", "drive"],
       "category": "productivity"
     },
     {
@@ -2035,108 +1236,63 @@
       "homepage": "https://github.com/MarkusPfundstein/mcp-obsidian",
       "transport": "stdio",
       "command": "uvx",
-      "args": [
-        "mcp-obsidian"
-      ],
-      "env": [
-        {
-          "key": "OBSIDIAN_API_KEY",
-          "value": ""
-        }
-      ],
-      "setup_note": "Requires Python/uv and the 'Local REST API' community plugin enabled in Obsidian \u2014 copy its API key here.",
-      "tags": [
-        "notes",
-        "knowledge-base",
-        "markdown"
-      ],
+      "args": ["mcp-obsidian"],
+      "env": [{ "key": "OBSIDIAN_API_KEY", "value": "" }],
+      "setup_note": "Requires Python/uv and the 'Local REST API' community plugin enabled in Obsidian — copy its API key here.",
+      "tags": ["notes", "knowledge-base", "markdown"],
       "category": "productivity"
     },
     {
       "id": "markitdown",
       "name": "MarkItDown",
-      "description": "Microsoft's official MarkItDown MCP server: convert files to Markdown \u2014 PDF, Word, PowerPoint, Excel, images (OCR), audio, HTML, and more.",
+      "description": "Microsoft's official MarkItDown MCP server: convert files to Markdown — PDF, Word, PowerPoint, Excel, images (OCR), audio, HTML, and more.",
       "author": "Microsoft",
       "homepage": "https://github.com/microsoft/markitdown",
       "transport": "stdio",
       "command": "uvx",
-      "args": [
-        "markitdown-mcp"
-      ],
+      "args": ["markitdown-mcp"],
       "setup_note": "Requires Python/uv.",
-      "tags": [
-        "conversion",
-        "markdown",
-        "documents"
-      ],
+      "tags": ["conversion", "markdown", "documents"],
       "category": "productivity"
     },
     {
       "id": "excel",
       "name": "Excel",
-      "description": "Create and edit Excel workbooks over MCP: read and write data, formulas, formatting, charts, and pivot tables \u2014 no Microsoft Excel install needed.",
+      "description": "Create and edit Excel workbooks over MCP: read and write data, formulas, formatting, charts, and pivot tables — no Microsoft Excel install needed.",
       "author": "Haris Musa",
       "homepage": "https://github.com/haris-musa/excel-mcp-server",
       "transport": "stdio",
       "command": "uvx",
-      "args": [
-        "excel-mcp-server",
-        "stdio"
-      ],
+      "args": ["excel-mcp-server", "stdio"],
       "setup_note": "Requires Python/uv.",
-      "tags": [
-        "excel",
-        "spreadsheet",
-        "xlsx"
-      ],
+      "tags": ["excel", "spreadsheet", "xlsx"],
       "category": "productivity"
     },
     {
       "id": "zapier",
       "name": "Zapier",
-      "description": "Zapier's official MCP server: call actions across 8,000+ connected apps \u2014 Gmail, Sheets, Slack, CRMs, and more \u2014 from one MCP endpoint.",
+      "description": "Zapier's official MCP server: call actions across 8,000+ connected apps — Gmail, Sheets, Slack, CRMs, and more — from one MCP endpoint.",
       "author": "Zapier",
       "homepage": "https://zapier.com/mcp",
       "transport": "http",
       "url": "https://mcp.zapier.com/api/mcp/mcp",
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": ""
-        }
-      ],
+      "headers": [{ "key": "Authorization", "value": "" }],
       "setup_note": "Create an MCP server at https://mcp.zapier.com, choose the actions to expose, and set the Authorization header to: Bearer YOUR_ZAPIER_MCP_TOKEN.",
-      "tags": [
-        "automation",
-        "integrations",
-        "workflows"
-      ],
+      "tags": ["automation", "integrations", "workflows"],
       "category": "automation"
     },
     {
       "id": "hubspot",
       "name": "HubSpot",
-      "description": "HubSpot's official MCP server: work with CRM objects \u2014 contacts, companies, deals, tickets, associations, and properties.",
+      "description": "HubSpot's official MCP server: work with CRM objects — contacts, companies, deals, tickets, associations, and properties.",
       "author": "HubSpot",
       "homepage": "https://developers.hubspot.com/mcp",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@hubspot/mcp-server"
-      ],
-      "env": [
-        {
-          "key": "PRIVATE_APP_ACCESS_TOKEN",
-          "value": ""
-        }
-      ],
-      "setup_note": "Create a private app in HubSpot (Settings \u2192 Integrations \u2192 Private Apps) with CRM scopes and paste its access token.",
-      "tags": [
-        "crm",
-        "sales",
-        "contacts"
-      ],
+      "args": ["-y", "@hubspot/mcp-server"],
+      "env": [{ "key": "PRIVATE_APP_ACCESS_TOKEN", "value": "" }],
+      "setup_note": "Create a private app in HubSpot (Settings → Integrations → Private Apps) with CRM scopes and paste its access token.",
+      "tags": ["crm", "sales", "contacts"],
       "category": "integrations"
     },
     {
@@ -2149,11 +1305,7 @@
       "url": "https://mcp.intercom.com/mcp",
       "oauth": {},
       "setup_note": "Authenticates with OAuth against your Intercom workspace on first connect.",
-      "tags": [
-        "support",
-        "conversations",
-        "crm"
-      ],
+      "tags": ["support", "conversations", "crm"],
       "category": "communication"
     },
     {
@@ -2164,45 +1316,24 @@
       "homepage": "https://github.com/stripe/agent-toolkit",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@stripe/mcp"
-      ],
-      "env": [
-        {
-          "key": "STRIPE_SECRET_KEY",
-          "value": ""
-        }
-      ],
-      "setup_note": "Create a restricted API key (rk_\u2026) at https://dashboard.stripe.com/apikeys \u2014 the key's permissions control which tools are enabled.",
-      "tags": [
-        "payments",
-        "billing",
-        "invoices"
-      ],
+      "args": ["-y", "@stripe/mcp"],
+      "env": [{ "key": "STRIPE_SECRET_KEY", "value": "" }],
+      "setup_note": "Create a restricted API key (rk_…) at https://dashboard.stripe.com/apikeys — the key's permissions control which tools are enabled.",
+      "tags": ["payments", "billing", "invoices"],
       "category": "commerce"
     },
     {
       "id": "stripe-remote",
       "name": "Stripe (hosted)",
-      "description": "Stripe's hosted remote MCP server: the same account tools as the local @stripe/mcp package, served from mcp.stripe.com with OAuth sign-in \u2014 no API key or local Node needed.",
+      "description": "Stripe's hosted remote MCP server: the same account tools as the local @stripe/mcp package, served from mcp.stripe.com with OAuth sign-in — no API key or local Node needed.",
       "author": "Stripe",
       "homepage": "https://docs.stripe.com/mcp",
       "transport": "http",
       "url": "https://mcp.stripe.com",
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": ""
-        }
-      ],
+      "headers": [{ "key": "Authorization", "value": "" }],
       "oauth": {},
-      "setup_note": "Click Sign in with Stripe to connect with OAuth (recommended). Alternatively set the Authorization header to: Bearer rk_\u2026 using a restricted API key from https://dashboard.stripe.com/apikeys.",
-      "tags": [
-        "payments",
-        "billing",
-        "invoices"
-      ],
+      "setup_note": "Click Sign in with Stripe to connect with OAuth (recommended). Alternatively set the Authorization header to: Bearer rk_… using a restricted API key from https://dashboard.stripe.com/apikeys.",
+      "tags": ["payments", "billing", "invoices"],
       "category": "commerce"
     },
     {
@@ -2215,116 +1346,72 @@
       "url": "https://mcp.paypal.com/mcp",
       "oauth": {},
       "setup_note": "Authenticates with OAuth against your PayPal account on first connect (sandbox variant: https://mcp.sandbox.paypal.com/mcp).",
-      "tags": [
-        "payments",
-        "invoices",
-        "orders"
-      ],
+      "tags": ["payments", "invoices", "orders"],
       "category": "commerce"
     },
     {
       "id": "square",
       "name": "Square",
-      "description": "Square's official MCP server: work with the Square ecosystem \u2014 payments, customers, catalog, orders, inventory, and team management.",
+      "description": "Square's official MCP server: work with the Square ecosystem — payments, customers, catalog, orders, inventory, and team management.",
       "author": "Square",
       "homepage": "https://developer.squareup.com/docs/mcp",
       "transport": "sse",
       "url": "https://mcp.squareup.com/sse",
       "oauth": {},
       "setup_note": "Authenticates with OAuth against your Square account on first connect.",
-      "tags": [
-        "payments",
-        "pos",
-        "catalog"
-      ],
+      "tags": ["payments", "pos", "catalog"],
       "category": "commerce"
     },
     {
       "id": "shopify-dev",
       "name": "Shopify Dev",
-      "description": "Shopify's official Dev MCP server: search Shopify docs, explore Admin GraphQL schemas, and get Polaris and Functions guidance \u2014 no store credentials needed.",
+      "description": "Shopify's official Dev MCP server: search Shopify docs, explore Admin GraphQL schemas, and get Polaris and Functions guidance — no store credentials needed.",
       "author": "Shopify",
       "homepage": "https://github.com/Shopify/dev-mcp",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@shopify/dev-mcp@latest"
-      ],
+      "args": ["-y", "@shopify/dev-mcp@latest"],
       "setup_note": "",
-      "tags": [
-        "shopify",
-        "documentation",
-        "graphql"
-      ],
+      "tags": ["shopify", "documentation", "graphql"],
       "category": "commerce"
     },
     {
       "id": "plaid",
       "name": "Plaid",
-      "description": "Plaid's official MCP server: inspect and debug your Plaid integration \u2014 items, institutions, errors, and usage from the Plaid dashboard.",
+      "description": "Plaid's official MCP server: inspect and debug your Plaid integration — items, institutions, errors, and usage from the Plaid dashboard.",
       "author": "Plaid",
       "homepage": "https://plaid.com/docs/mcp/",
       "transport": "sse",
       "url": "https://api.dashboard.plaid.com/mcp/sse",
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": ""
-        }
-      ],
+      "headers": [{ "key": "Authorization", "value": "" }],
       "setup_note": "Set the Authorization header to: Bearer YOUR_CLIENT_ID:YOUR_SECRET using the API keys from https://dashboard.plaid.com/developers/keys.",
-      "tags": [
-        "fintech",
-        "banking",
-        "api"
-      ],
+      "tags": ["fintech", "banking", "api"],
       "category": "commerce"
     },
     {
       "id": "xero",
       "name": "Xero",
-      "description": "Xero's official MCP server: accounting operations \u2014 contacts, invoices, quotes, payments, bank transactions, and reports on your Xero organisation.",
+      "description": "Xero's official MCP server: accounting operations — contacts, invoices, quotes, payments, bank transactions, and reports on your Xero organisation.",
       "author": "Xero",
       "homepage": "https://github.com/XeroAPI/xero-mcp-server",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@xeroapi/xero-mcp-server@latest"
-      ],
-      "env": [
-        {
-          "key": "XERO_CLIENT_ID",
-          "value": ""
-        },
-        {
-          "key": "XERO_CLIENT_SECRET",
-          "value": ""
-        }
-      ],
+      "args": ["-y", "@xeroapi/xero-mcp-server@latest"],
+      "env": [{ "key": "XERO_CLIENT_ID", "value": "" }, { "key": "XERO_CLIENT_SECRET", "value": "" }],
       "setup_note": "Create a Custom Connection app at https://developer.xero.com/app/manage with the accounting scopes you need.",
-      "tags": [
-        "accounting",
-        "invoices",
-        "finance"
-      ],
+      "tags": ["accounting", "invoices", "finance"],
       "category": "commerce"
     },
     {
       "id": "coingecko",
       "name": "CoinGecko",
-      "description": "CoinGecko's official MCP server: crypto prices, market data, OHLC charts, and metadata for 15,000+ coins across 1,000+ exchanges \u2014 public tier needs no key.",
+      "description": "CoinGecko's official MCP server: crypto prices, market data, OHLC charts, and metadata for 15,000+ coins across 1,000+ exchanges — public tier needs no key.",
       "author": "CoinGecko",
       "homepage": "https://docs.coingecko.com/reference/mcp-server",
       "transport": "sse",
       "url": "https://mcp.api.coingecko.com/sse",
       "setup_note": "Public endpoint with no key at basic rate limits; paid keys unlock the authenticated endpoint (see docs).",
-      "tags": [
-        "crypto",
-        "prices",
-        "market-data"
-      ],
+      "tags": ["crypto", "prices", "market-data"],
       "category": "data"
     },
     {
@@ -2335,18 +1422,9 @@
       "homepage": "https://huggingface.co/mcp",
       "transport": "http",
       "url": "https://huggingface.co/mcp",
-      "headers": [
-        {
-          "key": "Authorization",
-          "value": ""
-        }
-      ],
+      "headers": [{ "key": "Authorization", "value": "" }],
       "setup_note": "Works anonymously for public content; set the Authorization header to: Bearer hf_YOUR_TOKEN (from https://huggingface.co/settings/tokens) for gated/private access and your personal tool setup.",
-      "tags": [
-        "models",
-        "datasets",
-        "machine-learning"
-      ],
+      "tags": ["models", "datasets", "machine-learning"],
       "category": "ai"
     },
     {
@@ -2357,21 +1435,10 @@
       "homepage": "https://github.com/elevenlabs/elevenlabs-mcp",
       "transport": "stdio",
       "command": "uvx",
-      "args": [
-        "elevenlabs-mcp"
-      ],
-      "env": [
-        {
-          "key": "ELEVENLABS_API_KEY",
-          "value": ""
-        }
-      ],
+      "args": ["elevenlabs-mcp"],
+      "env": [{ "key": "ELEVENLABS_API_KEY", "value": "" }],
       "setup_note": "Requires Python/uv. Get an API key at https://elevenlabs.io/app/settings/api-keys (free tier available).",
-      "tags": [
-        "text-to-speech",
-        "audio",
-        "voice"
-      ],
+      "tags": ["text-to-speech", "audio", "voice"],
       "category": "ai"
     },
     {
@@ -2382,22 +1449,10 @@
       "homepage": "https://github.com/mapbox/mcp-server",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@mapbox/mcp-server"
-      ],
-      "env": [
-        {
-          "key": "MAPBOX_ACCESS_TOKEN",
-          "value": ""
-        }
-      ],
+      "args": ["-y", "@mapbox/mcp-server"],
+      "env": [{ "key": "MAPBOX_ACCESS_TOKEN", "value": "" }],
       "setup_note": "Get an access token at https://console.mapbox.com/account/access-tokens/.",
-      "tags": [
-        "maps",
-        "geocoding",
-        "directions"
-      ],
+      "tags": ["maps", "geocoding", "directions"],
       "category": "data"
     },
     {
@@ -2408,64 +1463,36 @@
       "homepage": "https://github.com/modelcontextprotocol/servers-archived/tree/main/src/google-maps",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-google-maps"
-      ],
-      "env": [
-        {
-          "key": "GOOGLE_MAPS_API_KEY",
-          "value": ""
-        }
-      ],
-      "setup_note": "Create an API key in the Google Cloud console with the Maps APIs enabled. (Archived reference server \u2014 still functional.)",
-      "tags": [
-        "maps",
-        "geocoding",
-        "places"
-      ],
+      "args": ["-y", "@modelcontextprotocol/server-google-maps"],
+      "env": [{ "key": "GOOGLE_MAPS_API_KEY", "value": "" }],
+      "setup_note": "Create an API key in the Google Cloud console with the Maps APIs enabled. (Archived reference server — still functional.)",
+      "tags": ["maps", "geocoding", "places"],
       "category": "data"
     },
     {
       "id": "auth0",
       "name": "Auth0",
-      "description": "Auth0's official MCP server: manage your Auth0 tenant \u2014 applications, APIs, actions, forms, and logs \u2014 in natural language.",
+      "description": "Auth0's official MCP server: manage your Auth0 tenant — applications, APIs, actions, forms, and logs — in natural language.",
       "author": "Auth0",
       "homepage": "https://github.com/auth0/auth0-mcp-server",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@auth0/auth0-mcp-server",
-        "run"
-      ],
+      "args": ["-y", "@auth0/auth0-mcp-server", "run"],
       "setup_note": "Initialize once with: npx @auth0/auth0-mcp-server init (device-flow login to your tenant). Requires an OS keychain to store credentials (libsecret/gnome-keyring on Linux).",
-      "tags": [
-        "auth",
-        "identity",
-        "sso"
-      ],
+      "tags": ["auth", "identity", "sso"],
       "category": "security"
     },
     {
       "id": "snyk",
       "name": "Snyk",
-      "description": "Snyk's official MCP server: scan projects for vulnerabilities \u2014 open source dependencies (SCA), code (SAST), containers, and IaC.",
+      "description": "Snyk's official MCP server: scan projects for vulnerabilities — open source dependencies (SCA), code (SAST), containers, and IaC.",
       "author": "Snyk",
       "homepage": "https://docs.snyk.io/integrations/snyk-mcp",
       "transport": "stdio",
       "command": "snyk",
-      "args": [
-        "mcp",
-        "-t",
-        "stdio"
-      ],
+      "args": ["mcp", "-t", "stdio"],
       "setup_note": "Requires the Snyk CLI v1.1296+ installed and authenticated (snyk auth).",
-      "tags": [
-        "security",
-        "vulnerabilities",
-        "dependencies"
-      ],
+      "tags": ["security", "vulnerabilities", "dependencies"],
       "category": "security"
     },
     {
@@ -2476,100 +1503,62 @@
       "homepage": "https://github.com/blazickjp/arxiv-mcp-server",
       "transport": "stdio",
       "command": "uvx",
-      "args": [
-        "arxiv-mcp-server"
-      ],
+      "args": ["arxiv-mcp-server"],
       "setup_note": "Requires Python/uv. Optionally add --storage-path /path/to/paper/storage.",
-      "tags": [
-        "research",
-        "papers",
-        "arxiv"
-      ],
+      "tags": ["research", "papers", "arxiv"],
       "category": "ai"
     },
     {
       "id": "youtube-transcript",
       "name": "YouTube Transcript",
-      "description": "Fetch transcripts and captions for YouTube videos over MCP, with language selection \u2014 no API key required.",
+      "description": "Fetch transcripts and captions for YouTube videos over MCP, with language selection — no API key required.",
       "author": "Junpei Kawamoto",
       "homepage": "https://github.com/jkawamoto/mcp-youtube-transcript",
       "transport": "stdio",
       "command": "uvx",
-      "args": [
-        "mcp-youtube-transcript"
-      ],
+      "args": ["mcp-youtube-transcript"],
       "setup_note": "Requires Python/uv.",
-      "tags": [
-        "youtube",
-        "transcripts",
-        "video"
-      ],
+      "tags": ["youtube", "transcripts", "video"],
       "category": "web"
     },
     {
       "id": "airbnb",
       "name": "Airbnb",
-      "description": "Search Airbnb listings over MCP: availability, pricing, and listing details \u2014 no API key required.",
+      "description": "Search Airbnb listings over MCP: availability, pricing, and listing details — no API key required.",
       "author": "OpenBnB",
       "homepage": "https://github.com/openbnb-org/mcp-server-airbnb",
       "transport": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@openbnb/mcp-server-airbnb"
-      ],
+      "args": ["-y", "@openbnb/mcp-server-airbnb"],
       "setup_note": "Add --ignore-robots-txt only if you accept the implications.",
-      "tags": [
-        "travel",
-        "listings",
-        "search"
-      ],
+      "tags": ["travel", "listings", "search"],
       "category": "web"
     },
     {
       "id": "oxylabs",
       "name": "Oxylabs",
-      "description": "Oxylabs' official MCP server: scrape websites via the Oxylabs Web Scraper API \u2014 JavaScript rendering, geo-targeting, and markdown output.",
+      "description": "Oxylabs' official MCP server: scrape websites via the Oxylabs Web Scraper API — JavaScript rendering, geo-targeting, and markdown output.",
       "author": "Oxylabs",
       "homepage": "https://github.com/oxylabs/oxylabs-mcp",
       "transport": "stdio",
       "command": "uvx",
-      "args": [
-        "oxylabs-mcp"
-      ],
-      "env": [
-        {
-          "key": "OXYLABS_USERNAME",
-          "value": ""
-        },
-        {
-          "key": "OXYLABS_PASSWORD",
-          "value": ""
-        }
-      ],
+      "args": ["oxylabs-mcp"],
+      "env": [{ "key": "OXYLABS_USERNAME", "value": "" }, { "key": "OXYLABS_PASSWORD", "value": "" }],
       "setup_note": "Requires Python/uv. Get Web Scraper API credentials at https://dashboard.oxylabs.io.",
-      "tags": [
-        "scraping",
-        "proxies",
-        "web"
-      ],
+      "tags": ["scraping", "proxies", "web"],
       "category": "web"
     },
     {
       "id": "wix",
       "name": "Wix",
-      "description": "Wix's official MCP server: manage your Wix sites and business \u2014 content, bookings, e-commerce, payments, and site data.",
+      "description": "Wix's official MCP server: manage your Wix sites and business — content, bookings, e-commerce, payments, and site data.",
       "author": "Wix",
       "homepage": "https://www.wix.com/studio/developers/mcp-server",
       "transport": "sse",
       "url": "https://mcp.wix.com/sse",
       "oauth": {},
       "setup_note": "Authenticates with OAuth against your Wix account on first connect.",
-      "tags": [
-        "website",
-        "cms",
-        "ecommerce"
-      ],
+      "tags": ["website", "cms", "ecommerce"],
       "category": "integrations"
     },
     {
@@ -2582,11 +1571,7 @@
       "url": "https://mcp.close.com/mcp",
       "oauth": {},
       "setup_note": "Authenticates with OAuth against your Close organization on first connect.",
-      "tags": [
-        "crm",
-        "sales",
-        "leads"
-      ],
+      "tags": ["crm", "sales", "leads"],
       "category": "integrations"
     }
   ]
