@@ -75,15 +75,15 @@
       "description": "LogRocket-style replay of recorded browser test runs: network waterfall with masked request/response detail, console panel, event timeline with rage-click detection, cursor replay with click ripples, session details, and time-scaled playback with inactivity skipping — on a Playwright Tests page below Sessions.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/playwright-video",
-      "version": "0.3.1",
+      "version": "0.3.2",
       "tags": ["testing", "playwright", "replay"],
       "category": "dev-tools",
       "hooks": [
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/playwright-video/releases/download/v0.3.1/playwright-video.wasm",
-      "sha256": "502f160a8de0b2a6a3ffcc7ac2bcf30cb561b9b8b7160b363590b0d383083ea0",
+      "url": "https://github.com/PeckBoard/playwright-video/releases/download/v0.3.2/playwright-video.wasm",
+      "sha256": "52c166022d92a1cba9bfd65e65fb3e37a1a6d3d15ab7a5a36b65e2cb912c9044",
       "min_peckboard": "0.0.119"
     },
     {
@@ -143,7 +143,7 @@
       "description": "Hold connection details for many SSH hosts (user+password or user+key) and drive them over MCP tools: register hosts, run commands on one host or across the whole fleet, and read/write/edit remote files over SFTP. Ships a live activity dashboard (searchable host picker, per-host and all-hosts views, live polling). SSH runs through native host functions in Peckboard core, so credentials stay in memory and are never written to disk. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/ssh-fleet",
-      "version": "0.2.2",
+      "version": "0.2.3",
       "tags": ["ssh", "sftp", "fleet"],
       "category": "infrastructure",
       "hooks": [
@@ -151,8 +151,8 @@
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/ssh-fleet/releases/download/v0.2.2/ssh-fleet.wasm",
-      "sha256": "7ee685bea2ba9f169d5a11aa983f4138af299a05f60a4950b2b8e212e8ef782e",
+      "url": "https://github.com/PeckBoard/ssh-fleet/releases/download/v0.2.3/ssh-fleet.wasm",
+      "sha256": "b0142f6fe055bfbb6b7457abe41a3f99e09481925f046da7fbfbd04d8a795785",
       "min_peckboard": "0.0.105"
     }
   ],
