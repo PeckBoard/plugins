@@ -399,7 +399,7 @@
         { "label": "AP1 (ap1.datadoghq.com)", "url": "https://mcp.ap1.datadoghq.com/v1/mcp" }
       ],
       "oauth": {},
-      "setup_note": "Pick your Datadog site in the Region dropdown, then click Sign in with Datadog — the OAuth sign-in follows the selected region. If Datadog rejects the redirect, allow-list the callback URL shown in the sign-in panel under Datadog Organization Settings. Alternatively set the Authorization header to: Bearer YOUR_TOKEN using a Personal or Service Access Token — or replace the header with DD_API_KEY and DD_APPLICATION_KEY rows. Append ?toolsets=all to enable all toolsets.",
+      "setup_note": "Pick your Datadog site in the Region dropdown, then click Sign in with Datadog — the OAuth sign-in follows the selected region. Datadog only completes sign-in for allow-listed redirect URLs: if it fails with 'Mismatching redirect URI', add the callback URL shown in the sign-in panel in Datadog under Organization Settings > Preferences > MCP OAuth Redirect URLs, then retry. Alternatively set the Authorization header to: Bearer YOUR_TOKEN using a Personal or Service Access Token — or replace the header with DD_API_KEY and DD_APPLICATION_KEY rows. Append ?toolsets=all to enable all toolsets.",
       "tags": ["observability", "metrics", "logs", "monitoring"],
       "category": "infrastructure"
     },
