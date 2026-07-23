@@ -87,6 +87,23 @@
       "min_peckboard": "0.0.119"
     },
     {
+      "id": "chicken-coop",
+      "name": "Chicken Coop",
+      "description": "A 3D chicken run visualizing the cards being worked on: one low-poly hen per active card — she leaves the coop when work starts, wanders and pecks at the grass as the worker runs commands and edits files (peck style varies by tool class), sits on a nest during testing steps like review, and walks back into the coop (and disappears) when the card lands on done or wont_do. Sidebar page with a live-polled state endpoint; all three.js, no external assets.",
+      "author": "PeckBoard",
+      "homepage": "https://github.com/PeckBoard/chicken-coop",
+      "version": "0.1.0",
+      "tags": ["visualization", "fun", "workers"],
+      "category": "visualization",
+      "hooks": [
+        "http.request.before",
+        "http.request.authed"
+      ],
+      "url": "https://github.com/PeckBoard/chicken-coop/releases/download/v0.1.0/chicken-coop.wasm",
+      "sha256": "030b0cc79ed9429c39c964085ea847d00493b328d1bd3a004f3b6633f0d6044a",
+      "min_peckboard": "0.0.130"
+    },
+    {
       "id": "pre-hatcher",
       "name": "Pre-hatcher",
       "description": "Pre-warms chat messages before they reach the main model: each intercepted message first gets a plain opt-in question card (no AI involved) — declining sends it unchanged; accepting has a temp session on a cheaper model (the provider's cheapest priced one, or the model picked in Settings) gather repository context with the full chat transcript in view, ask a clarifying question when the request is ambiguous, and propose an enriched message delivered only after the user approves it on a second plain question card showing the expanded text (declining delivers the original). The research session runs under a configurable library system prompt (default \"fable 5\"). Research actions stream into the parked message live. Served as a WASM plugin.",
