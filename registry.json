@@ -89,19 +89,19 @@
     {
       "id": "chicken-coop",
       "name": "Chicken Coop",
-      "description": "A 3D chicken run visualizing the cards being worked on: one low-poly hen per active card — she leaves the coop when work starts, wanders and pecks at the grass as the worker runs commands and edits files (peck style varies by tool class), sits on a nest during testing steps like review, and walks back into the coop (and disappears) when the card lands on done or wont_do. Sidebar page with a live-polled state endpoint; all three.js, no external assets.",
+      "description": "A 3D chicken run visualizing the cards being worked on: one hen per active card — she leaves the coop when work starts, wanders and pecks at the grass as the worker runs commands and edits files (peck style varies by tool class), sits on a nest during testing steps like review, and walks back into the coop (and disappears) when the card lands on done or wont_do. When a worker asks a question, an alert badge pops over its hen — click the hen to answer in a modal with full card and project context. Sidebar page with a live-polled state endpoint; all three.js, no external assets.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/chicken-coop",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "tags": ["visualization", "fun", "workers"],
       "category": "visualization",
       "hooks": [
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/chicken-coop/releases/download/v0.1.0/chicken-coop.wasm",
-      "sha256": "030b0cc79ed9429c39c964085ea847d00493b328d1bd3a004f3b6633f0d6044a",
-      "min_peckboard": "0.0.130"
+      "url": "https://github.com/PeckBoard/chicken-coop/releases/download/v0.2.0/chicken-coop.wasm",
+      "sha256": "3dfec521ea332a0e94fcd1b323b394f408b7b39d49c941405596d519f952a5f9",
+      "min_peckboard": "0.0.131"
     },
     {
       "id": "pre-hatcher",
