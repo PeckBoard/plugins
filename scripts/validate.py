@@ -71,6 +71,24 @@ def fail(errors):
     sys.exit(1)
 
 
+def reject_duplicate_keys(pairs):
+    """json.load object_pairs_hook: refuse duplicate keys anywhere.
+
+    Python's json silently keeps the LAST duplicate, but Peckboard's serde
+    parser rejects the whole index on ANY duplicate field — so a registry
+    with a duplicated key would validate here yet break every app. Fail
+    loudly instead.
+    """
+    seen = set()
+    out = {}
+    for k, v in pairs:
+        if k in seen:
+            raise ValueError(f"duplicate key `{k}` in object")
+        seen.add(k)
+        out[k] = v
+    return out
+
+
 def check_tags_category(where, obj, errors):
     tags = obj.get("tags")
     if "tags" in obj:
@@ -311,7 +329,10 @@ def main():
     path = args[0] if args else "registry.json"
 
     with open(path, encoding="utf-8") as fh:
-        data = json.load(fh)
+        try:
+            data = json.load(fh, object_pairs_hook=reject_duplicate_keys)
+        except ValueError as exc:
+            fail([str(exc)])
 
     errors = validate_structure(data)
     if errors:
