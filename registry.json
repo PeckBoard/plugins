@@ -89,18 +89,18 @@
     {
       "id": "chicken-coop",
       "name": "Chicken Coop",
-      "description": "A 3D chicken run visualizing every live session as a bird: a hen per active card (out of the coop while working, pecking on tool activity — peck style varies by tool class — nesting during testing steps, walking home on done/wont_do), a rooster for chat sessions, a barred hen for repeating-task runs, a bantam for temp sessions, and chicks in the parent's palette that follow their parent bird for subagents — a chick runs back to its parent and vanishes when the subagent completes. When a session asks a question, an alert badge pops over its bird — click to answer in a modal with full context. Sidebar page with a live-polled state endpoint; all three.js, no external assets.",
+      "description": "A 3D chicken run visualizing every live session as a bird: a hen per active card (out of the coop while working, pecking on tool activity, nesting during testing, walking home on done/wont_do), a rooster for chats, a barred hen for repeating tasks, a bantam for temp sessions, and chicks that follow their parent bird for subagents. Hover a bird for its name tag and click any bird for an info popover; blocked cards show a marked hen; each done card lays an egg, tallied on a daily stats board. The run organizes into one fenced pen per project, runs a real-clock day/night cycle with optional procedural sound, and lets you scatter feed to gather the flock and switch camera modes. Pauses rendering and throttles polling when the tab is hidden. Sidebar page with a live-polled state endpoint; all three.js, no external assets.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/chicken-coop",
       "version": "0.3.1",
-      "tags": ["visualization", "fun", "workers"],
+      "version": "0.4.0",
       "category": "visualization",
       "hooks": [
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/chicken-coop/releases/download/v0.3.1/chicken-coop.wasm",
-      "sha256": "bd99ad90f29f1db0c61321454b695a56518e8ed0c5130a1f395b59020806488f",
+      "url": "https://github.com/PeckBoard/chicken-coop/releases/download/v0.4.0/chicken-coop.wasm",
+      "sha256": "19e39313e308eeda92b1b440fa86975de52c344eb43c1bc9255c3f81c35e5185",
       "min_peckboard": "0.0.132"
     },
     {
