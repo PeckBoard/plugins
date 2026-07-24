@@ -40,7 +40,7 @@
       "description": "Experts feature for Peckboard (knowledge / question / PM experts, MCP tools, and UI), served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/experts",
-      "version": "0.2.1",
+      "version": "0.2.2",
       "tags": ["agents", "knowledge", "project-management"],
       "category": "ai",
       "hooks": [
@@ -49,8 +49,8 @@
         "http.request.authed",
         "session.user.answer"
       ],
-      "url": "https://github.com/PeckBoard/experts/releases/download/v0.2.1/experts.wasm",
-      "sha256": "4f251f3503d7f6560df8a070c3c8c90af7a97081804f66458015f4a61444def6",
+      "url": "https://github.com/PeckBoard/experts/releases/download/v0.2.2/experts.wasm",
+      "sha256": "d7a915e50ca162117cd6db5385ead2c2ea6f17ca17d64a4e37ce16f54404b025",
       "min_peckboard": "0.0.19"
     },
     {
@@ -75,15 +75,15 @@
       "description": "LogRocket-style replay of recorded browser test runs: network waterfall with masked request/response detail, console panel, event timeline with rage-click detection, cursor replay with click ripples, session details, and time-scaled playback with inactivity skipping — on a Playwright Tests page below Sessions.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/playwright-video",
-      "version": "0.3.2",
+      "version": "0.3.3",
       "tags": ["testing", "playwright", "replay"],
       "category": "dev-tools",
       "hooks": [
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/playwright-video/releases/download/v0.3.2/playwright-video.wasm",
-      "sha256": "52c166022d92a1cba9bfd65e65fb3e37a1a6d3d15ab7a5a36b65e2cb912c9044",
+      "url": "https://github.com/PeckBoard/playwright-video/releases/download/v0.3.3/playwright-video.wasm",
+      "sha256": "1322e6a35c4d56b2f96b208938c3af7ff80c69ce820c5e92c157a2af7c233711",
       "min_peckboard": "0.0.119"
     },
     {
@@ -92,15 +92,15 @@
       "description": "A 3D chicken run visualizing every live session as a bird: a hen per active card (out of the coop while working, pecking on tool activity — peck style varies by tool class — nesting during testing steps, walking home on done/wont_do), a rooster for chat sessions, a barred hen for repeating-task runs, a bantam for temp sessions, and chicks in the parent's palette that follow their parent bird for subagents — a chick runs back to its parent and vanishes when the subagent completes. When a session asks a question, an alert badge pops over its bird — click to answer in a modal with full context. Sidebar page with a live-polled state endpoint; all three.js, no external assets.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/chicken-coop",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "tags": ["visualization", "fun", "workers"],
       "category": "visualization",
       "hooks": [
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/chicken-coop/releases/download/v0.3.0/chicken-coop.wasm",
-      "sha256": "cc479d9c3cfeff7b671b089d465109c3c7f387fd8d76053d49611221f4bd701c",
+      "url": "https://github.com/PeckBoard/chicken-coop/releases/download/v0.3.1/chicken-coop.wasm",
+      "sha256": "bd99ad90f29f1db0c61321454b695a56518e8ed0c5130a1f395b59020806488f",
       "min_peckboard": "0.0.132"
     },
     {
