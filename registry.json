@@ -89,19 +89,19 @@
     {
       "id": "chicken-coop",
       "name": "Chicken Coop",
-      "description": "A 3D chicken run visualizing the cards being worked on: one hen per active card — she leaves the coop when work starts, wanders and pecks at the grass as the worker runs commands and edits files (peck style varies by tool class), sits on a nest during testing steps like review, and walks back into the coop (and disappears) when the card lands on done or wont_do. When a worker asks a question, an alert badge pops over its hen — click the hen to answer in a modal with full card and project context. Sidebar page with a live-polled state endpoint; all three.js, no external assets.",
+      "description": "A 3D chicken run visualizing every live session as a bird: a hen per active card (out of the coop while working, pecking on tool activity — peck style varies by tool class — nesting during testing steps, walking home on done/wont_do), a rooster for chat sessions, a barred hen for repeating-task runs, a bantam for temp sessions, and chicks in the parent's palette that follow their parent bird for subagents — a chick runs back to its parent and vanishes when the subagent completes. When a session asks a question, an alert badge pops over its bird — click to answer in a modal with full context. Sidebar page with a live-polled state endpoint; all three.js, no external assets.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/chicken-coop",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "tags": ["visualization", "fun", "workers"],
       "category": "visualization",
       "hooks": [
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/chicken-coop/releases/download/v0.2.0/chicken-coop.wasm",
-      "sha256": "3dfec521ea332a0e94fcd1b323b394f408b7b39d49c941405596d519f952a5f9",
-      "min_peckboard": "0.0.131"
+      "url": "https://github.com/PeckBoard/chicken-coop/releases/download/v0.3.0/chicken-coop.wasm",
+      "sha256": "cc479d9c3cfeff7b671b089d465109c3c7f387fd8d76053d49611221f4bd701c",
+      "min_peckboard": "0.0.132"
     },
     {
       "id": "pre-hatcher",
