@@ -92,15 +92,15 @@
       "description": "A 3D chicken run visualizing every live session as a bird: a hen per active card (out of the coop while working, pecking on tool activity, nesting during testing, walking home on done/wont_do), a rooster for chats, a barred hen for repeating tasks, a bantam for temp sessions, and chicks that follow their parent bird for subagents. Hover a bird for its name tag and click any bird for an info popover; blocked cards show a marked hen; each done card lays an egg, tallied on a daily stats board. The run organizes into one fenced pen per project, runs a real-clock day/night cycle with optional procedural sound, and lets you scatter feed to gather the flock and switch camera modes. Pauses rendering and throttles polling when the tab is hidden. Sidebar page with a live-polled state endpoint; all three.js, no external assets.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/chicken-coop",
-      "version": "0.4.0",
+      "version": "0.4.1",
       "tags": ["visualization", "fun", "workers"],
       "category": "visualization",
       "hooks": [
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/chicken-coop/releases/download/v0.4.0/chicken-coop.wasm",
-      "sha256": "19e39313e308eeda92b1b440fa86975de52c344eb43c1bc9255c3f81c35e5185",
+      "url": "https://github.com/PeckBoard/chicken-coop/releases/download/v0.4.1/chicken-coop.wasm",
+      "sha256": "6940c42ed756afb21609705a31dae6b182cd8a8a68586ede90001c63eb6162bf",
       "min_peckboard": "0.0.132"
     },
     {
@@ -109,7 +109,7 @@
       "description": "Pre-warms chat messages before they reach the main model: each intercepted message first gets a plain opt-in question card (no AI involved) — declining sends it unchanged; accepting has a temp session on a cheaper model (the provider's cheapest priced one, or the model picked in Settings) gather repository context with the full chat transcript in view, ask a clarifying question when the request is ambiguous, and propose an enriched message delivered only after the user approves it on a second plain question card showing the expanded text (declining delivers the original). The research session runs under a configurable library system prompt (default \"fable 5\"). Research actions stream into the parked message live. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/pre-hatcher",
-      "version": "0.5.0",
+      "version": "0.5.1",
       "tags": ["chat", "context", "prompt-enrichment"],
       "category": "ai",
       "hooks": [
@@ -118,8 +118,8 @@
         "session.prehatch.cancel",
         "mcp.tool.invoke"
       ],
-      "url": "https://github.com/PeckBoard/pre-hatcher/releases/download/v0.5.0/pre-hatcher.wasm",
-      "sha256": "356a19716afa1110b7a63e8d7c6457bc672638722b3a36263db89a87b835a18f",
+      "url": "https://github.com/PeckBoard/pre-hatcher/releases/download/v0.5.1/pre-hatcher.wasm",
+      "sha256": "31081220b838bac99a26b140b73112ffff3ce7d0cab3a43ce8130ede1dd32ed5",
       "min_peckboard": "0.0.82"
     },
     {
