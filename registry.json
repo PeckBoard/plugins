@@ -75,15 +75,15 @@
       "description": "LogRocket-style replay of recorded browser test runs: network waterfall with masked request/response detail, console panel, event timeline with rage-click detection, cursor replay with click ripples, session details, time-scaled playback with inactivity skipping, and one-click MP4 export (client-side WebCodecs H.264) — on a Playwright Tests page below Sessions.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/playwright-video",
-      "version": "0.4.0",
+      "version": "0.4.1",
       "tags": ["testing", "playwright", "replay"],
       "category": "dev-tools",
       "hooks": [
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/playwright-video/releases/download/v0.4.0/playwright-video.wasm",
-      "sha256": "e45b11eb4100418c0cb3969b425559cc9f3ab0b973e78610754d10e03eed6d7b",
+      "url": "https://github.com/PeckBoard/playwright-video/releases/download/v0.4.1/playwright-video.wasm",
+      "sha256": "e14acec28bb4f92bec7b2c3fd784b4ae40ee7b863c626e88c2dca258358977bf",
       "min_peckboard": "0.0.134"
     },
     {
