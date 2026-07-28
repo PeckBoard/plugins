@@ -155,6 +155,22 @@
       "min_peckboard": "0.0.97"
     },
     {
+      "id": "opensearch",
+      "name": "OpenSearch",
+      "description": "Query and manage an OpenSearch cluster from Peckboard sessions: cluster health, compact index listing, full query-DSL search (or Lucene q strings), document CRUD, and a raw REST escape hatch for mappings, _bulk, and _cat APIs — opensearch_status, opensearch_indices, opensearch_search, opensearch_get_doc, opensearch_index_doc, opensearch_delete_doc, opensearch_request, opensearch_configure. Talks to the cluster's REST API directly (no separate MCP server needed) and also works with Elasticsearch-compatible clusters. Requires the http_request permission (outbound HTTP incl. private/LAN targets) to reach a self-hosted cluster. Served as a WASM plugin.",
+      "author": "PeckBoard",
+      "homepage": "https://github.com/PeckBoard/opensearch",
+      "version": "0.1.0",
+      "tags": ["opensearch", "search", "elasticsearch"],
+      "category": "infrastructure",
+      "hooks": [
+        "mcp.tool.invoke"
+      ],
+      "url": "https://github.com/PeckBoard/opensearch/releases/download/v0.1.0/opensearch.wasm",
+      "sha256": "f98495796b0f1127e98f845bc6fad499fc8199e15848dcaf9859ab89a5e82364",
+      "min_peckboard": "0.0.97"
+    },
+    {
       "id": "ssh-fleet",
       "name": "SSH Fleet",
       "description": "Hold connection details for many SSH hosts (user+password or user+key) and drive them over MCP tools: register hosts, run commands on one host or across the whole fleet, and read/write/edit remote files over SFTP. Ships a live activity dashboard (searchable host picker, per-host and all-hosts views, live polling). SSH runs through native host functions in Peckboard core, so credentials stay in memory and are never written to disk. Served as a WASM plugin.",
@@ -1042,6 +1058,20 @@
       "env": [{ "key": "ES_URL", "value": "" }, { "key": "ES_API_KEY", "value": "" }],
       "setup_note": "Set ES_URL to your cluster endpoint and create an API key in Kibana under Stack Management → API keys.",
       "tags": ["elasticsearch", "search", "indices"],
+      "category": "data"
+    },
+    {
+      "id": "opensearch",
+      "name": "OpenSearch",
+      "description": "OpenSearch's official MCP server: list indices, inspect mappings and shards, run query-DSL searches, count and explain queries, and call any OpenSearch API via a generic endpoint tool.",
+      "author": "OpenSearch Project",
+      "homepage": "https://github.com/opensearch-project/opensearch-mcp-server-py",
+      "transport": "stdio",
+      "command": "uvx",
+      "args": ["opensearch-mcp-server-py"],
+      "env": [{ "key": "OPENSEARCH_URL", "value": "" }, { "key": "OPENSEARCH_USERNAME", "value": "" }, { "key": "OPENSEARCH_PASSWORD", "value": "" }],
+      "setup_note": "Set OPENSEARCH_URL to your cluster endpoint (e.g. http://localhost:9200) plus username/password for a security-enabled cluster — or leave all empty for zero-config mode, where the agent passes connection details on each tool call. Runs via uvx (requires uv).",
+      "tags": ["opensearch", "search", "indices"],
       "category": "data"
     },
     {
