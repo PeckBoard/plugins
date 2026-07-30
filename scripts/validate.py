@@ -54,6 +54,7 @@ MCP_OAUTH_ALLOWED = {
     "authorize_url",
     "token_url",
     "registration_url",
+    "redirect_broker",
     "client_id",
     "client_secret",
     "scopes",
