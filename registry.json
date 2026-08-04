@@ -7,7 +7,7 @@
       "description": "Public, API-key-authenticated HTTP surface for Peckboard, served as a WASM plugin. Lets external clients list projects, list/create cards, and manage scoped API keys over a /plugin-api/* prefix.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/api-plugin",
-      "version": "0.2.2",
+      "version": "0.2.3",
       "tags": [
         "http-api",
         "api-keys",
@@ -17,8 +17,8 @@
       "hooks": [
         "http.request.before"
       ],
-      "url": "https://github.com/PeckBoard/api-plugin/releases/download/v0.2.2/api.wasm",
-      "sha256": "d0fa23aac56a05dc11aef3421927a24b7fa14419076cfc7e8903bc2c9cf0184d",
+      "url": "https://github.com/PeckBoard/api-plugin/releases/download/v0.2.3/api.wasm",
+      "sha256": "3cb598031cb80b2b2540ac951e447eca71f432cb1b2b924a4d97952e129b4ecb",
       "min_peckboard": "0.0.19"
     },
     {
@@ -27,7 +27,7 @@
       "description": "Pick any git repo in the project/session folder, then get a side-by-side viewer/editor for every file that differs from origin/main, including new files and images, served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/diff-viewer",
-      "version": "0.3.1",
+      "version": "0.3.2",
       "tags": [
         "git",
         "diff",
@@ -38,8 +38,8 @@
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/diff-viewer/releases/download/v0.3.1/diff-viewer.wasm",
-      "sha256": "66ae8b127d9a4d254da4b47a2ef21a6a863316fb468412f14ceedf8f14e830bd",
+      "url": "https://github.com/PeckBoard/diff-viewer/releases/download/v0.3.2/diff-viewer.wasm",
+      "sha256": "181da08b514b94073b58bc4887addb54bd85d43b039417c33aa38e450e29a321",
       "min_peckboard": "0.0.28"
     },
     {
@@ -48,7 +48,7 @@
       "description": "Experts feature for Peckboard (knowledge / question / PM experts, MCP tools, and UI), served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/experts",
-      "version": "0.2.2",
+      "version": "0.2.3",
       "tags": [
         "agents",
         "knowledge",
@@ -61,8 +61,8 @@
         "http.request.authed",
         "session.user.answer"
       ],
-      "url": "https://github.com/PeckBoard/experts/releases/download/v0.2.2/experts.wasm",
-      "sha256": "d7a915e50ca162117cd6db5385ead2c2ea6f17ca17d64a4e37ce16f54404b025",
+      "url": "https://github.com/PeckBoard/experts/releases/download/v0.2.3/experts.wasm",
+      "sha256": "59a1cc6d975de2bd5f32083b367aaf2551c5242d320d72c49f85d722e91ad87e",
       "min_peckboard": "0.0.19"
     },
     {
@@ -91,7 +91,7 @@
       "description": "LogRocket-style replay of recorded browser test runs: network waterfall with masked request/response detail, console panel, event timeline with rage-click detection, cursor replay with click ripples, session details, time-scaled playback with inactivity skipping, and one-click MP4 export (client-side WebCodecs H.264) \u2014 on a Playwright Tests page below Sessions.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/playwright-video",
-      "version": "0.4.2",
+      "version": "0.4.3",
       "tags": [
         "testing",
         "playwright",
@@ -102,8 +102,8 @@
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/playwright-video/releases/download/v0.4.2/playwright-video.wasm",
-      "sha256": "31d9294a79f6f72b9e7116bf2f786a9e57c4756cd050401d99ece132c64c7efc",
+      "url": "https://github.com/PeckBoard/playwright-video/releases/download/v0.4.3/playwright-video.wasm",
+      "sha256": "60abede6a31960906e7bf9bea79997721301600da50bb8879ed09a1cbdfd8e5e",
       "min_peckboard": "0.0.134"
     },
     {
@@ -112,7 +112,7 @@
       "description": "A 3D chicken run visualizing every live session as a bird: a hen per active card (out of the coop while working, pecking on tool activity, nesting during testing, walking home on done/wont_do), a rooster for chats, a barred hen for repeating tasks, a bantam for temp sessions, and chicks that follow their parent bird for subagents. Hover a bird for its name tag and click any bird for an info popover; blocked cards show a marked hen; each done card lays an egg, tallied on a daily stats board. The run organizes into one fenced pen per project, runs a real-clock day/night cycle with optional procedural sound, and lets you scatter feed to gather the flock and switch camera modes. Pauses rendering and throttles polling when the tab is hidden. Sidebar page with a live-polled state endpoint; all three.js, no external assets.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/chicken-coop",
-      "version": "0.4.1",
+      "version": "0.4.2",
       "tags": [
         "visualization",
         "fun",
@@ -123,8 +123,8 @@
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/chicken-coop/releases/download/v0.4.1/chicken-coop.wasm",
-      "sha256": "6940c42ed756afb21609705a31dae6b182cd8a8a68586ede90001c63eb6162bf",
+      "url": "https://github.com/PeckBoard/chicken-coop/releases/download/v0.4.2/chicken-coop.wasm",
+      "sha256": "5d3f0fd042cd3b95b59b0fb88fc967653a1dbf1647384416bccb2493784a583e",
       "min_peckboard": "0.0.132"
     },
     {
@@ -216,7 +216,7 @@
       "description": "Hold connection details for many SSH hosts (user+password or user+key) and drive them over MCP tools: register hosts, run commands on one host or across the whole fleet, and read/write/edit remote files over SFTP. Ships a live activity dashboard (searchable host picker, per-host and all-hosts views, live polling). SSH runs through native host functions in Peckboard core, so credentials stay in memory and are never written to disk. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/ssh-fleet",
-      "version": "0.2.3",
+      "version": "0.2.4",
       "tags": [
         "ssh",
         "sftp",
@@ -228,8 +228,8 @@
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/ssh-fleet/releases/download/v0.2.3/ssh-fleet.wasm",
-      "sha256": "b0142f6fe055bfbb6b7457abe41a3f99e09481925f046da7fbfbd04d8a795785",
+      "url": "https://github.com/PeckBoard/ssh-fleet/releases/download/v0.2.4/ssh-fleet.wasm",
+      "sha256": "4348373d02d3509c9647aaa9be8c1dac43cca436fcddd49cd4011a55884429b0",
       "min_peckboard": "0.0.105"
     },
     {
