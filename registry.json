@@ -325,6 +325,29 @@
       "url": "https://github.com/PeckBoard/graphify/releases/download/v0.3.1/graphify.wasm",
       "sha256": "7bf42c9513448410aa8258acb2da446e424b13c8e1692a75de6c8239e73086f3",
       "min_peckboard": "0.0.165"
+    },
+    {
+      "id": "app-manager",
+      "name": "App Manager",
+      "description": "List, install, and remove common applications (git, Claude Code, cursor-agent, Ollama, Node.js, Docker, ripgrep, Python 3, pip) on Linux targets — the local Peckboard host and any configured SSH host — plus pip-namespace Python packages, which are labelled separately from the distro package database. Installs and removals run real package-manager commands (apt/dnf/pacman/zypper), vendor installer scripts, or pip as the Peckboard host user, using sudo -A where root is needed; the plugin holds process_exec_any but is restricted in code to the catalog's static recipes. Ships an App Manager dashboard (sidebar entry) for picking a target, seeing what is installed, watching install progress live, and browsing each app's dependency graph as resolved from the target's package manager. Local-host installs run through a temporary AI session on a user-picked account and model, with provenance recorded from package-DB snapshots taken around the session. Served as a WASM plugin.",
+      "author": "PeckBoard",
+      "homepage": "https://github.com/PeckBoard/app-manager",
+      "version": "0.5.0",
+      "tags": [
+        "packages",
+        "install",
+        "ssh",
+        "linux"
+      ],
+      "category": "infrastructure",
+      "hooks": [
+        "mcp.tool.invoke",
+        "http.request.before",
+        "http.request.authed"
+      ],
+      "url": "https://github.com/PeckBoard/app-manager/releases/download/v0.5.0/app-manager.wasm",
+      "sha256": "9de408faa233fcf6c8a61c18926279e04fa6755ac0ea99fa93da17e7ea7fa69d",
+      "min_peckboard": "0.0.167"
     }
   ],
   "mcp_servers": [
