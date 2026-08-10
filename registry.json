@@ -306,10 +306,10 @@
     {
       "id": "graphify",
       "name": "Graphify",
-      "description": "Turn each repo into a queryable knowledge graph and point the agent at it. Builds the graph with graphify's deterministic tree-sitter pass (no LLM, no network) and exposes it over three MCP tools: graphify_build, graphify_path (how does A reach B?), and graphify_explain (what is X and what touches it?). Sets a session system prompt describing the repo's graph so the agent reaches for it instead of reading files, and ships a per-repo visualizer with community clustering, confidence-coded edges, search and a node detail drawer, reachable from a project, a session, or a row of the Folders page. Nothing is installed behind your back: when the graphify binary is missing, tools answer with a handoff naming the App Manager page and what to install there (python3, pip, graphifyy), plus a manual command — the legacy private-venv self-install stays available behind an off-by-default setting. Off until switched on: a folder carries a Graphify switch and each repo inside it carries its own, both default off, and every tool refuses while its switch is off. graphify_path also returns a diagram of the hop chain that the chat renders inline. Served as a WASM plugin.",
+      "description": "Turn each repo into a queryable knowledge graph and point the agent at it. Builds the graph with graphify's deterministic tree-sitter pass (no LLM, no network) and exposes it over three MCP tools: graphify_build, graphify_path (how does A reach B?), and graphify_explain (what is X and what touches it?). Sets a session system prompt describing the repo's graph so the agent reaches for it instead of reading files, and ships a per-repo visualizer with community clustering, confidence-coded edges, search and a node detail drawer, reachable from a project, a session, or a row of the Folders page. Nothing is installed behind your back: when the graphify binary is missing, every install banner offers an Install from App Manager button that opens the App Manager with the request prefilled (python3, pip, graphifyy), alongside a manual command — the legacy private-venv self-install stays available behind an off-by-default setting. Off until switched on: a folder carries a Graphify switch and each repo inside it carries its own, both default off, and every tool refuses while its switch is off. graphify_path also returns a diagram of the hop chain that the chat renders inline. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/graphify",
-      "version": "0.4.0",
+      "version": "0.4.1",
       "tags": [
         "knowledge-graph",
         "code-search",
@@ -322,17 +322,17 @@
         "http.request.authed",
         "session.message.before"
       ],
-      "url": "https://github.com/PeckBoard/graphify/releases/download/v0.4.0/graphify.wasm",
-      "sha256": "58ffe645ce7d5fdefd80a1d06af778860760c929c0dd7df7163172e0310ee34d",
+      "url": "https://github.com/PeckBoard/graphify/releases/download/v0.4.1/graphify.wasm",
+      "sha256": "fe63247b685613ed67b89efa9a3fd57633396c5111aae69077bd6833fe8c946a",
       "min_peckboard": "0.0.165"
     },
     {
       "id": "app-manager",
       "name": "App Manager",
-      "description": "List, install, and remove common applications (git, Claude Code, cursor-agent, Ollama, Node.js, Docker, ripgrep, Python 3, pip) on Linux targets — the local Peckboard host and any configured SSH host — plus pip-namespace Python packages, which are labelled separately from the distro package database. Installs and removals run real package-manager commands (apt/dnf/pacman/zypper), vendor installer scripts, or pip as the Peckboard host user, using sudo -A where root is needed; the plugin holds process_exec_any but is restricted in code to the catalog's static recipes. Ships an App Manager dashboard (sidebar entry) for picking a target, seeing what is installed, watching install progress live, and browsing each app's dependency graph as resolved from the target's package manager. Local-host installs run through a temporary AI session on a user-picked account and model, with provenance recorded from package-DB snapshots taken around the session. Served as a WASM plugin.",
+      "description": "List, install, and remove common applications (git, Claude Code, cursor-agent, Ollama, Node.js, Docker, ripgrep, Python 3, pip) on Linux targets — the local Peckboard host and any configured SSH host — plus pip-namespace Python packages, which are labelled separately from the distro package database. Installs and removals run real package-manager commands (apt/dnf/pacman/zypper), vendor installer scripts, or pip as the Peckboard host user, using sudo -A where root is needed; the plugin holds process_exec_any but is restricted in code to the catalog's static recipes. Ships an App Manager dashboard (sidebar entry) for picking a target, seeing what is installed, watching install progress live, and browsing each app's dependency graph as resolved from the target's package manager. Another plugin's page can link here with a request prefilled (?install=python3,pip,graphifyy&from=graphify), which names those apps in a request bar with an Install button each — the link only prefills, nothing installs without a click. Local-host installs run through a temporary AI session on a user-picked account and model, with provenance recorded from package-DB snapshots taken around the session. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/app-manager",
-      "version": "0.5.0",
+      "version": "0.6.0",
       "tags": [
         "packages",
         "install",
@@ -345,8 +345,8 @@
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/app-manager/releases/download/v0.5.0/app-manager.wasm",
-      "sha256": "9de408faa233fcf6c8a61c18926279e04fa6755ac0ea99fa93da17e7ea7fa69d",
+      "url": "https://github.com/PeckBoard/app-manager/releases/download/v0.6.0/app-manager.wasm",
+      "sha256": "7c791336f17739c81e4bb76bce5fe24ebf6664a1dc0bea13b838478cf24375ab",
       "min_peckboard": "0.0.167"
     }
   ],
