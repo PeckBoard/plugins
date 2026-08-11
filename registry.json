@@ -309,7 +309,7 @@
       "description": "Turn each repo into a queryable knowledge graph and point the agent at it. Builds the graph with graphify's deterministic tree-sitter pass (no LLM, no network) and exposes it over three MCP tools: graphify_build, graphify_path (how does A reach B?), and graphify_explain (what is X and what touches it?). Sets a session system prompt describing the repo's graph so the agent reaches for it instead of reading files, and ships a per-repo visualizer with community clustering, confidence-coded edges, search and a node detail drawer, reachable from a project, a session, or a row of the Folders page. Nothing is installed behind your back: when the graphify binary is missing, every install banner offers an Install from App Manager button that opens the App Manager with the request prefilled (python3, pip, graphifyy), alongside a manual command — the legacy private-venv self-install stays available behind an off-by-default setting. Off until switched on: a folder carries a Graphify switch and each repo inside it carries its own, both default off, and every tool refuses while its switch is off. graphify_path also returns a diagram of the hop chain that the chat renders inline. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/graphify",
-      "version": "0.4.3",
+      "version": "0.4.4",
       "tags": [
         "knowledge-graph",
         "code-search",
@@ -322,8 +322,8 @@
         "http.request.authed",
         "session.message.before"
       ],
-      "url": "https://github.com/PeckBoard/graphify/releases/download/v0.4.3/graphify.wasm",
-      "sha256": "704f4d2eec61e39260f8889580b1a6ce5fa2bfa7ae511ad99c4812814f9f88dd",
+      "url": "https://github.com/PeckBoard/graphify/releases/download/v0.4.4/graphify.wasm",
+      "sha256": "42dcf48f3be2542470bb0b7d4f95b22ada14641adee88ea79c5ee8c337f97c1c",
       "min_peckboard": "0.0.168"
     },
     {
