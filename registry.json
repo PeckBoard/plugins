@@ -329,10 +329,10 @@
     {
       "id": "app-manager",
       "name": "App Manager",
-      "description": "List, install, and remove common applications (git, Claude Code, cursor-agent, Ollama, Node.js, Docker, ripgrep, Python 3, pip) on Linux targets — the local Peckboard host and any configured SSH host — plus pip-namespace Python packages, which are labelled separately from the distro package database. Installs and removals run real package-manager commands (apt/dnf/pacman/zypper), vendor installer scripts, or pip as the Peckboard host user, using sudo -A where root is needed; the plugin holds process_exec_any but is restricted in code to the catalog's static recipes. Ships an App Manager dashboard (sidebar entry) for picking a target, seeing what is installed, watching install progress live, and browsing each app's dependency graph as resolved from the target's package manager. Another plugin's page can link here with a request prefilled (?install=python3,pip,graphifyy&from=graphify), which names those apps in a request bar with an Install button each — the link only prefills, nothing installs without a click. Local-host installs run through a temporary AI session on a user-picked account and model, with provenance recorded from package-DB snapshots taken around the session. Served as a WASM plugin.",
+      "description": "List, install, and remove common applications (git, Claude Code, cursor-agent, Ollama, Node.js, Docker, ripgrep, Python 3, pip) on Linux targets — the local Peckboard host and any configured SSH host — plus pip-namespace Python packages, which are labelled separately from the distro package database. Installs and removals run real package-manager commands (apt/dnf/pacman/zypper), vendor installer scripts, or pip as the Peckboard host user, using sudo -A where root is needed; the plugin holds process_exec_any but is restricted in code to the catalog's static recipes. Ships an App Manager dashboard (sidebar entry) for picking a target, seeing what is installed, watching install progress live, and browsing each app's dependency graph as resolved from the target's package manager. Another plugin's page can link here with a request prefilled (?install=python3,pip,graphifyy&from=graphify), which names those apps in a request bar with an Install button each — the link only prefills, nothing installs without a click. Local-host installs run through a temporary AI session on a user-picked account and model, with provenance recorded from package-DB snapshots taken around the session. Apps outside the catalog can be added by hand: on the local host that install session identifies the software, searching the web when it does not know it, and downloads only from official sources; on a remote target it runs the install command you typed for that app, verbatim. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/app-manager",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "tags": [
         "packages",
         "install",
@@ -345,8 +345,8 @@
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/app-manager/releases/download/v0.6.0/app-manager.wasm",
-      "sha256": "7c791336f17739c81e4bb76bce5fe24ebf6664a1dc0bea13b838478cf24375ab",
+      "url": "https://github.com/PeckBoard/app-manager/releases/download/v0.7.0/app-manager.wasm",
+      "sha256": "283f144b63f6e1358a798bb9b89e264ef564eff7b9be5d59d9b70baf8c0e1c6c",
       "min_peckboard": "0.0.167"
     }
   ],
