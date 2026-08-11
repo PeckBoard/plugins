@@ -323,7 +323,7 @@
         "session.message.before"
       ],
       "url": "https://github.com/PeckBoard/graphify/releases/download/v0.4.3/graphify.wasm",
-      "sha256": "41a55b03c8ccac0cb7d043c39989498ec3103b1a5b7d161539d406e8d60dfedb",
+      "sha256": "704f4d2eec61e39260f8889580b1a6ce5fa2bfa7ae511ad99c4812814f9f88dd",
       "min_peckboard": "0.0.168"
     },
     {
