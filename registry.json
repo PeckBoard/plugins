@@ -213,10 +213,10 @@
     {
       "id": "ssh-fleet",
       "name": "SSH Fleet",
-      "description": "Hold connection details for many SSH hosts (user+password or user+key) and drive them over MCP tools: register hosts, run commands on one host or across the whole fleet, and read/write/edit remote files over SFTP. Ships a live activity dashboard (searchable host picker, per-host and all-hosts views, live polling). SSH runs through native host functions in Peckboard core, so credentials stay in memory and are never written to disk. Served as a WASM plugin.",
+      "description": "Hold connection details for many SSH hosts (user+password, user+key, or a reference to a key in Peckboard's SSH key vault — the plugin stores and sees no key material for those, core resolves the key at connect time; inline password/key hosts keep working and are flagged as legacy in the dashboard) and drive them over MCP tools: register hosts, run commands on one host or across the whole fleet, and read/write/edit remote files over SFTP. Ships a live activity dashboard (searchable host picker, per-host and all-hosts views, live polling). SSH runs through native host functions in Peckboard core, so credentials stay in memory and are never written to disk. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/ssh-fleet",
-      "version": "0.2.4",
+      "version": "0.3.0",
       "tags": [
         "ssh",
         "sftp",
@@ -228,9 +228,9 @@
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/ssh-fleet/releases/download/v0.2.4/ssh-fleet.wasm",
-      "sha256": "4348373d02d3509c9647aaa9be8c1dac43cca436fcddd49cd4011a55884429b0",
-      "min_peckboard": "0.0.105"
+      "url": "https://github.com/PeckBoard/ssh-fleet/releases/download/v0.3.0/ssh-fleet.wasm",
+      "sha256": "50d8b1129c36319137486454c17382f76dc122d6da5bfef89e794422120c27f2",
+      "min_peckboard": "0.0.167"
     },
     {
       "id": "github-bridge",
