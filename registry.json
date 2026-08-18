@@ -82,7 +82,7 @@
         "mcp.tool.invoke"
       ],
       "url": "https://github.com/PeckBoard/session-control/releases/download/v0.3.0/session-control.wasm",
-      "sha256": "5536b0f6375eb2beebbd2812b18256da5d3880dac02a9d09c2d783baf5a14ddf",
+      "sha256": "1762a281f0e62a0e03dcacacfa5ae24c00b29e166ce134cc6d716e0100131f80",
       "min_peckboard": "0.0.175"
     },
     {
