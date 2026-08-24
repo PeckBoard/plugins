@@ -348,6 +348,28 @@
       "url": "https://github.com/PeckBoard/app-manager/releases/download/v0.8.1/app-manager.wasm",
       "sha256": "b7d237c9db66f998baa9e935b1e2996a976ece49e0a197372ffc262260d4ca74",
       "min_peckboard": "0.0.167"
+    },
+    {
+      "id": "project-planner",
+      "name": "Project Planner",
+      "author": "PeckBoard",
+      "homepage": "https://github.com/PeckBoard/project-planner",
+      "description": "Build a project definition file by interview. A slideshow asks one pointed question per slide - fill-in-the-blank or multiple choice with every option justified and compared, plus small diagrams - each generated after the last by a dedicated agent session. The interview establishes the project's purpose and goal before anything else; only then does it move to users and their stories, flows, architecture, technology choices, deployment, and monitoring. Complex topics are split into a pending-question queue the agent works through one slide at a time. After every answer the agent writes exactly one requirement into PROJECT_DEFINITION.md at the folder root (or amends the one the answer changed); an existing definition is read first and the interview continues from it. Open it from a folder, project, or session; a watchdog surfaces a run that stops without asking instead of leaving the slideshow hanging.",
+      "version": "0.1.0",
+      "tags": [
+        "planning",
+        "requirements",
+        "interview"
+      ],
+      "category": "dev-tools",
+      "hooks": [
+        "mcp.tool.invoke",
+        "http.request.before",
+        "http.request.authed"
+      ],
+      "url": "https://github.com/PeckBoard/project-planner/releases/download/v0.1.0/project-planner.wasm",
+      "sha256": "533330d2acd878f1f5c5bbfaaabbc33073f3f51881b75f9a013817a1c2ac7f7d",
+      "min_peckboard": "0.0.168"
     }
   ],
   "mcp_servers": [
