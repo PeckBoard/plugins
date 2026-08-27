@@ -355,7 +355,7 @@
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/project-planner",
       "description": "Build a project definition file by interview. A slideshow asks one pointed question per slide - fill-in-the-blank or multiple choice with every option justified and compared, plus small diagrams - each generated after the last by a dedicated agent session. The interview establishes the project's purpose and goal before anything else; only then does it move to users and their stories, flows, architecture, technology choices, deployment, and monitoring. Complex topics are split into a pending-question queue the agent works through one slide at a time. After every answer the agent writes exactly one requirement into PROJECT_DEFINITION.md at the folder root (or amends the one the answer changed); an existing definition is read first and the interview continues from it. Open it from a folder, project, or session; a watchdog surfaces a run that stops without asking instead of leaving the slideshow hanging.",
-      "version": "0.2.1",
+      "version": "0.2.2",
       "tags": [
         "planning",
         "requirements",
@@ -367,8 +367,8 @@
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/project-planner/releases/download/v0.2.1/project-planner.wasm",
-      "sha256": "c7b1f6359f05245f226201866740b6d2b3ebcb389987e2d7b6cb1764fcba1337",
+      "url": "https://github.com/PeckBoard/project-planner/releases/download/v0.2.2/project-planner.wasm",
+      "sha256": "568e6b9d138f588745402b851bc87ea327e9ba953c2ee75a74fb4f071878053d",
       "min_peckboard": "0.0.168"
     }
   ],
