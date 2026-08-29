@@ -71,7 +71,7 @@
       "description": "Control and orchestrate Peckboard sessions: interrupt, terminate, clear, send messages/images, plus goal-driven orchestrators that schedule, watch, and direct other sessions autonomously — with hats, ETA tracking, and a management page.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/session-control",
-      "version": "0.4.0",
+      "version": "0.4.1",
       "tags": [
         "sessions",
         "orchestration",
@@ -86,8 +86,8 @@
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/session-control/releases/download/v0.4.0/session-control.wasm",
-      "sha256": "db47d64f99854c544b3dfafa4965dfbe9b625657637a2ac57cb9de31caf78b04",
+      "url": "https://github.com/PeckBoard/session-control/releases/download/v0.4.1/session-control.wasm",
+      "sha256": "0c5b35c1c01a65f28607746bd8c3131c7941eb90eaed7aecc3c7c9e2331804d6",
       "min_peckboard": "0.0.188"
     },
     {
@@ -379,10 +379,10 @@
     {
       "id": "ui-gauge",
       "name": "UI Gauge",
-      "description": "Gauge UI design quality against user-ranked baselines: rank reference screenshots 1-10 per category, agents score worker output on the same calibrated scale, and subpar results automatically become follow-up cards.",
+      "description": "Gauge UI design quality against user-ranked baselines — with a generate-rate-learn loop: one button generates the next baseline UI, you rate it 1-10 per category, and high-rated changes build a living overall baseline prompt agents apply when designing UI. Subpar scores on worker output become follow-up cards.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/ui-gauge",
-      "version": "0.1.0",
+      "version": "0.2.1",
       "tags": [
         "design",
         "quality",
@@ -392,11 +392,12 @@
       "hooks": [
         "mcp.tool.invoke",
         "timer.tick",
+        "session.agent.ended",
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/ui-gauge/releases/download/v0.1.0/ui-gauge.wasm",
-      "sha256": "90b50e86e0de15354a8c15790c83110f370811c0d27293d98ca10cf4eeb0c261",
+      "url": "https://github.com/PeckBoard/ui-gauge/releases/download/v0.2.1/ui-gauge.wasm",
+      "sha256": "2196078f071e929b4e2a5b171f21e8a4e618231abbe7220cc441ab3878cd468d",
       "min_peckboard": "0.0.188"
     }
   ],
