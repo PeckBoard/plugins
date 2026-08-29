@@ -68,10 +68,10 @@
     {
       "id": "session-control",
       "name": "Session Control",
-      "description": "Control another Peckboard session: interrupt, terminate, clear, send messages/images. Same-folder free; cross-folder asks Approve once / Always / Deny.",
+      "description": "Control and orchestrate Peckboard sessions: interrupt, terminate, clear, send messages/images, plus goal-driven orchestrators that schedule, watch, and direct other sessions autonomously — with hats, ETA tracking, and a management page.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/session-control",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "tags": [
         "sessions",
         "orchestration",
@@ -79,11 +79,16 @@
       ],
       "category": "automation",
       "hooks": [
-        "mcp.tool.invoke"
+        "mcp.tool.invoke",
+        "timer.tick",
+        "session.agent.ended",
+        "session.message.before",
+        "http.request.before",
+        "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/session-control/releases/download/v0.3.0/session-control.wasm",
-      "sha256": "1762a281f0e62a0e03dcacacfa5ae24c00b29e166ce134cc6d716e0100131f80",
-      "min_peckboard": "0.0.175"
+      "url": "https://github.com/PeckBoard/session-control/releases/download/v0.4.0/session-control.wasm",
+      "sha256": "db47d64f99854c544b3dfafa4965dfbe9b625657637a2ac57cb9de31caf78b04",
+      "min_peckboard": "0.0.188"
     },
     {
       "id": "playwright-video",
@@ -370,6 +375,29 @@
       "url": "https://github.com/PeckBoard/project-planner/releases/download/v0.2.2/project-planner.wasm",
       "sha256": "568e6b9d138f588745402b851bc87ea327e9ba953c2ee75a74fb4f071878053d",
       "min_peckboard": "0.0.168"
+    },
+    {
+      "id": "ui-gauge",
+      "name": "UI Gauge",
+      "description": "Gauge UI design quality against user-ranked baselines: rank reference screenshots 1-10 per category, agents score worker output on the same calibrated scale, and subpar results automatically become follow-up cards.",
+      "author": "PeckBoard",
+      "homepage": "https://github.com/PeckBoard/ui-gauge",
+      "version": "0.1.0",
+      "tags": [
+        "design",
+        "quality",
+        "review"
+      ],
+      "category": "automation",
+      "hooks": [
+        "mcp.tool.invoke",
+        "timer.tick",
+        "http.request.before",
+        "http.request.authed"
+      ],
+      "url": "https://github.com/PeckBoard/ui-gauge/releases/download/v0.1.0/ui-gauge.wasm",
+      "sha256": "90b50e86e0de15354a8c15790c83110f370811c0d27293d98ca10cf4eeb0c261",
+      "min_peckboard": "0.0.188"
     }
   ],
   "mcp_servers": [
