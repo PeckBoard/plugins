@@ -71,7 +71,7 @@
       "description": "Control and orchestrate Peckboard sessions: interrupt, terminate, clear, send messages/images, plus goal-driven orchestrators that schedule, watch, and direct other sessions autonomously — with hats, ETA tracking, and a management page.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/session-control",
-      "version": "0.4.2",
+      "version": "0.4.3",
       "tags": [
         "sessions",
         "orchestration",
@@ -86,9 +86,9 @@
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/session-control/releases/download/v0.4.2/session-control.wasm",
-      "sha256": "488a978205b41de92678ce28ba3fa941b6e36e4ccb3052303fbf6f6e2b9bd17c",
-      "min_peckboard": "0.0.188"
+      "url": "https://github.com/PeckBoard/session-control/releases/download/v0.4.3/session-control.wasm",
+      "sha256": "5781d2fc61695b3989ec443ec2445adc0692f8de93af0a2dc42e0d6582491394",
+      "min_peckboard": "0.0.189"
     },
     {
       "id": "playwright-video",
@@ -382,7 +382,7 @@
       "description": "Gauge UI design quality against user-ranked baselines — with a generate-rate-learn loop: one button generates the next baseline UI, you rate it 1-10 per category, and high-rated changes build a living overall baseline prompt agents apply when designing UI. Subpar scores on worker output become follow-up cards.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/ui-gauge",
-      "version": "0.2.1",
+      "version": "0.2.2",
       "tags": [
         "design",
         "quality",
@@ -396,9 +396,9 @@
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/ui-gauge/releases/download/v0.2.1/ui-gauge.wasm",
-      "sha256": "2196078f071e929b4e2a5b171f21e8a4e618231abbe7220cc441ab3878cd468d",
-      "min_peckboard": "0.0.188"
+      "url": "https://github.com/PeckBoard/ui-gauge/releases/download/v0.2.2/ui-gauge.wasm",
+      "sha256": "9960f34b377410c8811d55932f70a98a3b8f1339d4ccf62b26d999d2a7248b85",
+      "min_peckboard": "0.0.189"
     }
   ],
   "mcp_servers": [
