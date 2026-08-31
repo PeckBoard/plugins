@@ -382,7 +382,7 @@
       "description": "Gauge UI design quality against user-ranked baselines — with a generate-rate-learn loop: one button generates the next baseline UI, you rate it 1-10 per category, and high-rated changes build a living overall baseline prompt agents apply when designing UI. Subpar scores on worker output become follow-up cards.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/ui-gauge",
-      "version": "0.2.4",
+      "version": "0.2.5",
       "tags": [
         "design",
         "quality",
@@ -396,8 +396,8 @@
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/ui-gauge/releases/download/v0.2.4/ui-gauge.wasm",
-      "sha256": "b1428a3d3561ae3a29643133579dffff178fa595d774293e62433ecfd79efeff",
+      "url": "https://github.com/PeckBoard/ui-gauge/releases/download/v0.2.5/ui-gauge.wasm",
+      "sha256": "9080caa5bab70260771a64bbd06a62b236021c81c9b36dff6786a35bc4bb116c",
       "min_peckboard": "0.0.191"
     }
   ],
