@@ -68,10 +68,10 @@
     {
       "id": "session-control",
       "name": "Session Control",
-      "description": "Control and orchestrate Peckboard sessions: interrupt, terminate, clear, send messages/images, plus goal-driven orchestrators that schedule, watch, and direct other sessions autonomously — with hats, ETA tracking, and a management page.",
+      "description": "Control and orchestrate Peckboard sessions: interrupt, terminate, clear, send messages/images, read another session's transcript, plus goal-driven orchestrators that schedule, watch, and direct other sessions autonomously — with hats, ETA tracking, and a management page.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/session-control",
-      "version": "0.4.5",
+      "version": "0.4.6",
       "tags": [
         "sessions",
         "orchestration",
@@ -86,9 +86,9 @@
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/session-control/releases/download/v0.4.5/session-control.wasm",
-      "sha256": "4302c33b1a514a1f3f67e84dfa2020b7458c21e2a79ef4e9f0efeb6d8521aac4",
-      "min_peckboard": "0.0.191"
+      "url": "https://github.com/PeckBoard/session-control/releases/download/v0.4.6/session-control.wasm",
+      "sha256": "33441b3e0b260c1c1d4878bb84fbfd68dd7c2d50c7c33c5f6bd58620f37227c8",
+      "min_peckboard": "0.1.7"
     },
     {
       "id": "playwright-video",
