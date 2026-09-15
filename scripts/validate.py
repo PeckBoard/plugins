@@ -25,6 +25,14 @@ TAG_RE = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 REQUIRED = ["id", "name", "description", "author", "version", "hooks", "url", "sha256"]
 ALLOWED = set(REQUIRED) | {"homepage", "min_peckboard", "tags", "category"}
 
+CRATE_REQUIRED = ["id", "name", "description", "author", "version"]
+CRATE_ALLOWED = set(CRATE_REQUIRED) | {
+    "homepage",
+    "hooks",
+    "permissions",
+    "tags",
+    "category",
+}
 # MCP server templates: Settings → MCP Servers entries with one-click add.
 # Nothing is downloaded, so no version/sha256 — the entry mirrors the editor.
 MCP_REQUIRED = ["id", "name", "description", "transport"]
@@ -172,10 +180,39 @@ def validate_structure(data):
             errors.append(f"{where}.sha256 must be 64 lowercase hex chars")
 
         check_tags_category(where, p, errors)
-
     if "mcp_servers" in data:
         errors += validate_mcp_servers(data["mcp_servers"])
+    if "crate_plugins" in data:
+        errors += validate_crate_plugins(data["crate_plugins"], seen_ids)
 
+    return errors
+
+
+def validate_crate_plugins(entries, seen_ids):
+    errors = []
+    if not isinstance(entries, list):
+        return ["`crate_plugins` must be an array"]
+    for i, p in enumerate(entries):
+        where = f"crate_plugins[{i}]"
+        if not isinstance(p, dict):
+            errors.append(f"{where} must be an object")
+            continue
+        for k in CRATE_REQUIRED:
+            if k not in p:
+                errors.append(f"{where} missing required field `{k}`")
+        for k in p:
+            if k not in CRATE_ALLOWED:
+                errors.append(f"{where} has unknown field `{k}`")
+        if "url" in p or "sha256" in p:
+            errors.append(f"{where} crate plugin must not declare url/sha256")
+        pid = p.get("id")
+        if isinstance(pid, str):
+            if not ID_RE.match(pid):
+                errors.append(f"{where}.id `{pid}` must match {ID_RE.pattern}")
+            if pid in seen_ids:
+                errors.append(f"{where}.id `{pid}` is duplicated")
+            seen_ids.add(pid)
+        check_tags_category(where, p, errors)
     return errors
 
 
@@ -192,10 +229,10 @@ def validate_mcp_servers(servers):
         for k in MCP_REQUIRED:
             if k not in m:
                 errors.append(f"{where} missing required field `{k}`")
-        for k in m:
             if k not in MCP_ALLOWED:
                 errors.append(f"{where} has unknown field `{k}`")
 
+        mid = m.get("id")
         mid = m.get("id")
         if isinstance(mid, str):
             if not ID_RE.match(mid):
