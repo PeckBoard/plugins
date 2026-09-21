@@ -379,10 +379,10 @@
     {
       "id": "ui-gauge",
       "name": "UI Gauge",
-      "description": "Gauge UI design quality against user-ranked baselines — with a generate-rate-learn loop: one button generates the next baseline UI, you rate it 1-10 per category, and high-rated changes build a living overall baseline prompt agents apply when designing UI. Subpar scores on worker output become follow-up cards.",
+      "description": "Steer UI-generating agents toward the user's taste: generate marked-up HTML pages in a temp agent session, review them element by element (thumbs, comments, stars — like a document review), and compose a UI preference prompt you toggle onto every chat session in a folder. Starred elements' screenshots are fetchable by agents as visual references.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/ui-gauge",
-      "version": "0.2.5",
+      "version": "0.3.0",
       "tags": [
         "design",
         "quality",
@@ -393,11 +393,12 @@
         "mcp.tool.invoke",
         "timer.tick",
         "session.agent.ended",
+        "session.message.before",
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/ui-gauge/releases/download/v0.2.5/ui-gauge.wasm",
-      "sha256": "9080caa5bab70260771a64bbd06a62b236021c81c9b36dff6786a35bc4bb116c",
+      "url": "https://github.com/PeckBoard/ui-gauge/releases/download/v0.3.0/ui-gauge.wasm",
+      "sha256": "69efa454460adc2992d0cebc3a801d70f5aa89db0b3e34a98a49c6fe41215ba2",
       "min_peckboard": "0.0.191"
     }
   ],
