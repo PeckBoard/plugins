@@ -71,7 +71,7 @@
       "description": "Control and orchestrate Peckboard sessions: interrupt, terminate, clear, send messages/images, read another session's transcript, plus goal-driven orchestrators that schedule, watch, and direct other sessions autonomously — with hats, ETA tracking, and a management page.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/session-control",
-      "version": "0.4.6",
+      "version": "0.4.7",
       "tags": [
         "sessions",
         "orchestration",
@@ -86,8 +86,8 @@
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/session-control/releases/download/v0.4.6/session-control.wasm",
-      "sha256": "33441b3e0b260c1c1d4878bb84fbfd68dd7c2d50c7c33c5f6bd58620f37227c8",
+      "url": "https://github.com/PeckBoard/session-control/releases/download/v0.4.7/session-control.wasm",
+      "sha256": "a0fb1c5cbee943af54dedcbedd28890cf1b4542885da623e445377b965debd94",
       "min_peckboard": "0.1.7"
     },
     {
