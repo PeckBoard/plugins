@@ -68,10 +68,10 @@
     {
       "id": "session-control",
       "name": "Session Control",
-      "description": "Control and orchestrate Peckboard sessions: interrupt, terminate, clear, send messages/images, read another session's transcript, plus goal-driven orchestrators that schedule, watch, and direct other sessions autonomously — with hats, ETA tracking, and a management page.",
+      "description": "Control and orchestrate Peckboard sessions: interrupt, terminate, clear, send messages/images, read another session's transcript, plus goal-driven orchestrators that schedule, watch, and direct other sessions autonomously — with hats, ETA tracking, a management page, and MCP tools for sessions to list, get, create, update, and delete orchestrators (user approval for create, delete, and widening updates).",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/session-control",
-      "version": "0.4.7",
+      "version": "0.5.0",
       "tags": [
         "sessions",
         "orchestration",
@@ -86,9 +86,9 @@
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/session-control/releases/download/v0.4.7/session-control.wasm",
-      "sha256": "a0fb1c5cbee943af54dedcbedd28890cf1b4542885da623e445377b965debd94",
-      "min_peckboard": "0.1.7"
+      "url": "https://github.com/PeckBoard/session-control/releases/download/v0.5.0/session-control.wasm",
+      "sha256": "b948821251d16337be64cb70a4adf06d276c08bb6f9128e51990e939cf983719",
+      "min_peckboard": "0.1.77"
     },
     {
       "id": "playwright-video",
@@ -218,10 +218,10 @@
     {
       "id": "ssh-fleet",
       "name": "SSH Fleet",
-      "description": "Hold connection details for many SSH hosts (user+password, user+key, or a reference to a key in Peckboard's SSH key vault \u2014 the plugin stores and sees no key material for those, core resolves the key at connect time; inline password/key hosts keep working and are flagged as legacy in the dashboard) and drive them over MCP tools: register hosts, run commands on one host or across the whole fleet, and read/write/edit remote files over SFTP. Opens interactive terminals: a live PTY shell per host in the dashboard (xterm.js) that stays open when the tab closes and replays scrollback on reattach, until closed or the remote shell exits. Ships a live activity dashboard (searchable host picker, per-host and all-hosts views, live polling). SSH runs through native host functions in Peckboard core, so credentials stay in memory and are never written to disk. Served as a WASM plugin.",
+      "description": "Hold connection details for many SSH hosts (user+password, user+key, or a reference to a key in Peckboard's SSH key vault \u2014 the plugin stores and sees no key material for those, core resolves the key at connect time; inline password/key hosts keep working and are flagged as legacy in the dashboard) and drive them over MCP tools: register hosts, run commands on one host or across the whole fleet, and read/write/edit remote files over SFTP. Each host opens an interactive terminal in the Peckboard app: a real shell in a full-size tab (or pop-out window), kept alive in tmux across browser closes, Peckboard restarts, and network drops. Ships a live activity dashboard (searchable host picker, per-host and all-hosts views, live polling). SSH runs through native host functions in Peckboard core, so credentials stay in memory and are never written to disk. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/ssh-fleet",
-      "version": "0.4.0",
+      "version": "0.5.0",
       "tags": [
         "ssh",
         "sftp",
@@ -233,9 +233,9 @@
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/ssh-fleet/releases/download/v0.4.0/ssh-fleet.wasm",
-      "sha256": "8e2f6b9524a65425e9562c0c2305262ddb7777d0075177d29fc31090c70d9a64",
-      "min_peckboard": "0.1.76"
+      "url": "https://github.com/PeckBoard/ssh-fleet/releases/download/v0.5.0/ssh-fleet.wasm",
+      "sha256": "59e965f90ccc828d3af0bdef43df874449d1f5802804fbe13779ec936d29b260",
+      "min_peckboard": "0.1.77"
     },
     {
       "id": "github-bridge",
