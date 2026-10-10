@@ -240,24 +240,27 @@
     {
       "id": "github-bridge",
       "name": "GitHub Bridge",
-      "description": "Sync GitHub issues with PeckBoard kanban cards \u2014 MCP tools (gh_import_issues, gh_sync_card, gh_link_pr, gh_status) for import/sync/PR links; auto-closes issues when a card reaches a terminal step.",
+      "description": "Sync GitHub issues with PeckBoard kanban cards — MCP tools (gh_import_issues, gh_sync_card, gh_link_pr, gh_status) for import/sync/PR links; auto-closes issues when a card reaches a terminal step. PRs linked to cards feed the dashboard PRs & CI widget (live state, checks, review; cached 60s).",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/github-bridge",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "tags": [
         "github",
         "issues",
         "kanban",
-        "sync"
+        "sync",
+        "pull-requests",
+        "ci"
       ],
       "category": "integrations",
       "hooks": [
         "mcp.tool.invoke",
-        "card.step.after"
+        "card.step.after",
+        "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/github-bridge/releases/download/v0.1.0/github-bridge.wasm",
-      "sha256": "560e534abebb569a00052186f915625f2e067ee732c106db88f69a2fbc759482",
-      "min_peckboard": "0.0.99"
+      "url": "https://github.com/PeckBoard/github-bridge/releases/download/v0.2.0/github-bridge.wasm",
+      "sha256": "f0b3fba6d9c0dc8a1fefb3822911caf3c65657d7757cbbc31f6e43e4a3fe90be",
+      "min_peckboard": "0.1.83"
     },
     {
       "id": "notifier",
