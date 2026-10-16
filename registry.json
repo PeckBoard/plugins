@@ -93,10 +93,10 @@
     {
       "id": "playwright-video",
       "name": "Playwright Tests",
-      "description": "LogRocket-style replay of recorded browser test runs: network waterfall with masked request/response detail, console panel, event timeline with rage-click detection, cursor replay with click ripples, session details, time-scaled playback with inactivity skipping, and one-click MP4 export (client-side WebCodecs H.264) \u2014 on a Playwright Tests page below Sessions.",
+      "description": "LogRocket-style replay of recorded browser test runs: the page itself replayed from a continuous DOM recording, network waterfall with masked request/response detail, console panel, event timeline with rage-click detection, session details, playback that jumps over inactivity, and one-click MP4 export (client-side WebCodecs H.264) \u2014 on a Playwright Tests page below Sessions.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/playwright-video",
-      "version": "0.4.4",
+      "version": "0.5.0",
       "tags": [
         "testing",
         "playwright",
@@ -107,9 +107,9 @@
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/playwright-video/releases/download/v0.4.4/playwright-video.wasm",
-      "sha256": "17e7ff808ac07e8b44cb4070fae28709c6dc7828f85a96dcf2e4f9467546309d",
-      "min_peckboard": "0.0.134"
+      "url": "https://github.com/PeckBoard/playwright-video/releases/download/v0.5.0/playwright-video.wasm",
+      "sha256": "0efba36ff893b9ac59651b736075a1eb32f6f0c0407e86b866ed655a2db9ea92",
+      "min_peckboard": "0.1.90"
     },
     {
       "id": "chicken-coop",
