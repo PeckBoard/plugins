@@ -384,8 +384,8 @@
       "name": "PR Review",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/pr-review",
-      "description": "Review a branch with several models in parallel. Pick a branch and a folder; each review runs in its own agent session from a detached worktree (your checkout is never touched), fans out to Claude, Codex and Grok reviewers, then merges, verifies and ranks their findings. A sidebar page lists every review with its status, step and per-provider progress; a review page shows the summary, why the change is needed, the linked ticket, recommended changes by severity (file:line, suggested fix, consensus, confidence) and praise. Per-review custom prompts and an editable global prompt with a researched default.",
-      "version": "0.1.0",
+      "description": "Review a branch with several models in parallel. Pick a branch and a folder; each review runs in its own agent session from a detached worktree (your checkout is never touched), fans out to Claude, Codex and Grok reviewers, then merges, verifies and ranks their findings. Sessions can start and manage reviews through MCP tools (pr_review_start and friends) and are messaged with the verdict when a review ends. A sidebar page lists every review with its status, step and per-provider progress; a review page shows the summary, why the change is needed, the linked ticket, recommended changes by severity (file:line, suggested fix, consensus, confidence) and praise. Per-review custom prompts and an editable global prompt with a researched default.",
+      "version": "0.2.0",
       "tags": [
         "code-review",
         "pull-requests",
@@ -398,8 +398,8 @@
         "http.request.authed",
         "session.agent.ended"
       ],
-      "url": "https://github.com/PeckBoard/pr-review/releases/download/v0.1.0/pr-review.wasm",
-      "sha256": "c0f1404adab6e66e3f9e7bde8758cf6f2e09983f46e84f8160bb52b968444ff8",
+      "url": "https://github.com/PeckBoard/pr-review/releases/download/v0.2.0/pr-review.wasm",
+      "sha256": "f28280de9dda6d84255ddb15abb8b432ba6c3294b4d7dd5a71201e752fd90289",
       "min_peckboard": "0.1.90"
     },
     {
