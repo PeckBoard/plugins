@@ -362,8 +362,8 @@
       "name": "Project Planner",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/project-planner",
-      "description": "Build a project definition file by interview. A slideshow asks one pointed question per slide - fill-in-the-blank or multiple choice with every option justified and compared, plus small diagrams - each generated after the last by a dedicated agent session. The interview establishes the project's purpose and goal before anything else; only then does it move to users and their stories, flows, architecture, technology choices, deployment, and monitoring. Complex topics are split into a pending-question queue the agent works through one slide at a time. After every answer the agent writes exactly one requirement (or amends the one the answer changed) into a split definition: PROJECT_DEFINITION.md holds the purpose, goals and an index linking one file per section under project-definition/, each depending on the root, so a question only reads what it needs. An existing definition is read first (a single-file one is split) and the interview continues from it; the page lists and browses every definition file. Open it from a folder, project, or session; a watchdog surfaces a run that stops without asking instead of leaving the slideshow hanging.",
-      "version": "0.8.0",
+      "description": "Build a project definition file by interview. A slideshow asks pointed questions, one per slide - fill-in-the-blank or multiple choice with every option justified and compared, plus small diagrams - in batches of up to ten independent questions from a dedicated agent session, answered back to back with no wait in between. Questions in a batch never depend on each other: a follow-up to an open question waits in a pending queue and is asked in a later batch only if the answer kept it relevant. The interview establishes the project's purpose and goal before anything else; only then does it move to users and their stories, flows, architecture, technology choices, deployment, and monitoring. Once a batch is answered, one agent run writes every answer as a requirement (or amends the one it changed) into a split definition: PROJECT_DEFINITION.md holds the purpose, goals and an index linking one file per section under project-definition/, each depending on the root, so a question only reads what it needs. An existing definition is read first (a single-file one is split) and the interview continues from it; the page lists and browses every definition file. A watchdog surfaces a run that stops without asking instead of leaving the slideshow hanging.",
+      "version": "0.9.0",
       "tags": [
         "planning",
         "requirements",
@@ -375,8 +375,8 @@
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/project-planner/releases/download/v0.8.0/project-planner.wasm",
-      "sha256": "9e84a2c8f67ed0e6dd215375a9468eaa2c8f90cb0aa4bc466e0cb0c511be393d",
+      "url": "https://github.com/PeckBoard/project-planner/releases/download/v0.9.0/project-planner.wasm",
+      "sha256": "83615c11fba319b350c7866b86293335926b941fd51f84c5f9e515db132f99e2",
       "min_peckboard": "0.1.2"
     },
     {
