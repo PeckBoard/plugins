@@ -363,7 +363,7 @@
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/project-planner",
       "description": "Build a project definition file by interview. A slideshow asks pointed questions, one per slide - fill-in-the-blank or multiple choice with every option justified and compared, plus small diagrams - in batches of up to ten independent questions from a dedicated agent session, answered back to back with no wait in between. Questions in a batch never depend on each other: a follow-up to an open question waits in a pending queue and is asked in a later batch only if the answer kept it relevant. The interview establishes the project's purpose and goal before anything else; only then does it move to users and their stories, flows, architecture, technology choices, deployment, and monitoring. Once a batch is answered, one agent run writes every answer as a requirement (or amends the one it changed) into a split definition: PROJECT_DEFINITION.md holds the purpose, goals and an index linking one file per section under project-definition/, each depending on the root, so a question only reads what it needs. An existing definition is read first (a single-file one is split) and the interview continues from it; the page lists and browses every definition file. A watchdog surfaces a run that stops without asking instead of leaving the slideshow hanging.",
-      "version": "0.9.0",
+      "version": "0.10.0",
       "tags": [
         "planning",
         "requirements",
@@ -375,8 +375,8 @@
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/project-planner/releases/download/v0.9.0/project-planner.wasm",
-      "sha256": "83615c11fba319b350c7866b86293335926b941fd51f84c5f9e515db132f99e2",
+      "url": "https://github.com/PeckBoard/project-planner/releases/download/v0.10.0/project-planner.wasm",
+      "sha256": "447a6b1b3d19e112fb1e2231bb9eb0533d13335881e3e38a7e75662f2c5fc863",
       "min_peckboard": "0.1.2"
     },
     {
