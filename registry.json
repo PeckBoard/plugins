@@ -385,7 +385,7 @@
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/pr-review",
       "description": "Review a branch with several models in parallel. Pick a branch and a folder; each review runs in its own agent session from a detached worktree (your checkout is never touched), fans out to Claude, Codex and Grok reviewers, then merges, verifies and ranks their findings. Once done, ignore or reword findings and post one GitHub review to the PR with your own decision (approve, request changes or comment). Sessions can start and manage reviews through MCP tools (pr_review_start and friends) and are messaged with the verdict when a review ends. A sidebar page lists every review with its status, step and per-provider progress; a review page shows the summary, why the change is needed, the linked ticket, recommended changes by severity (file:line, suggested fix, consensus, confidence) and praise. Per-review custom prompts and an editable global prompt with a researched default.",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "tags": [
         "code-review",
         "pull-requests",
@@ -398,8 +398,8 @@
         "http.request.authed",
         "session.agent.ended"
       ],
-      "url": "https://github.com/PeckBoard/pr-review/releases/download/v0.3.0/pr-review.wasm",
-      "sha256": "50aefa8545cfc357a40b6cbd9e37a064622ba9872f82eaef1fa0af30ae85c8c6",
+      "url": "https://github.com/PeckBoard/pr-review/releases/download/v0.4.0/pr-review.wasm",
+      "sha256": "f8c0bd39ec5759bb405f976f0202e24b8533c7ab110fd856cfe5be41742cc431",
       "min_peckboard": "0.1.90"
     },
     {
