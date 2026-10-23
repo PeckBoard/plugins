@@ -450,7 +450,7 @@
       ],
       "url": "https://github.com/PeckBoard/print-farm/releases/download/v0.2.0/print-farm.wasm",
       "sha256": "1580c792bc6871c29e3dfc6deea4333be77e938793024d52eb92f594aebc5c20",
-      "min_peckboard": "0.2.00"
+      "min_peckboard": "0.1.100"
     }
   ],
   "mcp_servers": [
