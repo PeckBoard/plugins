@@ -93,7 +93,7 @@
     {
       "id": "playwright-video",
       "name": "Playwright Tests",
-      "description": "LogRocket-style replay of recorded browser test runs: the page itself replayed from a continuous DOM recording, network waterfall with masked request/response detail, console panel, event timeline with rage-click detection, session details, playback that jumps over inactivity, and one-click MP4 export (client-side WebCodecs H.264) \u2014 on a Playwright Tests page below Sessions.",
+      "description": "LogRocket-style replay of recorded browser test runs: the page itself replayed from a continuous DOM recording, network waterfall with masked request/response detail, console panel, event timeline with rage-click detection, session details, playback that jumps over inactivity, and one-click MP4 export (client-side WebCodecs H.264) — on a Playwright Tests page below Sessions.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/playwright-video",
       "version": "0.5.0",
@@ -135,7 +135,7 @@
     {
       "id": "pre-hatcher",
       "name": "Pre-hatcher",
-      "description": "Pre-warms chat messages before they reach the main model: each intercepted message first gets a plain opt-in question card (no AI involved) \u2014 declining sends it unchanged; accepting has a temp session on a cheaper model (the provider's cheapest priced one, or the model picked in Settings) gather repository context with the full chat transcript in view, ask a clarifying question when the request is ambiguous, and propose an enriched message delivered only after the user approves it on a second plain question card showing the expanded text (declining delivers the original). The research session runs under a configurable library system prompt (default \"fable 5\"). Research actions stream into the parked message live. Served as a WASM plugin.",
+      "description": "Pre-warms chat messages before they reach the main model: each intercepted message first gets a plain opt-in question card (no AI involved) — declining sends it unchanged; accepting has a temp session on a cheaper model (the provider's cheapest priced one, or the model picked in Settings) gather repository context with the full chat transcript in view, ask a clarifying question when the request is ambiguous, and propose an enriched message delivered only after the user approves it on a second plain question card showing the expanded text (declining delivers the original). The research session runs under a configurable library system prompt (default \"fable 5\"). Research actions stream into the parked message live. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/pre-hatcher",
       "version": "0.5.1",
@@ -158,7 +158,7 @@
     {
       "id": "nginx-manager",
       "name": "Nginx Proxy Manager",
-      "description": "Manage an Nginx Proxy Manager instance from Peckboard sessions: bridges NPM's built-in MCP server (proxy hosts, redirections, streams, certificates, access lists) as MCP tools \u2014 npm_status, npm_list_tools, npm_call, npm_configure. Passthrough surface: the tool catalog is discovered live per API-key scope. Requires the http_request permission (outbound HTTP incl. private/LAN targets) to reach a self-hosted NPM. Served as a WASM plugin.",
+      "description": "Manage an Nginx Proxy Manager instance from Peckboard sessions: bridges NPM's built-in MCP server (proxy hosts, redirections, streams, certificates, access lists) as MCP tools — npm_status, npm_list_tools, npm_call, npm_configure. Passthrough surface: the tool catalog is discovered live per API-key scope. Requires the http_request permission (outbound HTTP incl. private/LAN targets) to reach a self-hosted NPM. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/nginx-manager",
       "version": "0.2.0",
@@ -178,7 +178,7 @@
     {
       "id": "kaiad-manager",
       "name": "Kaiad",
-      "description": "Manage a Kaiad control plane from Peckboard sessions: bridges Kaiad's hosted MCP server (services & deployments, builds, registry, agents, operators, incidents) as MCP tools \u2014 kaiad_status, kaiad_list_tools, kaiad_call, kaiad_configure. Passthrough surface: the tool catalog is discovered live per credential scope (mcp.read/mcp.write). Requires the http_request permission (outbound HTTP incl. private/LAN targets) to reach a self-hosted Kaiad panel. Served as a WASM plugin.",
+      "description": "Manage a Kaiad control plane from Peckboard sessions: bridges Kaiad's hosted MCP server (services & deployments, builds, registry, agents, operators, incidents) as MCP tools — kaiad_status, kaiad_list_tools, kaiad_call, kaiad_configure. Passthrough surface: the tool catalog is discovered live per credential scope (mcp.read/mcp.write). Requires the http_request permission (outbound HTTP incl. private/LAN targets) to reach a self-hosted Kaiad panel. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/kaiad-manager",
       "version": "0.1.0",
@@ -198,7 +198,7 @@
     {
       "id": "opensearch",
       "name": "OpenSearch",
-      "description": "Query and manage an OpenSearch cluster from Peckboard sessions: cluster health, compact index listing, full query-DSL search (or Lucene q strings), document CRUD, and a raw REST escape hatch for mappings, _bulk, and _cat APIs \u2014 opensearch_status, opensearch_indices, opensearch_search, opensearch_get_doc, opensearch_index_doc, opensearch_delete_doc, opensearch_request, opensearch_configure. Talks to the cluster's REST API directly (no separate MCP server needed) and also works with Elasticsearch-compatible clusters. Requires the http_request permission (outbound HTTP incl. private/LAN targets) to reach a self-hosted cluster. Served as a WASM plugin.",
+      "description": "Query and manage an OpenSearch cluster from Peckboard sessions: cluster health, compact index listing, full query-DSL search (or Lucene q strings), document CRUD, and a raw REST escape hatch for mappings, _bulk, and _cat APIs — opensearch_status, opensearch_indices, opensearch_search, opensearch_get_doc, opensearch_index_doc, opensearch_delete_doc, opensearch_request, opensearch_configure. Talks to the cluster's REST API directly (no separate MCP server needed) and also works with Elasticsearch-compatible clusters. Requires the http_request permission (outbound HTTP incl. private/LAN targets) to reach a self-hosted cluster. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/opensearch",
       "version": "0.1.0",
@@ -218,7 +218,7 @@
     {
       "id": "ssh-fleet",
       "name": "SSH Fleet",
-      "description": "Hold connection details for many SSH hosts (user+password, user+key, or a reference to a key in Peckboard's SSH key vault \u2014 the plugin stores and sees no key material for those, core resolves the key at connect time; inline password/key hosts keep working and are flagged as legacy in the dashboard) and drive them over MCP tools: register hosts, run commands on one host or across the whole fleet, and read/write/edit remote files over SFTP. Each host opens an interactive terminal in the Peckboard app: a real shell in a full-size tab (or pop-out window), kept alive in tmux across browser closes, Peckboard restarts, and network drops. Every command, write, and edit requires a short reason from the agent; the activity log shows that reason and links to the session that made the call, and the dashboard itself cannot run commands. Ships a live activity dashboard (searchable host picker, per-host and all-hosts views, live polling). SSH runs through native host functions in Peckboard core, so credentials stay in memory and are never written to disk. Served as a WASM plugin.",
+      "description": "Hold connection details for many SSH hosts (user+password, user+key, or a reference to a key in Peckboard's SSH key vault — the plugin stores and sees no key material for those, core resolves the key at connect time; inline password/key hosts keep working and are flagged as legacy in the dashboard) and drive them over MCP tools: register hosts, run commands on one host or across the whole fleet, and read/write/edit remote files over SFTP. Each host opens an interactive terminal in the Peckboard app: a real shell in a full-size tab (or pop-out window), kept alive in tmux across browser closes, Peckboard restarts, and network drops. Every command, write, and edit requires a short reason from the agent; the activity log shows that reason and links to the session that made the call, and the dashboard itself cannot run commands. Ships a live activity dashboard (searchable host picker, per-host and all-hosts views, live polling). SSH runs through native host functions in Peckboard core, so credentials stay in memory and are never written to disk. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/ssh-fleet",
       "version": "0.6.0",
@@ -291,7 +291,7 @@
     {
       "id": "openai-compat",
       "name": "OpenAI-Compatible Provider",
-      "description": "Reference OpenAI-compatible AI provider \u2014 connects Peckboard to any /v1/chat/completions endpoint (OpenRouter, LM Studio, vLLM, llama.cpp, and more).",
+      "description": "Reference OpenAI-compatible AI provider — connects Peckboard to any /v1/chat/completions endpoint (OpenRouter, LM Studio, vLLM, llama.cpp, and more).",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/openai-compat",
       "version": "0.1.0",
@@ -337,7 +337,7 @@
     {
       "id": "app-manager",
       "name": "App Manager",
-      "description": "List, install, and remove common applications (git, Claude Code, cursor-agent, Ollama, Node.js, Docker, ripgrep, Python 3, pip) on Linux targets \u2014 the local Peckboard host and any configured SSH host \u2014 plus pip-namespace Python packages, which are labelled separately from the distro package database. Installs and removals run real package-manager commands (apt/dnf/pacman/zypper), vendor installer scripts, or pip as the Peckboard host user, using sudo -A where root is needed; the plugin holds process_exec_any but is restricted in code to the catalog's static recipes. Ships an App Manager dashboard (sidebar entry) for picking a target, seeing what is installed, watching install progress live, and browsing each app's dependency graph as resolved from the target's package manager. Another plugin's page can link here with a request prefilled (?install=python3,pip,graphifyy&from=graphify), which names those apps in a request bar with an Install button each \u2014 the link only prefills, nothing installs without a click. Local-host installs run through a temporary AI session on a user-picked account and model, with provenance recorded from package-DB snapshots taken around the session. Apps outside the catalog can be added by hand: on the local host that install session identifies the software, searching the web when it does not know it, and downloads only from official sources; on a remote target it runs the install command you typed for that app, verbatim. A row added by hand starts as little more than a name, so the entries it is missing \u2014 what the software is, its official site, the command that proves it is installed, its install and remove commands \u2014 are filled in by an AI session: on save, on demand from the row, and by the install session on its way out. It fills blanks only, so whatever you typed is kept, and any install or remove command it works out is stored as a suggestion you review and accept in the dashboard \u2014 nothing runs a command because an agent proposed it. Served as a WASM plugin.",
+      "description": "List, install, and remove common applications (git, Claude Code, cursor-agent, Ollama, Node.js, Docker, ripgrep, Python 3, pip) on Linux targets — the local Peckboard host and any configured SSH host — plus pip-namespace Python packages, which are labelled separately from the distro package database. Installs and removals run real package-manager commands (apt/dnf/pacman/zypper), vendor installer scripts, or pip as the Peckboard host user, using sudo -A where root is needed; the plugin holds process_exec_any but is restricted in code to the catalog's static recipes. Ships an App Manager dashboard (sidebar entry) for picking a target, seeing what is installed, watching install progress live, and browsing each app's dependency graph as resolved from the target's package manager. Another plugin's page can link here with a request prefilled (?install=python3,pip,graphifyy&from=graphify), which names those apps in a request bar with an Install button each — the link only prefills, nothing installs without a click. Local-host installs run through a temporary AI session on a user-picked account and model, with provenance recorded from package-DB snapshots taken around the session. Apps outside the catalog can be added by hand: on the local host that install session identifies the software, searching the web when it does not know it, and downloads only from official sources; on a remote target it runs the install command you typed for that app, verbatim. A row added by hand starts as little more than a name, so the entries it is missing — what the software is, its official site, the command that proves it is installed, its install and remove commands — are filled in by an AI session: on save, on demand from the row, and by the install session on its way out. It fills blanks only, so whatever you typed is kept, and any install or remove command it works out is stored as a suggestion you review and accept in the dashboard — nothing runs a command because an agent proposed it. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/app-manager",
       "version": "0.8.5",
@@ -433,7 +433,7 @@
       "description": "Run a fleet of 3D printers from Peckboard — Klipper (Moonraker), OctoPrint, Prusa (PrusaLink), and Bambu Lab in LAN mode via the print-bridge sidecar — and slice models with the OrcaSlicer CLI using Orca's printer, filament, and process profiles. A sidebar page shows every printer live (state, progress, layers, temperatures, webcam snapshots) with pause/resume/cancel, uploads STL/3MF/STEP models, slices, and previews models and G-code layer by layer in 3D. Agents get tools to list printers, read status, slice, upload, pause, and cancel; starting a print always needs a human confirmation. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/print-farm",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "tags": [
         "3d-printing",
         "orcaslicer",
@@ -448,8 +448,8 @@
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/print-farm/releases/download/v0.2.0/print-farm.wasm",
-      "sha256": "1580c792bc6871c29e3dfc6deea4333be77e938793024d52eb92f594aebc5c20",
+      "url": "https://github.com/PeckBoard/print-farm/releases/download/v0.2.1/print-farm.wasm",
+      "sha256": "3ad5a3b4db4df1649d58b9baabe149044359e87c047c7867d18df14a71ae0295",
       "min_peckboard": "0.1.100"
     }
   ],
@@ -476,7 +476,7 @@
     {
       "id": "context7",
       "name": "Context7",
-      "description": "Fetches up-to-date, version-specific documentation and code examples for any library directly from official sources \u2014 no hallucinated or outdated APIs.",
+      "description": "Fetches up-to-date, version-specific documentation and code examples for any library directly from official sources — no hallucinated or outdated APIs.",
       "author": "Upstash",
       "homepage": "https://github.com/upstash/context7",
       "transport": "stdio",
@@ -544,7 +544,7 @@
     {
       "id": "filesystem",
       "name": "Filesystem",
-      "description": "Filesystem operations over MCP: read/write files, create/list/delete directories, move files, search, and file metadata \u2014 scoped to the directories you allow.",
+      "description": "Filesystem operations over MCP: read/write files, create/list/delete directories, move files, search, and file metadata — scoped to the directories you allow.",
       "author": "Anthropic",
       "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
       "transport": "stdio",
@@ -565,7 +565,7 @@
     {
       "id": "memory",
       "name": "Memory (Knowledge Graph)",
-      "description": "Persistent agent memory backed by a local knowledge graph \u2014 remember entities, relations, and facts across sessions.",
+      "description": "Persistent agent memory backed by a local knowledge graph — remember entities, relations, and facts across sessions.",
       "author": "Anthropic",
       "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/memory",
       "transport": "stdio",
@@ -604,7 +604,7 @@
     {
       "id": "clear-thought",
       "name": "Clear Thought",
-      "description": "Advanced reasoning toolkit: one clear_thought tool with 38 operations \u2014 mental models, debugging approaches, tree-of-thought, beam search, MCTS, graph-of-thought, decision frameworks, and metacognitive monitoring.",
+      "description": "Advanced reasoning toolkit: one clear_thought tool with 38 operations — mental models, debugging approaches, tree-of-thought, beam search, MCTS, graph-of-thought, decision frameworks, and metacognitive monitoring.",
       "author": "Waldzell AI",
       "homepage": "https://github.com/waldzellai/clearthought-onepointfive",
       "transport": "stdio",
@@ -664,7 +664,7 @@
     {
       "id": "mcp-reasoner",
       "name": "MCP Reasoner",
-      "description": "Systematic reasoning engine with beam search and Monte Carlo Tree Search over scored thought trees \u2014 strong on math, logic puzzles, and problems with uncertain outcomes.",
+      "description": "Systematic reasoning engine with beam search and Monte Carlo Tree Search over scored thought trees — strong on math, logic puzzles, and problems with uncertain outcomes.",
       "author": "Jacck",
       "homepage": "https://github.com/Jacck/mcp-reasoner",
       "transport": "stdio",
@@ -756,7 +756,7 @@
     {
       "id": "atlassian",
       "name": "Atlassian",
-      "description": "Atlassian's official Rovo MCP Server: real-time access to Jira, Confluence, Jira Service Management, Bitbucket, and Compass \u2014 search, create, and update issues and pages, with existing Atlassian permissions enforced.",
+      "description": "Atlassian's official Rovo MCP Server: real-time access to Jira, Confluence, Jira Service Management, Bitbucket, and Compass — search, create, and update issues and pages, with existing Atlassian permissions enforced.",
       "author": "Atlassian",
       "homepage": "https://github.com/atlassian/atlassian-mcp-server",
       "transport": "http",
@@ -778,7 +778,7 @@
     {
       "id": "atlassian-oauth",
       "name": "Atlassian (OAuth)",
-      "description": "Atlassian's official Rovo MCP Server via OAuth sign-in: Jira, Confluence, Jira Service Management, Bitbucket, and Compass with your existing Atlassian permissions \u2014 no API token to create.",
+      "description": "Atlassian's official Rovo MCP Server via OAuth sign-in: Jira, Confluence, Jira Service Management, Bitbucket, and Compass with your existing Atlassian permissions — no API token to create.",
       "author": "Atlassian",
       "homepage": "https://www.atlassian.com/platform/remote-mcp-server",
       "transport": "http",
@@ -807,7 +807,7 @@
         }
       ],
       "oauth": {},
-      "setup_note": "Click Sign in with Linear to connect with OAuth (recommended \u2014 nothing to paste). Alternatively create an API key under Settings \u2192 Security & Access and set the Authorization header to: Bearer YOUR_KEY.",
+      "setup_note": "Click Sign in with Linear to connect with OAuth (recommended — nothing to paste). Alternatively create an API key under Settings → Security & Access and set the Authorization header to: Bearer YOUR_KEY.",
       "tags": [
         "issues",
         "project-management"
@@ -851,7 +851,7 @@
         }
       ],
       "oauth": {},
-      "setup_note": "Pick your Datadog site in the Region dropdown, then click Sign in with Datadog \u2014 the OAuth sign-in follows the selected region. Datadog only completes sign-in for allow-listed redirect URLs: if it fails with 'Mismatching redirect URI', add the callback URL shown in the sign-in panel in Datadog under Organization Settings > Preferences > MCP OAuth Redirect URLs, then retry. Alternatively set the Authorization header to: Bearer YOUR_TOKEN using a Personal or Service Access Token \u2014 or replace the header with DD_API_KEY and DD_APPLICATION_KEY rows. Append ?toolsets=all to enable all toolsets.",
+      "setup_note": "Pick your Datadog site in the Region dropdown, then click Sign in with Datadog — the OAuth sign-in follows the selected region. Datadog only completes sign-in for allow-listed redirect URLs: if it fails with 'Mismatching redirect URI', add the callback URL shown in the sign-in panel in Datadog under Organization Settings > Preferences > MCP OAuth Redirect URLs, then retry. Alternatively set the Authorization header to: Bearer YOUR_TOKEN using a Personal or Service Access Token — or replace the header with DD_API_KEY and DD_APPLICATION_KEY rows. Append ?toolsets=all to enable all toolsets.",
       "tags": [
         "observability",
         "metrics",
@@ -879,7 +879,7 @@
         "token_url": "https://slack.com/api/oauth.v2.user.access",
         "scopes": "search:read.public search:read.private search:read.mpim search:read.im search:read.files search:read.users chat:write channels:history groups:history mpim:history im:history canvases:read canvases:write users:read users:read.email reactions:write reactions:read emoji:read files:read files:write channels:read channels:write groups:read groups:write im:write mpim:read mpim:write"
       },
-      "setup_note": "Slack does not support automatic client registration, so bring your own Slack app \u2014 only internal apps and Marketplace-published apps may use MCP. 1) Create the app at https://api.slack.com/apps. 2) Turn ON MCP server access for it (Agents & AI settings, https://api.slack.com/apps/YOUR_APP_ID/app-assistant, or is_mcp_enabled: true in the app manifest) \u2014 without this, mcp.slack.com rejects every call with 'App is not enabled for Slack MCP server access'. 3) Under OAuth & Permissions, add the callback URL shown in the sign-in panel below to Redirect URLs, and declare this entry's scopes as User Token Scopes (the Slack MCP server uses user tokens; bot scopes are not used). 4) Click Sign in and enter the app's client id and secret. Enterprise Grid: the app must be approved by your org or workspace admin before it can connect; to make it available across the whole org, set org_deploy_enabled and have an Org Owner install it org-wide. If your org uses SSO, or you belong to more than one workspace, pin the workspace to sign into by adding the extra sign-in parameter team=YOUR_WORKSPACE_ID (the T\u2026 id) \u2014 Slack then routes the sign-in through your org's IdP. Alternatively skip OAuth and paste a user OAuth token (xoxp-\u2026) as the Authorization header: Bearer YOUR_TOKEN.",
+      "setup_note": "Slack does not support automatic client registration, so bring your own Slack app — only internal apps and Marketplace-published apps may use MCP. 1) Create the app at https://api.slack.com/apps. 2) Turn ON MCP server access for it (Agents & AI settings, https://api.slack.com/apps/YOUR_APP_ID/app-assistant, or is_mcp_enabled: true in the app manifest) — without this, mcp.slack.com rejects every call with 'App is not enabled for Slack MCP server access'. 3) Under OAuth & Permissions, add the callback URL shown in the sign-in panel below to Redirect URLs, and declare this entry's scopes as User Token Scopes (the Slack MCP server uses user tokens; bot scopes are not used). 4) Click Sign in and enter the app's client id and secret. Enterprise Grid: the app must be approved by your org or workspace admin before it can connect; to make it available across the whole org, set org_deploy_enabled and have an Org Owner install it org-wide. If your org uses SSO, or you belong to more than one workspace, pin the workspace to sign into by adding the extra sign-in parameter team=YOUR_WORKSPACE_ID (the T… id) — Slack then routes the sign-in through your org's IdP. Alternatively skip OAuth and paste a user OAuth token (xoxp-…) as the Authorization header: Bearer YOUR_TOKEN.",
       "tags": [
         "slack",
         "messaging",
@@ -890,7 +890,7 @@
     {
       "id": "git",
       "name": "Git",
-      "description": "Git repository tools over MCP: read, search, and manipulate local repositories \u2014 status, diff, log, branch, commit, and more.",
+      "description": "Git repository tools over MCP: read, search, and manipulate local repositories — status, diff, log, branch, commit, and more.",
       "author": "Anthropic",
       "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/git",
       "transport": "stdio",
@@ -953,7 +953,7 @@
       "transport": "http",
       "url": "https://mcp.sentry.dev/mcp",
       "oauth": {},
-      "setup_note": "Authenticates with OAuth \u2014 click Sign in with Sentry to connect your org.",
+      "setup_note": "Authenticates with OAuth — click Sign in with Sentry to connect your org.",
       "tags": [
         "errors",
         "monitoring",
@@ -981,7 +981,7 @@
     {
       "id": "chrome-devtools",
       "name": "Chrome DevTools",
-      "description": "Google's official Chrome DevTools MCP server: control and inspect a live Chrome browser \u2014 performance traces, network requests, console, screenshots, and page automation.",
+      "description": "Google's official Chrome DevTools MCP server: control and inspect a live Chrome browser — performance traces, network requests, console, screenshots, and page automation.",
       "author": "Google",
       "homepage": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
       "transport": "stdio",
@@ -1041,7 +1041,7 @@
           "value": ""
         }
       ],
-      "setup_note": "Requires Python/uv and the semgrep CLI on PATH (e.g. pip install semgrep). SEMGREP_APP_TOKEN is optional \u2014 set it to use Semgrep AppSec Platform rules (get one at https://semgrep.dev/orgs/-/settings/tokens).",
+      "setup_note": "Requires Python/uv and the semgrep CLI on PATH (e.g. pip install semgrep). SEMGREP_APP_TOKEN is optional — set it to use Semgrep AppSec Platform rules (get one at https://semgrep.dev/orgs/-/settings/tokens).",
       "tags": [
         "security",
         "static-analysis",
@@ -1052,7 +1052,7 @@
     {
       "id": "sonarqube",
       "name": "SonarQube",
-      "description": "SonarSource's official MCP server: analyze code quality and security \u2014 issues, quality gates, metrics, and languages from SonarQube Server or Cloud.",
+      "description": "SonarSource's official MCP server: analyze code quality and security — issues, quality gates, metrics, and languages from SonarQube Server or Cloud.",
       "author": "SonarSource",
       "homepage": "https://github.com/SonarSource/sonarqube-mcp-server",
       "transport": "stdio",
@@ -1077,7 +1077,7 @@
           "value": ""
         }
       ],
-      "setup_note": "Requires Docker. Generate a token in SonarQube under My Account \u2192 Security; SONARQUBE_ORG is your SonarQube Cloud organization key (for SonarQube Server set SONARQUBE_URL instead).",
+      "setup_note": "Requires Docker. Generate a token in SonarQube under My Account → Security; SONARQUBE_ORG is your SonarQube Cloud organization key (for SonarQube Server set SONARQUBE_URL instead).",
       "tags": [
         "code-quality",
         "security",
@@ -1088,7 +1088,7 @@
     {
       "id": "e2b",
       "name": "E2B Code Interpreter",
-      "description": "E2B's official MCP server: run code in secure cloud sandboxes \u2014 execute Python and shell in isolated VMs for data analysis and code interpretation.",
+      "description": "E2B's official MCP server: run code in secure cloud sandboxes — execute Python and shell in isolated VMs for data analysis and code interpretation.",
       "author": "E2B",
       "homepage": "https://github.com/e2b-dev/mcp-server",
       "transport": "stdio",
@@ -1136,7 +1136,7 @@
     {
       "id": "deepwiki",
       "name": "DeepWiki",
-      "description": "Cognition's DeepWiki MCP server: ask questions about any public GitHub repository and read AI-generated architecture docs \u2014 no authentication required.",
+      "description": "Cognition's DeepWiki MCP server: ask questions about any public GitHub repository and read AI-generated architecture docs — no authentication required.",
       "author": "Cognition",
       "homepage": "https://docs.devin.ai/work-with-devin/deepwiki-mcp",
       "transport": "http",
@@ -1152,7 +1152,7 @@
     {
       "id": "microsoft-learn",
       "name": "Microsoft Learn",
-      "description": "Microsoft's official Learn MCP server: search and fetch trusted, up-to-date Microsoft/Azure documentation and code samples \u2014 no authentication required.",
+      "description": "Microsoft's official Learn MCP server: search and fetch trusted, up-to-date Microsoft/Azure documentation and code samples — no authentication required.",
       "author": "Microsoft",
       "homepage": "https://github.com/MicrosoftDocs/mcp",
       "transport": "http",
@@ -1168,7 +1168,7 @@
     {
       "id": "aws-knowledge",
       "name": "AWS Knowledge",
-      "description": "AWS's official Knowledge MCP server: search and read AWS documentation, API references, What's New posts, and architectural guidance \u2014 no AWS account required.",
+      "description": "AWS's official Knowledge MCP server: search and read AWS documentation, API references, What's New posts, and architectural guidance — no AWS account required.",
       "author": "AWS",
       "homepage": "https://awslabs.github.io/mcp/servers/aws-knowledge-mcp-server/",
       "transport": "http",
@@ -1183,7 +1183,7 @@
     {
       "id": "azure",
       "name": "Azure",
-      "description": "Microsoft's official Azure MCP server: work with Azure resources \u2014 storage, Cosmos DB, Azure CLI, monitor logs, and dozens of other services.",
+      "description": "Microsoft's official Azure MCP server: work with Azure resources — storage, Cosmos DB, Azure CLI, monitor logs, and dozens of other services.",
       "author": "Microsoft",
       "homepage": "https://github.com/microsoft/mcp",
       "transport": "stdio",
@@ -1194,7 +1194,7 @@
         "server",
         "start"
       ],
-      "setup_note": "Requires Node.js 22+. Uses your local Azure credentials \u2014 sign in first with: az login.",
+      "setup_note": "Requires Node.js 22+. Uses your local Azure credentials — sign in first with: az login.",
       "tags": [
         "azure",
         "cloud"
@@ -1204,7 +1204,7 @@
     {
       "id": "aws-api",
       "name": "AWS API",
-      "description": "AWS's official API MCP server: call AWS CLI commands from agents with validation and suggestions \u2014 manage and inspect resources across all AWS services.",
+      "description": "AWS's official API MCP server: call AWS CLI commands from agents with validation and suggestions — manage and inspect resources across all AWS services.",
       "author": "AWS",
       "homepage": "https://awslabs.github.io/mcp/servers/aws-api-mcp-server/",
       "transport": "stdio",
@@ -1269,7 +1269,7 @@
     {
       "id": "kubernetes",
       "name": "Kubernetes",
-      "description": "Kubernetes cluster management over MCP: pods, deployments, services, logs, exec, port-forward, and Helm \u2014 driven by kubectl against your current context.",
+      "description": "Kubernetes cluster management over MCP: pods, deployments, services, logs, exec, port-forward, and Helm — driven by kubectl against your current context.",
       "author": "Flux159",
       "homepage": "https://github.com/Flux159/mcp-server-kubernetes",
       "transport": "stdio",
@@ -1289,7 +1289,7 @@
     {
       "id": "cloudflare-docs",
       "name": "Cloudflare Docs",
-      "description": "Cloudflare's official documentation MCP server: search up-to-date Cloudflare docs (Workers, R2, KV, DNS, and more) \u2014 no authentication required.",
+      "description": "Cloudflare's official documentation MCP server: search up-to-date Cloudflare docs (Workers, R2, KV, DNS, and more) — no authentication required.",
       "author": "Cloudflare",
       "homepage": "https://github.com/cloudflare/mcp-server-cloudflare",
       "transport": "http",
@@ -1304,7 +1304,7 @@
     {
       "id": "cloudflare-observability",
       "name": "Cloudflare Observability",
-      "description": "Cloudflare's official observability MCP server: debug Workers applications \u2014 logs, analytics, errors, and usage data for your Cloudflare account.",
+      "description": "Cloudflare's official observability MCP server: debug Workers applications — logs, analytics, errors, and usage data for your Cloudflare account.",
       "author": "Cloudflare",
       "homepage": "https://github.com/cloudflare/mcp-server-cloudflare",
       "transport": "http",
@@ -1416,7 +1416,7 @@
           "value": ""
         }
       ],
-      "setup_note": "Generate an API key with: heroku authorizations:create, or from Account Settings \u2192 Applications.",
+      "setup_note": "Generate an API key with: heroku authorizations:create, or from Account Settings → Applications.",
       "tags": [
         "deploy",
         "hosting"
@@ -1453,7 +1453,7 @@
           "value": ""
         }
       ],
-      "setup_note": "Requires Docker. Set GRAFANA_URL to your instance (e.g. https://myorg.grafana.net) and create a service account token under Administration \u2192 Service accounts.",
+      "setup_note": "Requires Docker. Set GRAFANA_URL to your instance (e.g. https://myorg.grafana.net) and create a service account token under Administration → Service accounts.",
       "tags": [
         "grafana",
         "dashboards",
@@ -1478,7 +1478,7 @@
           "value": ""
         }
       ],
-      "setup_note": "Requires Python/uv. Create an API user token in PagerDuty under My Profile \u2192 User Settings \u2192 API Access.",
+      "setup_note": "Requires Python/uv. Create an API user token in PagerDuty under My Profile → User Settings → API Access.",
       "tags": [
         "incidents",
         "on-call",
@@ -1514,7 +1514,7 @@
     {
       "id": "browserbase",
       "name": "Browserbase",
-      "description": "Browserbase's official MCP server: cloud browser automation with Stagehand \u2014 navigate, act, extract, and screenshot on headless browsers at scale.",
+      "description": "Browserbase's official MCP server: cloud browser automation with Stagehand — navigate, act, extract, and screenshot on headless browsers at scale.",
       "author": "Browserbase",
       "homepage": "https://github.com/browserbase/mcp-server-browserbase",
       "transport": "stdio",
@@ -1548,7 +1548,7 @@
     {
       "id": "firecrawl",
       "name": "Firecrawl",
-      "description": "Firecrawl's official MCP server: web scraping, crawling, search, and structured extraction \u2014 JavaScript rendering, batch scraping, and deep research.",
+      "description": "Firecrawl's official MCP server: web scraping, crawling, search, and structured extraction — JavaScript rendering, batch scraping, and deep research.",
       "author": "Firecrawl",
       "homepage": "https://github.com/firecrawl/firecrawl-mcp-server",
       "transport": "stdio",
@@ -1600,7 +1600,7 @@
     {
       "id": "apify",
       "name": "Apify",
-      "description": "Apify's official MCP server: run any of 6,000+ Apify Actors \u2014 scrapers and extractors for websites, social media, maps, e-commerce, and more.",
+      "description": "Apify's official MCP server: run any of 6,000+ Apify Actors — scrapers and extractors for websites, social media, maps, e-commerce, and more.",
       "author": "Apify",
       "homepage": "https://github.com/apify/actors-mcp-server",
       "transport": "stdio",
@@ -1652,7 +1652,7 @@
     {
       "id": "exa",
       "name": "Exa Search",
-      "description": "Exa's official MCP server: AI-native web search \u2014 real-time results, code context, company research, crawling, and deep research tools.",
+      "description": "Exa's official MCP server: AI-native web search — real-time results, code context, company research, crawling, and deep research tools.",
       "author": "Exa",
       "homepage": "https://github.com/exa-labs/exa-mcp-server",
       "transport": "stdio",
@@ -1704,7 +1704,7 @@
     {
       "id": "perplexity",
       "name": "Perplexity",
-      "description": "Perplexity's official MCP server: live web-wide research via the Sonar API \u2014 ask questions and get grounded, up-to-date answers with citations.",
+      "description": "Perplexity's official MCP server: live web-wide research via the Sonar API — ask questions and get grounded, up-to-date answers with citations.",
       "author": "Perplexity",
       "homepage": "https://github.com/perplexityai/modelcontextprotocol",
       "transport": "stdio",
@@ -1755,7 +1755,7 @@
     {
       "id": "duckduckgo",
       "name": "DuckDuckGo Search",
-      "description": "Web search through DuckDuckGo with result formatting and content fetching \u2014 no API key required.",
+      "description": "Web search through DuckDuckGo with result formatting and content fetching — no API key required.",
       "author": "Nick Clyde",
       "homepage": "https://github.com/nickclyde/duckduckgo-mcp-server",
       "transport": "stdio",
@@ -1773,7 +1773,7 @@
     {
       "id": "mongodb",
       "name": "MongoDB",
-      "description": "MongoDB's official MCP server: query and manage MongoDB databases and Atlas clusters \u2014 find, aggregate, schema inspection, and Atlas administration.",
+      "description": "MongoDB's official MCP server: query and manage MongoDB databases and Atlas clusters — find, aggregate, schema inspection, and Atlas administration.",
       "author": "MongoDB",
       "homepage": "https://github.com/mongodb-js/mongodb-mcp-server",
       "transport": "stdio",
@@ -1825,7 +1825,7 @@
     {
       "id": "neon",
       "name": "Neon",
-      "description": "Neon's official MCP server: manage serverless Postgres \u2014 create projects and branches, run SQL, and handle migrations in natural language.",
+      "description": "Neon's official MCP server: manage serverless Postgres — create projects and branches, run SQL, and handle migrations in natural language.",
       "author": "Neon",
       "homepage": "https://github.com/neondatabase/mcp-server-neon",
       "transport": "stdio",
@@ -1880,7 +1880,7 @@
     {
       "id": "motherduck",
       "name": "MotherDuck / DuckDB",
-      "description": "MotherDuck's official MCP server: run SQL analytics on DuckDB \u2014 query local database files or MotherDuck cloud databases.",
+      "description": "MotherDuck's official MCP server: run SQL analytics on DuckDB — query local database files or MotherDuck cloud databases.",
       "author": "MotherDuck",
       "homepage": "https://github.com/motherduckdb/mcp-server-motherduck",
       "transport": "stdio",
@@ -1892,7 +1892,7 @@
         "--motherduck-token",
         "YOUR_MOTHERDUCK_TOKEN"
       ],
-      "setup_note": "Requires Python/uv. Get a token at https://app.motherduck.com/settings/tokens \u2014 or query a local file instead with: --db-path /path/to/local.db (drop the token argument).",
+      "setup_note": "Requires Python/uv. Get a token at https://app.motherduck.com/settings/tokens — or query a local file instead with: --db-path /path/to/local.db (drop the token argument).",
       "tags": [
         "duckdb",
         "sql",
@@ -1922,7 +1922,7 @@
           "value": ""
         }
       ],
-      "setup_note": "Set ES_URL to your cluster endpoint and create an API key in Kibana under Stack Management \u2192 API keys.",
+      "setup_note": "Set ES_URL to your cluster endpoint and create an API key in Kibana under Stack Management → API keys.",
       "tags": [
         "elasticsearch",
         "search",
@@ -1955,7 +1955,7 @@
           "value": ""
         }
       ],
-      "setup_note": "Set OPENSEARCH_URL to your cluster endpoint (e.g. http://localhost:9200) plus username/password for a security-enabled cluster \u2014 or leave all empty for zero-config mode, where the agent passes connection details on each tool call. Runs via uvx (requires uv).",
+      "setup_note": "Set OPENSEARCH_URL to your cluster endpoint (e.g. http://localhost:9200) plus username/password for a security-enabled cluster — or leave all empty for zero-config mode, where the agent passes connection details on each tool call. Runs via uvx (requires uv).",
       "tags": [
         "opensearch",
         "search",
@@ -1966,7 +1966,7 @@
     {
       "id": "redis",
       "name": "Redis",
-      "description": "Redis' official MCP server: manage and search data in Redis \u2014 strings, hashes, lists, sets, streams, JSON, and vector indexes.",
+      "description": "Redis' official MCP server: manage and search data in Redis — strings, hashes, lists, sets, streams, JSON, and vector indexes.",
       "author": "Redis",
       "homepage": "https://github.com/redis/mcp-redis",
       "transport": "stdio",
@@ -1989,7 +1989,7 @@
     {
       "id": "chroma",
       "name": "Chroma",
-      "description": "Chroma's official MCP server: vector database operations \u2014 create collections, add documents, and run semantic search, with local or cloud backends.",
+      "description": "Chroma's official MCP server: vector database operations — create collections, add documents, and run semantic search, with local or cloud backends.",
       "author": "Chroma",
       "homepage": "https://github.com/chroma-core/chroma-mcp",
       "transport": "stdio",
@@ -2008,7 +2008,7 @@
     {
       "id": "qdrant",
       "name": "Qdrant",
-      "description": "Qdrant's official MCP server: a semantic memory layer \u2014 store and retrieve documents by vector similarity on your Qdrant instance.",
+      "description": "Qdrant's official MCP server: a semantic memory layer — store and retrieve documents by vector similarity on your Qdrant instance.",
       "author": "Qdrant",
       "homepage": "https://github.com/qdrant/mcp-server-qdrant",
       "transport": "stdio",
@@ -2067,7 +2067,7 @@
     {
       "id": "neo4j",
       "name": "Neo4j",
-      "description": "Neo4j's official MCP server: query graph databases with Cypher \u2014 schema introspection plus read and write queries against your Neo4j instance.",
+      "description": "Neo4j's official MCP server: query graph databases with Cypher — schema introspection plus read and write queries against your Neo4j instance.",
       "author": "Neo4j",
       "homepage": "https://github.com/neo4j-contrib/mcp-neo4j",
       "transport": "stdio",
@@ -2214,7 +2214,7 @@
         "-t",
         "YOUR_MONDAY_API_TOKEN"
       ],
-      "setup_note": "Replace YOUR_MONDAY_API_TOKEN with a token from monday.com \u2192 Avatar \u2192 Developers \u2192 My access tokens.",
+      "setup_note": "Replace YOUR_MONDAY_API_TOKEN with a token from monday.com → Avatar → Developers → My access tokens.",
       "tags": [
         "boards",
         "project-management"
@@ -2240,7 +2240,7 @@
     {
       "id": "figma",
       "name": "Figma",
-      "description": "Figma's official MCP server: give agents design context \u2014 read files, frames, components, and variables, and generate code from selections.",
+      "description": "Figma's official MCP server: give agents design context — read files, frames, components, and variables, and generate code from selections.",
       "author": "Figma",
       "homepage": "https://developers.figma.com/docs/figma-mcp-server/",
       "transport": "http",
@@ -2336,7 +2336,7 @@
           "value": ""
         }
       ],
-      "setup_note": "Requires Python/uv and the 'Local REST API' community plugin enabled in Obsidian \u2014 copy its API key here.",
+      "setup_note": "Requires Python/uv and the 'Local REST API' community plugin enabled in Obsidian — copy its API key here.",
       "tags": [
         "notes",
         "knowledge-base",
@@ -2347,7 +2347,7 @@
     {
       "id": "markitdown",
       "name": "MarkItDown",
-      "description": "Microsoft's official MarkItDown MCP server: convert files to Markdown \u2014 PDF, Word, PowerPoint, Excel, images (OCR), audio, HTML, and more.",
+      "description": "Microsoft's official MarkItDown MCP server: convert files to Markdown — PDF, Word, PowerPoint, Excel, images (OCR), audio, HTML, and more.",
       "author": "Microsoft",
       "homepage": "https://github.com/microsoft/markitdown",
       "transport": "stdio",
@@ -2366,7 +2366,7 @@
     {
       "id": "excel",
       "name": "Excel",
-      "description": "Create and edit Excel workbooks over MCP: read and write data, formulas, formatting, charts, and pivot tables \u2014 no Microsoft Excel install needed.",
+      "description": "Create and edit Excel workbooks over MCP: read and write data, formulas, formatting, charts, and pivot tables — no Microsoft Excel install needed.",
       "author": "Haris Musa",
       "homepage": "https://github.com/haris-musa/excel-mcp-server",
       "transport": "stdio",
@@ -2386,7 +2386,7 @@
     {
       "id": "zapier",
       "name": "Zapier",
-      "description": "Zapier's official MCP server: call actions across 8,000+ connected apps \u2014 Gmail, Sheets, Slack, CRMs, and more \u2014 from one MCP endpoint.",
+      "description": "Zapier's official MCP server: call actions across 8,000+ connected apps — Gmail, Sheets, Slack, CRMs, and more — from one MCP endpoint.",
       "author": "Zapier",
       "homepage": "https://zapier.com/mcp",
       "transport": "http",
@@ -2408,7 +2408,7 @@
     {
       "id": "hubspot",
       "name": "HubSpot",
-      "description": "HubSpot's official MCP server: work with CRM objects \u2014 contacts, companies, deals, tickets, associations, and properties.",
+      "description": "HubSpot's official MCP server: work with CRM objects — contacts, companies, deals, tickets, associations, and properties.",
       "author": "HubSpot",
       "homepage": "https://developers.hubspot.com/mcp",
       "transport": "stdio",
@@ -2423,7 +2423,7 @@
           "value": ""
         }
       ],
-      "setup_note": "Create a private app in HubSpot (Settings \u2192 Integrations \u2192 Private Apps) with CRM scopes and paste its access token.",
+      "setup_note": "Create a private app in HubSpot (Settings → Integrations → Private Apps) with CRM scopes and paste its access token.",
       "tags": [
         "crm",
         "sales",
@@ -2466,7 +2466,7 @@
           "value": ""
         }
       ],
-      "setup_note": "Create a restricted API key (rk_\u2026) at https://dashboard.stripe.com/apikeys \u2014 the key's permissions control which tools are enabled.",
+      "setup_note": "Create a restricted API key (rk_…) at https://dashboard.stripe.com/apikeys — the key's permissions control which tools are enabled.",
       "tags": [
         "payments",
         "billing",
@@ -2477,7 +2477,7 @@
     {
       "id": "stripe-remote",
       "name": "Stripe (hosted)",
-      "description": "Stripe's hosted remote MCP server: the same account tools as the local @stripe/mcp package, served from mcp.stripe.com with OAuth sign-in \u2014 no API key or local Node needed.",
+      "description": "Stripe's hosted remote MCP server: the same account tools as the local @stripe/mcp package, served from mcp.stripe.com with OAuth sign-in — no API key or local Node needed.",
       "author": "Stripe",
       "homepage": "https://docs.stripe.com/mcp",
       "transport": "http",
@@ -2489,7 +2489,7 @@
         }
       ],
       "oauth": {},
-      "setup_note": "Click Sign in with Stripe to connect with OAuth (recommended). Alternatively set the Authorization header to: Bearer rk_\u2026 using a restricted API key from https://dashboard.stripe.com/apikeys.",
+      "setup_note": "Click Sign in with Stripe to connect with OAuth (recommended). Alternatively set the Authorization header to: Bearer rk_… using a restricted API key from https://dashboard.stripe.com/apikeys.",
       "tags": [
         "payments",
         "billing",
@@ -2517,7 +2517,7 @@
     {
       "id": "square",
       "name": "Square",
-      "description": "Square's official MCP server: work with the Square ecosystem \u2014 payments, customers, catalog, orders, inventory, and team management.",
+      "description": "Square's official MCP server: work with the Square ecosystem — payments, customers, catalog, orders, inventory, and team management.",
       "author": "Square",
       "homepage": "https://developer.squareup.com/docs/mcp",
       "transport": "sse",
@@ -2534,7 +2534,7 @@
     {
       "id": "shopify-dev",
       "name": "Shopify Dev",
-      "description": "Shopify's official Dev MCP server: search Shopify docs, explore Admin GraphQL schemas, and get Polaris and Functions guidance \u2014 no store credentials needed.",
+      "description": "Shopify's official Dev MCP server: search Shopify docs, explore Admin GraphQL schemas, and get Polaris and Functions guidance — no store credentials needed.",
       "author": "Shopify",
       "homepage": "https://github.com/Shopify/dev-mcp",
       "transport": "stdio",
@@ -2554,7 +2554,7 @@
     {
       "id": "plaid",
       "name": "Plaid",
-      "description": "Plaid's official MCP server: inspect and debug your Plaid integration \u2014 items, institutions, errors, and usage from the Plaid dashboard.",
+      "description": "Plaid's official MCP server: inspect and debug your Plaid integration — items, institutions, errors, and usage from the Plaid dashboard.",
       "author": "Plaid",
       "homepage": "https://plaid.com/docs/mcp/",
       "transport": "sse",
@@ -2576,7 +2576,7 @@
     {
       "id": "xero",
       "name": "Xero",
-      "description": "Xero's official MCP server: accounting operations \u2014 contacts, invoices, quotes, payments, bank transactions, and reports on your Xero organisation.",
+      "description": "Xero's official MCP server: accounting operations — contacts, invoices, quotes, payments, bank transactions, and reports on your Xero organisation.",
       "author": "Xero",
       "homepage": "https://github.com/XeroAPI/xero-mcp-server",
       "transport": "stdio",
@@ -2606,7 +2606,7 @@
     {
       "id": "coingecko",
       "name": "CoinGecko",
-      "description": "CoinGecko's official MCP server: crypto prices, market data, OHLC charts, and metadata for 15,000+ coins across 1,000+ exchanges \u2014 public tier needs no key.",
+      "description": "CoinGecko's official MCP server: crypto prices, market data, OHLC charts, and metadata for 15,000+ coins across 1,000+ exchanges — public tier needs no key.",
       "author": "CoinGecko",
       "homepage": "https://docs.coingecko.com/reference/mcp-server",
       "transport": "sse",
@@ -2710,7 +2710,7 @@
           "value": ""
         }
       ],
-      "setup_note": "Create an API key in the Google Cloud console with the Maps APIs enabled. (Archived reference server \u2014 still functional.)",
+      "setup_note": "Create an API key in the Google Cloud console with the Maps APIs enabled. (Archived reference server — still functional.)",
       "tags": [
         "maps",
         "geocoding",
@@ -2721,7 +2721,7 @@
     {
       "id": "auth0",
       "name": "Auth0",
-      "description": "Auth0's official MCP server: manage your Auth0 tenant \u2014 applications, APIs, actions, forms, and logs \u2014 in natural language.",
+      "description": "Auth0's official MCP server: manage your Auth0 tenant — applications, APIs, actions, forms, and logs — in natural language.",
       "author": "Auth0",
       "homepage": "https://github.com/auth0/auth0-mcp-server",
       "transport": "stdio",
@@ -2742,7 +2742,7 @@
     {
       "id": "snyk",
       "name": "Snyk",
-      "description": "Snyk's official MCP server: scan projects for vulnerabilities \u2014 open source dependencies (SCA), code (SAST), containers, and IaC.",
+      "description": "Snyk's official MCP server: scan projects for vulnerabilities — open source dependencies (SCA), code (SAST), containers, and IaC.",
       "author": "Snyk",
       "homepage": "https://docs.snyk.io/integrations/snyk-mcp",
       "transport": "stdio",
@@ -2782,7 +2782,7 @@
     {
       "id": "youtube-transcript",
       "name": "YouTube Transcript",
-      "description": "Fetch transcripts and captions for YouTube videos over MCP, with language selection \u2014 no API key required.",
+      "description": "Fetch transcripts and captions for YouTube videos over MCP, with language selection — no API key required.",
       "author": "Junpei Kawamoto",
       "homepage": "https://github.com/jkawamoto/mcp-youtube-transcript",
       "transport": "stdio",
@@ -2801,7 +2801,7 @@
     {
       "id": "airbnb",
       "name": "Airbnb",
-      "description": "Search Airbnb listings over MCP: availability, pricing, and listing details \u2014 no API key required.",
+      "description": "Search Airbnb listings over MCP: availability, pricing, and listing details — no API key required.",
       "author": "OpenBnB",
       "homepage": "https://github.com/openbnb-org/mcp-server-airbnb",
       "transport": "stdio",
@@ -2821,7 +2821,7 @@
     {
       "id": "oxylabs",
       "name": "Oxylabs",
-      "description": "Oxylabs' official MCP server: scrape websites via the Oxylabs Web Scraper API \u2014 JavaScript rendering, geo-targeting, and markdown output.",
+      "description": "Oxylabs' official MCP server: scrape websites via the Oxylabs Web Scraper API — JavaScript rendering, geo-targeting, and markdown output.",
       "author": "Oxylabs",
       "homepage": "https://github.com/oxylabs/oxylabs-mcp",
       "transport": "stdio",
@@ -2850,7 +2850,7 @@
     {
       "id": "wix",
       "name": "Wix",
-      "description": "Wix's official MCP server: manage your Wix sites and business \u2014 content, bookings, e-commerce, payments, and site data.",
+      "description": "Wix's official MCP server: manage your Wix sites and business — content, bookings, e-commerce, payments, and site data.",
       "author": "Wix",
       "homepage": "https://www.wix.com/studio/developers/mcp-server",
       "transport": "sse",
