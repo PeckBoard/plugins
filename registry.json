@@ -433,7 +433,7 @@
       "description": "Run a fleet of 3D printers from Peckboard — Klipper (Moonraker), OctoPrint, Prusa (PrusaLink), and Bambu Lab in LAN mode via the print-bridge sidecar — and slice models with the OrcaSlicer CLI using Orca's printer, filament, and process profiles. A sidebar page shows every printer live (state, progress, layers, temperatures, webcam snapshots) with pause/resume/cancel, uploads STL/3MF/STEP models, slices, and previews models and G-code layer by layer in 3D. Agents get tools to list printers, read status, slice, upload, pause, and cancel; starting a print always needs a human confirmation. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/print-farm",
-      "version": "0.1.3",
+      "version": "0.1.4",
       "tags": [
         "3d-printing",
         "orcaslicer",
@@ -448,8 +448,8 @@
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/print-farm/releases/download/v0.1.3/print-farm.wasm",
-      "sha256": "fa7a0b4754015dc3ee680732652bd139da577677d374d1ae46cb666d134d7293",
+      "url": "https://github.com/PeckBoard/print-farm/releases/download/v0.1.4/print-farm.wasm",
+      "sha256": "f87b7a74a9e15049c45137baecd4915073b367ca316a205052cc15f1c2b46825",
       "min_peckboard": "0.1.100"
     }
   ],
