@@ -455,15 +455,16 @@
     {
       "id": "homekit",
       "name": "HomeKit",
-      "description": "Pair with HomeKit accessories on your network and control them directly from Peckboard \u2014 lights, plugs, switches, thermostats, locks, blinds, garage doors, fans, and sensors \u2014 with no Apple device or Home hub. A sidebar page shows each paired device live with controls matched to what it is, discovers accessories over mDNS, and pairs them with their setup code; agents get tools to list, read, set, pair, unpair, and identify. Wi-Fi/Ethernet (IP) accessories only; an accessory in Apple Home must be removed from the Home app first. Talks to the local homekit-bridge daemon, which it installs as a systemd user service on demand. Served as a WASM plugin.",
+      "description": "Pair with HomeKit accessories on your network and control them directly from Peckboard \u2014 lights, plugs, switches, thermostats, locks, blinds, garage doors, fans, and sensors \u2014 and control Philips Hue lights, rooms, zones, and scenes through a linked Hue Bridge (Hue lights stay in Apple Home and the Hue app). A sidebar page shows every device live, grouped by room, with controls matched to what it is; it discovers HomeKit accessories and Hue Bridges and pairs or links them. Agents get tools to list, read, and set devices, switch rooms, and recall scenes. HomeKit: Wi-Fi/Ethernet (IP) accessories only, and an accessory in Apple Home must be removed from the Home app first. Talks to the local homekit-bridge daemon, which it installs or upgrades as a systemd user service on demand. Served as a WASM plugin.",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/homekit",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "tags": [
         "homekit",
         "smart-home",
         "home-automation",
-        "iot"
+        "iot",
+        "hue"
       ],
       "category": "integrations",
       "hooks": [
@@ -471,8 +472,8 @@
         "http.request.before",
         "http.request.authed"
       ],
-      "url": "https://github.com/PeckBoard/homekit/releases/download/v0.1.0/homekit.wasm",
-      "sha256": "1917a1feb27e69302fd578c20a75dec54189172a744044fa1d44b499205d8b6f",
+      "url": "https://github.com/PeckBoard/homekit/releases/download/v0.2.0/homekit.wasm",
+      "sha256": "ceed7639f0aee75ad145246789f650e5b992a9dcd6b80e25ad8e39e4b7fd06ca",
       "min_peckboard": "0.1.100"
     }
   ],
