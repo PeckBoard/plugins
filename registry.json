@@ -361,8 +361,8 @@
       "name": "PR Review",
       "author": "PeckBoard",
       "homepage": "https://github.com/PeckBoard/pr-review",
-      "description": "Review a branch with several models in parallel. Pick a branch and a folder; each review runs in its own agent session from a detached worktree (your checkout is never touched), fans out to Claude, Codex and Grok reviewers, then merges, verifies and ranks their findings. Once done, ignore or reword findings and post one GitHub review to the PR with your own decision (approve, request changes or comment). Sessions can start and manage reviews through MCP tools (pr_review_start and friends) and are messaged with the verdict when a review ends. A sidebar page lists every review with its status, step and per-provider progress; a review page shows the summary, why the change is needed, the linked ticket, recommended changes by severity (file:line, suggested fix, consensus, confidence) and praise. Per-review custom prompts and an editable global prompt with a researched default.",
-      "version": "0.4.0",
+      "description": "Review a branch with several models in parallel. Pick a branch and a folder; each review runs in its own agent session from a detached worktree (your checkout is never touched), fans out to Claude, Codex and Grok reviewers (a small change gets a single Claude Opus reviewer), then merges, verifies and ranks their findings. Re-runs review only the commits pushed since the last successful review and carry its findings and triage over (or run a full review / the same commit again). Once done, ignore or reword findings and post one GitHub review to the PR with your own decision (approve, request changes or comment). Sessions can start and manage reviews through MCP tools (pr_review_start and friends) and are messaged with the verdict when a review ends. A sidebar page lists every review with its status, step and per-provider progress; a review page shows the summary, why the change is needed, the linked ticket, recommended changes by severity (file:line, suggested fix, consensus, confidence) and praise. Per-review custom prompts and an editable global prompt with a researched default.",
+      "version": "0.5.1",
       "tags": [
         "code-review",
         "pull-requests",
@@ -375,8 +375,8 @@
         "http.request.authed",
         "session.agent.ended"
       ],
-      "url": "https://github.com/PeckBoard/pr-review/releases/download/v0.4.0/pr-review.wasm",
-      "sha256": "f8c0bd39ec5759bb405f976f0202e24b8533c7ab110fd856cfe5be41742cc431",
+      "url": "https://github.com/PeckBoard/pr-review/releases/download/v0.5.1/pr-review.wasm",
+      "sha256": "421fcccc609c49ff1377712913aa654e8867bb7c9287786419c00119d6211c03",
       "min_peckboard": "0.1.90"
     },
     {
