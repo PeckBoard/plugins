@@ -451,7 +451,8 @@
       ],
       "url": "https://github.com/PeckBoard/homekit/releases/download/v0.2.0/homekit.wasm",
       "sha256": "ceed7639f0aee75ad145246789f650e5b992a9dcd6b80e25ad8e39e4b7fd06ca",
-      "min_peckboard": "0.1.100"
+      "min_peckboard": "0.1.100",
+      "stability": "experimental"
     }
   ],
   "mcp_servers": [
